@@ -1,5 +1,6 @@
 $deepblue: #02152E;
 $gold: #B69753;
+$overlay: rgba(255, 255, 255, .2);
 
 #main{
   font-family: 'Geometria-Light', sans-serif;
@@ -9,9 +10,19 @@ $gold: #B69753;
     padding: 0;
     margin: 0;
     color: white;
+
+    .overlay{
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .3s;
+    }
   }
+
   .section-title{
     text-align: center;
+    z-index: 10;
 
     h2{
       font-family: 'Geometria-Bold', sans-serif;
@@ -19,7 +30,6 @@ $gold: #B69753;
       padding: 10px 0px;
       font-size: 3em;
     }
-
     .separator{
       height: 5px;
       width: 20%;
@@ -27,21 +37,39 @@ $gold: #B69753;
       transition: 0.3s;
     }
 
-    .sub-title{
+    .subtitle{
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+    .bloc-icons{
+      margin-top: 15px;
+
+      i{
+        padding: 0 5px;
+      }
+    }
+
+    .bloc-link{
       display: inline-block;
       font-family: 'Roboto Slab', serif;
       font-style: oblique;
       margin-top: 30px;
-      padding: 15px;
       border: 2px solid $gold;
       transition: .3s;
+
+      a{
+        padding: 15px;
+        display: block;
+        width: 100%;
+      }
     }
-    .sub-title:hover{
+    .bloc-link:hover{
       background: $gold;
     }
   }
 
   .section-left{
+    position: relative;
     background-image: url('../img/room-brigitte-1.jpg');
     background-size: 370%;
     background-position: center;
@@ -54,12 +82,9 @@ $gold: #B69753;
     transition: 0.3s;
   }
 
-  .section-left:hover{
-    background-size: 400%;
-  }
-  .section-left:hover .section-title .separator{
-    width: 100%;
-  }
+  .section-left:hover{background-size: 400%;}
+  .section-left:hover .section-title .separator{width: 100%;}
+  .section-left:hover .overlay{background: $overlay;}
 
   .section-right{
     height: calc(100vh - 70px);
@@ -77,12 +102,10 @@ $gold: #B69753;
       align-items: center;
       transition: 0.3s;
     }
-    .section-left-item:first-child:hover{
-      background-size: 250%;
-    }
-    .section-left-item:first-child:hover .section-title .separator{
-      width: 100%;
-    }
+    .section-left-item:first-child:hover{background-size: 250%;}
+    .section-left-item:first-child:hover .section-title .separator{width: 100%;}
+    .section-left-item:first-child:hover .overlay{background: $overlay;}
+
     .section-left-item:last-child{
       height: 50%;
       background-image: url('../img/spa-3.jpg');
@@ -95,11 +118,8 @@ $gold: #B69753;
       align-items: center;
       transition: 0.3s;
     }
-    .section-left-item:last-child:hover{
-      background-size: 200%;
-    }
-    .section-left-item:last-child:hover .section-title .separator{
-      width: 100%;
-    }
+    .section-left-item:last-child:hover{background-size: 200%;}
+    .section-left-item:last-child:hover .section-title .separator{width: 100%;}
+    .section-left-item:last-child:hover .overlay{background: $overlay;}
   }
 }
