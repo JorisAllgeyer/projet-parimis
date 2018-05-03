@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300");
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   margin: 0;
   padding: 0;
@@ -27,6 +28,10 @@ input, select {
   font-family: 'Geometria-Light';
   src: url("../fonts/webfonts/367441_0_0.eot");
   src: url("../fonts/webfonts/367441_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/367441_0_0.woff2") format("woff2"), url("../fonts/webfonts/367441_0_0.woff") format("woff"), url("../fonts/webfonts/367441_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url("../fonts/webfonts/Geometria-Bold.eot");
+  src: url("../fonts/webfonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/Geometria-Bold.woff2") format("woff2"), url("../fonts/webfonts/Geometria-Bold.woff") format("woff"), url("../fonts/webfonts/Geometria-Bold.ttf") format("truetype"); }
 .container-fluid {
   padding: 0; }
 
@@ -108,6 +113,23 @@ input, select {
         background: #02152E;
         color: #FFFFFF;
         cursor: pointer; }
+  #header .lang {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    color: #02152E;
+    background: rbga(255, 255, 255, 0.9);
+    width: 50px;
+    height: 140px;
+    line-height: 70px;
+    text-align: center; }
+    #header .lang p {
+      width: 100%;
+      display: block;
+      cursor: pointer; }
+    #header .lang p:hover {
+      background: #B69753;
+      color: #FFFFFF; }
   #header .search-form-container {
     position: absolute;
     top: 70px;
@@ -274,6 +296,11 @@ input, select {
           width: 100%; }
         #header nav .nav-list .sub-nav-item:hover {
           background: #C1A976; }
+    #header .lang {
+      position: static;
+      width: 30px;
+      height: 70px;
+      line-height: 35px; }
     #header .search-form-container, #header .booking-form-container {
       width: calc(100% - 240px);
       left: 120px; }
@@ -299,6 +326,8 @@ input, select {
 @media (min-width: 1200px) {
   #header nav .logo {
     padding-left: 30px; }
+  #header .lang {
+    width: 50px; }
 
   .b4 {
     display: block; }
@@ -309,4 +338,4 @@ input, select {
   #header nav .logo {
     padding-left: 50px; } }
 
-/*# sourceMappingURL=mobile-first.css.map */
+/*# sourceMappingURL=header.css.map */

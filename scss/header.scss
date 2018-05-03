@@ -22,9 +22,17 @@ input, select{outline: none;}
   url('../fonts/webfonts/367441_0_0.woff') format('woff'),
   url('../fonts/webfonts/367441_0_0.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url('../fonts/webfonts/Geometria-Bold.eot');
+  src: url('../fonts/webfonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfonts/Geometria-Bold.woff2') format('woff2'),
+  url('../fonts/webfonts/Geometria-Bold.woff') format('woff'),
+  url('../fonts/webfonts/Geometria-Bold.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
 
 $deepblue: #02152E;
-// $gold: #BF9B30;
 $gold: #B69753;
 $lightgold: #C1A976;
 $white: #FFFFFF;
@@ -132,6 +140,27 @@ $white: #FFFFFF;
         color: $white;
         cursor: pointer;
       }
+    }
+  }
+
+  .lang{
+    position: absolute;
+    top: 0; right: 60px;
+    color: $deepblue;
+    background: rbga(255, 255, 255, 0.9);
+    width: 50px;
+    height: 140px;
+    line-height: 70px;
+    text-align: center;
+
+    p{
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    }
+    p:hover{
+      background: $gold;
+      color: $white;
     }
   }
 
@@ -368,7 +397,12 @@ $white: #FFFFFF;
       }
 
     }/*nav*/
-
+    .lang{
+      position: static;
+      width: 30px;
+      height: 70px;
+      line-height: 35px;
+    }
     .search-form-container, .booking-form-container{
       width: calc(100% - 240px);
       left: 120px;
@@ -409,6 +443,9 @@ $white: #FFFFFF;
       .logo{
         padding-left: 30px;
       }
+    }
+    .lang{
+      width: 50px;
     }
   }
 

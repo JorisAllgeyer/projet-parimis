@@ -1,10 +1,8 @@
 $deepblue: #02152E;
+$gold: #B69753;
 
 #main{
   font-family: 'Geometria-Light', sans-serif;
-  font-size: 2.4em;
-  font-weight: bold;
-  text-transform: uppercase;
   margin-top: 70px;
 
   .row{
@@ -12,15 +10,40 @@ $deepblue: #02152E;
     margin: 0;
     color: white;
   }
-  h2{
-     padding: 10px;
-     font-weight: bold;
-     border-bottom: 3px solid $deepblue;
+  .section-title{
+    text-align: center;
+
+    h2{
+      font-family: 'Geometria-Bold', sans-serif;
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+    }
+
+    .separator{
+      height: 5px;
+      width: 20%;
+      background: $deepblue;
+      transition: 0.3s;
+    }
+
+    .sub-title{
+      display: inline-block;
+      font-family: 'Roboto Slab', serif;
+      font-style: oblique;
+      margin-top: 30px;
+      padding: 15px;
+      border: 2px solid $gold;
+      transition: .3s;
+    }
+    .sub-title:hover{
+      background: $gold;
+    }
   }
 
   .section-left{
     background-image: url('../img/room-brigitte-1.jpg');
-    background-size: 450%;
+    background-size: 370%;
     background-position: center;
     height: calc(100vh - 70px);
     display: -webkit-flex;
@@ -32,7 +55,10 @@ $deepblue: #02152E;
   }
 
   .section-left:hover{
-    background-size: 500%;
+    background-size: 400%;
+  }
+  .section-left:hover .section-title .separator{
+    width: 100%;
   }
 
   .section-right{
@@ -42,7 +68,7 @@ $deepblue: #02152E;
     .section-left-item:first-child{
       height: 50%;
       background-image: url('../img/restaurant-2.jpg');
-      background-size: 200%;
+      background-size: 235%;
       background-position: center;
       display: -webkit-flex;
       display: -ms-flex;
@@ -52,12 +78,15 @@ $deepblue: #02152E;
       transition: 0.3s;
     }
     .section-left-item:first-child:hover{
-      background-size: 230%;
+      background-size: 250%;
+    }
+    .section-left-item:first-child:hover .section-title .separator{
+      width: 100%;
     }
     .section-left-item:last-child{
       height: 50%;
       background-image: url('../img/spa-3.jpg');
-      background-size: 150%;
+      background-size: 180%;
       background-position: center;
       display: -webkit-flex;
       display: -ms-flex;
@@ -67,7 +96,10 @@ $deepblue: #02152E;
       transition: 0.3s;
     }
     .section-left-item:last-child:hover{
-      background-size: 170%;
+      background-size: 200%;
+    }
+    .section-left-item:last-child:hover .section-title .separator{
+      width: 100%;
     }
   }
 }
