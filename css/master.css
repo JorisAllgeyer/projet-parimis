@@ -24,6 +24,9 @@ ul {
 input, select {
   outline: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 @font-face {
   font-family: 'Geometria-Light';
   src: url("../fonts/webfonts/367441_0_0.eot");
@@ -342,8 +345,7 @@ input, select {
   margin-top: 70px; }
   #main .row {
     padding: 0;
-    margin: 0;
-    color: white; }
+    margin: 0; }
     #main .row .overlay {
       position: absolute;
       top: 0;
@@ -353,6 +355,7 @@ input, select {
       transition: .3s;
       z-index: 1; }
   #main .section-title {
+    color: white;
     position: relative;
     text-align: center;
     z-index: 5; }
@@ -442,5 +445,26 @@ input, select {
       width: 100%; }
     #main .section-right .section-left-item:last-child:hover .overlay {
       background: rgba(255, 255, 255, 0.2); }
+  #main .scroll {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 15px);
+    z-index: 10; }
+  #main #anchor-1 {
+    position: relative;
+    bottom: 70px; }
+  #main #hotel {
+    margin-top: 70px;
+    color: #02152E; }
+    #main #hotel h2 {
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold; }
+    #main #hotel img {
+      width: 100%; }
+    #main #hotel .section-hotel {
+      text-align: center; }
 
 /*# sourceMappingURL=master.css.map */
