@@ -157,6 +157,7 @@
     </header>
   </div>
 
+<!-- HOME -->
   <main id="main" class="container-fluid">
     <div class="row">
       <section class="col-md-6 section-left-home">
@@ -197,6 +198,7 @@
     </div>
 
     <div id="anchor-1"></div>
+<!-- HOTEL -->
     <div class="container" id="hotel">
       <section class="col-12 title">
         <p>1 avenue Montaigne, 75008 Paris</p>
@@ -207,18 +209,19 @@
           <p>«Situé dans le quartier des Champs Elysées, l’hôtel Parimis offre l’expérience d’un art de vivre parisien.»</p>
           <p>Disposant d’une vingtaine de chambre toutes différentes et contemporaines, respectant les sinuosités de l’immeuble pour leur disposition, notre décoratrice a su créer une atmosphère intime au sein d’un environnement sophistiqué.
           </p>
+          <p class="bloc-link"><a href="#">Réservez</a></p>
         </section>
         <section class="col-md-6 slider">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="img/room-serge-1.jpg" alt="First slide">
+                <img class="d-block w-100" src="img/hall-1.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="img/room-serge-2.jpg" alt="Second slide">
+                <img class="d-block w-100" src="img/room-serge-3.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="img/room-serge-3.jpg" alt="Third slide">
+                <img class="d-block w-100" src="img/plat-3.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -231,10 +234,22 @@
             </a>
           </div>
         </section>
-
-        
       </div>
     </div>
+
+<!-- MAP -->
+    <div class="container-fluid" id="map">
+      <div class="row">
+        <section class="col-12 title">
+          <h2>Nous Trouver</h2>
+        </section>
+        <div id="container-map" class="col-12">
+
+        </div>
+
+      </div>
+    </div>
+
   </main>
 
   <div class="container-fluid" id="bloc-footer">
@@ -251,6 +266,8 @@
     <span class="b4">Large</span>
   </div>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuakcGRgZHKfK-1N-rchnEcofVpHZTR7Y&callback=initMap" async defer></script>
+  <script src="js/map.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>

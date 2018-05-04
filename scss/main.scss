@@ -48,23 +48,24 @@
       }
     }
 
-    .bloc-link{
-      display: inline-block;
-      font-family: 'Roboto Slab', serif;
-      font-style: oblique;
-      margin-top: 30px;
-      border: 2px solid $gold;
-      transition: .3s;
+  }
 
-      a{
-        padding: 15px;
-        display: block;
-        width: 100%;
-      }
+  .bloc-link{
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-style: oblique;
+    margin-top: 30px;
+    border: 2px solid $gold;
+    transition: .3s;
+
+    a{
+      padding: 15px;
+      display: block;
+      width: 100%;
     }
-    .bloc-link:hover{
-      background: $gold;
-    }
+  }
+  .bloc-link:hover{
+    background: $gold;
   }
 
   .section-left-home{
@@ -126,6 +127,7 @@
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
+    color: $gold;
     z-index: 5;
   }
 
@@ -135,26 +137,26 @@
   }
 
 // ------------------------------------------- HOTEL
+  .title{
+    text-align: center;
+
+    p{
+      padding: 15px;
+    }
+    h2{
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+
   #hotel{
     margin-top: 70px;
     color: $deepblue;
     // min-height: 100vh;
-
-    .title{
-      text-align: center;
-
-      p{
-        padding: 15px;
-      }
-      h2{
-        text-transform: uppercase;
-        padding: 10px 0px;
-        font-size: 3em;
-        letter-spacing: -0.08em;
-        font-weight: bold;
-        margin-bottom: 40px;
-      }
-    }
 
     .text{
       display: -webkit-flex;
@@ -170,14 +172,31 @@
         color: $gold;
         margin-bottom: 30px;
       }
-      p:nth-child(2){
+      p:nth-child(3){
+        align-self: center;
+        text-align: center;
+        width: 150px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+// MAP
+
+  #map{
+
+    #container-map{
+      width: 80%;
+      height: 50vh;
+
+      #popup-map{
+        font-family: 'Geometria-Light';
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 2em;
+        color: $gold;
 
       }
     }
-
-    .slider{
-
-    }
-
   }
 }

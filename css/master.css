@@ -384,19 +384,19 @@ html {
       margin-top: 15px; }
       #main .section-title .bloc-icons i {
         padding: 0 5px; }
-    #main .section-title .bloc-link {
-      display: inline-block;
-      font-family: 'Roboto Slab', serif;
-      font-style: oblique;
-      margin-top: 30px;
-      border: 2px solid #B69753;
-      transition: .3s; }
-      #main .section-title .bloc-link a {
-        padding: 15px;
-        display: block;
-        width: 100%; }
-    #main .section-title .bloc-link:hover {
-      background: #B69753; }
+  #main .bloc-link {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-style: oblique;
+    margin-top: 30px;
+    border: 2px solid #B69753;
+    transition: .3s; }
+    #main .bloc-link a {
+      padding: 15px;
+      display: block;
+      width: 100%; }
+  #main .bloc-link:hover {
+    background: #B69753; }
   #main .section-left-home {
     position: relative;
     background-image: url("../img/room-brigitte-1.jpg");
@@ -457,24 +457,25 @@ html {
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
+    color: #B69753;
     z-index: 5; }
   #main #anchor-1 {
     position: relative;
     bottom: 70px; }
+  #main .title {
+    text-align: center; }
+    #main .title p {
+      padding: 15px; }
+    #main .title h2 {
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+      margin-bottom: 50px; }
   #main #hotel {
     margin-top: 70px;
     color: #02152E; }
-    #main #hotel .title {
-      text-align: center; }
-      #main #hotel .title p {
-        padding: 15px; }
-      #main #hotel .title h2 {
-        text-transform: uppercase;
-        padding: 10px 0px;
-        font-size: 3em;
-        letter-spacing: -0.08em;
-        font-weight: bold;
-        margin-bottom: 40px; }
     #main #hotel .text {
       display: -webkit-flex;
       display: -ms-flex;
@@ -487,5 +488,19 @@ html {
         font-style: italic;
         color: #B69753;
         margin-bottom: 30px; }
+      #main #hotel .text p:nth-child(3) {
+        align-self: center;
+        text-align: center;
+        width: 150px;
+        margin-bottom: 30px; }
+  #main #map #container-map {
+    width: 80%;
+    height: 50vh; }
+    #main #map #container-map #popup-map {
+      font-family: 'Geometria-Light';
+      padding: 5px;
+      text-transform: uppercase;
+      font-size: 2em;
+      color: #B69753; }
 
 /*# sourceMappingURL=master.css.map */
