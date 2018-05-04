@@ -1,22 +1,28 @@
 #footer{
   font-family: 'Geometria-Light', sans-serif;
-  height: 200px;
+  height: 300px;
   text-transform: uppercase;
 
   .row{
     padding: 0;
     margin: 0;
   }
+  #si-1, #si-4{background: $deepblue2;}
+  #si-2, #si-3{background: $deepblue;}
 
   .section-left{
-    background: #ccc;
+    h2{
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+    }
+
   }
   .section-center{
-    background: $deepblue;
     color: $white;
 
     .container-icon{
-      height: 100px;
+      height: 150px;
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
@@ -25,21 +31,27 @@
       align-items: center;
       font-size: 0.8em;
 
-      i{
+      a{color: $gold; padding-bottom: 15px;}
+      p:first-of-type{padding-bottom: 5px;}
+      p:last-child{color: $gold;}
+
+      input[type="text"]{
+        background: inherit;
         color: $gold;
+        border: 2px solid;
+        padding: 5px;
       }
-
-      p:first-child{
-
-      }
-
-      p:last-child{
-        color: $gold;
+      input[type="submit"]{
+        background: $gold;
+        color: $white;
+        padding: 5px;
+        border: 2px solid $gold;
+        cursor: pointer;
       }
     }
 
   }
   .section-right{
-    background: #aaa;
+
   }
 }

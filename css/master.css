@@ -490,7 +490,6 @@ html {
     margin-top: 70px;
     color: #02152E; }
     #main #hotel .bloc-link {
-      max-width: 150px;
       text-align: center;
       margin-bottom: 30px; }
     #main #hotel .slider {
@@ -509,18 +508,23 @@ html {
 
 #footer {
   font-family: 'Geometria-Light', sans-serif;
-  height: 200px;
+  height: 300px;
   text-transform: uppercase; }
   #footer .row {
     padding: 0;
     margin: 0; }
-  #footer .section-left {
-    background: #ccc; }
+  #footer #si-1, #footer #si-4 {
+    background: #0D2D56; }
+  #footer #si-2, #footer #si-3 {
+    background: #02152E; }
+  #footer .section-left h2 {
+    font-size: 3em;
+    letter-spacing: -0.08em;
+    font-weight: bold; }
   #footer .section-center {
-    background: #02152E;
     color: #FFFFFF; }
     #footer .section-center .container-icon {
-      height: 100px;
+      height: 150px;
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
@@ -528,11 +532,23 @@ html {
       justify-content: center;
       align-items: center;
       font-size: 0.8em; }
-      #footer .section-center .container-icon i {
-        color: #B69753; }
+      #footer .section-center .container-icon a {
+        color: #B69753;
+        padding-bottom: 15px; }
+      #footer .section-center .container-icon p:first-of-type {
+        padding-bottom: 5px; }
       #footer .section-center .container-icon p:last-child {
         color: #B69753; }
-  #footer .section-right {
-    background: #aaa; }
+      #footer .section-center .container-icon input[type="text"] {
+        background: inherit;
+        color: #B69753;
+        border: 2px solid;
+        padding: 5px; }
+      #footer .section-center .container-icon input[type="submit"] {
+        background: #B69753;
+        color: #FFFFFF;
+        padding: 5px;
+        border: 2px solid #B69753;
+        cursor: pointer; }
 
 /*# sourceMappingURL=master.css.map */
