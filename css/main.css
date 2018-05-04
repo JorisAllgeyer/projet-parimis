@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$deepblue".
-        on line 34 of scss/main.scss
+        on line 35 of scss/main.scss
 
-29:       font-size: 3em;
-30:     }
-31:     .separator{
-32:       height: 5px;
-33:       width: 20%;
-34:       background: $deepblue;
-35:       transition: 0.3s;
-36:     }
-37: 
-38:     .subtitle{
-39:       text-transform: uppercase;
+30:       font-size: 3em;
+31:     }
+32:     .separator{
+33:       height: 5px;
+34:       width: 20%;
+35:       background: $deepblue;
+36:       transition: 0.3s;
+37:     }
+38: 
+39:     .subtitle{
+40:       text-transform: uppercase;
 
 Backtrace:
-scss/main.scss:34
+scss/main.scss:35
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$deepblue\".\A         on line 34 of scss/main.scss\A \A 29:       font-size: 3em;\A 30:     }\A 31:     .separator{\A 32:       height: 5px;\A 33:       width: 20%;\A 34:       background: $deepblue;\A 35:       transition: 0.3s;\A 36:     }\A 37: \A 38:     .subtitle{\A 39:       text-transform: uppercase;"; }
+  content: "Error: Undefined variable: \"$deepblue\".\A         on line 35 of scss/main.scss\A \A 30:       font-size: 3em;\A 31:     }\A 32:     .separator{\A 33:       height: 5px;\A 34:       width: 20%;\A 35:       background: $deepblue;\A 36:       transition: 0.3s;\A 37:     }\A 38: \A 39:     .subtitle{\A 40:       text-transform: uppercase;"; }

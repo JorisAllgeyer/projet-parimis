@@ -2,6 +2,7 @@
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 70px;
 
+// ------------------------------------------- HOME
   .row{
     padding: 0;
     margin: 0;
@@ -66,7 +67,7 @@
     }
   }
 
-  .section-left{
+  .section-left-home{
     position: relative;
     background-image: url('../img/room-brigitte-1.jpg');
     background-size: 370%;
@@ -80,11 +81,11 @@
     transition: 0.3s;
   }
 
-  .section-left:hover{background-size: 400%;}
-  .section-left:hover .section-title .separator{width: 100%;}
-  .section-left:hover .overlay{background: $overlay;}
+  .section-left-home:hover{background-size: 400%;}
+  .section-left-home:hover .section-title .separator{width: 100%;}
+  .section-left-home:hover .overlay{background: $overlay;}
 
-  .section-right{
+  .section-right-home{
     height: calc(100vh - 70px);
     padding: 0; margin: 0;
 
@@ -125,7 +126,7 @@
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
-    z-index: 10;
+    z-index: 5;
   }
 
   #anchor-1{
@@ -133,25 +134,50 @@
     bottom: 70px;
   }
 
+// ------------------------------------------- HOTEL
   #hotel{
     margin-top: 70px;
     color: $deepblue;
     // min-height: 100vh;
 
-    h2{
-      text-transform: uppercase;
-      padding: 10px 0px;
-      font-size: 3em;
-      letter-spacing: -0.08em;
-      font-weight: bold;
-    }
-    img{
-      width: 100%;
-    }
-
-    .section-hotel{
+    .title{
       text-align: center;
 
+      p{
+        padding: 15px;
+      }
+      h2{
+        text-transform: uppercase;
+        padding: 10px 0px;
+        font-size: 3em;
+        letter-spacing: -0.08em;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
     }
+
+    .text{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p:first-child{
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.3em;
+        font-style: italic;
+        color: $gold;
+        margin-bottom: 30px;
+      }
+      p:nth-child(2){
+
+      }
+    }
+
+    .slider{
+
+    }
+
   }
 }

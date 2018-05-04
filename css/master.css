@@ -72,11 +72,12 @@ html {
   #header .header-bloc-right {
     height: 140px;
     background: #02152E; }
-  #header .header-bloc-right-item a {
+  #header .header-bloc-right-item a, #header .header-bloc-right-item span {
     display: block;
     width: 100%;
     height: 70px;
-    line-height: 70px; }
+    line-height: 70px;
+    cursor: pointer; }
   #header .header-bloc-right-item #text-search, #header .header-bloc-right-item #text-basket {
     display: none; }
   #header nav {
@@ -188,11 +189,17 @@ html {
     background: #02152E; }
     #header .header-bloc-left .header-booking {
       display: block; }
+      #header .header-bloc-left .header-booking span {
+        display: block;
+        width: 100%;
+        padding-bottom: 40px; }
     #header .header-bloc-left #booking-icon {
       position: relative;
-      top: 28px; }
+      top: 28px;
+      cursor: pointer; }
     #header .header-bloc-left #booking-text {
-      display: none; }
+      display: none;
+      cursor: pointer; }
   #header .booking-form-container {
     position: absolute;
     top: 60px;
@@ -201,7 +208,8 @@ html {
     height: 80px;
     background: #B69753;
     color: #FFFFFF;
-    display: none; }
+    display: none;
+    z-index: 2; }
     #header .booking-form-container .booking-form {
       display: -webkit-flex;
       display: -ms-flex;
@@ -389,7 +397,7 @@ html {
         width: 100%; }
     #main .section-title .bloc-link:hover {
       background: #B69753; }
-  #main .section-left {
+  #main .section-left-home {
     position: relative;
     background-image: url("../img/room-brigitte-1.jpg");
     background-size: 370%;
@@ -401,17 +409,17 @@ html {
     justify-content: center;
     align-items: center;
     transition: 0.3s; }
-  #main .section-left:hover {
+  #main .section-left-home:hover {
     background-size: 400%; }
-  #main .section-left:hover .section-title .separator {
+  #main .section-left-home:hover .section-title .separator {
     width: 100%; }
-  #main .section-left:hover .overlay {
+  #main .section-left-home:hover .overlay {
     background: rgba(255, 255, 255, 0.2); }
-  #main .section-right {
+  #main .section-right-home {
     height: calc(100vh - 70px);
     padding: 0;
     margin: 0; }
-    #main .section-right .section-left-item:first-child {
+    #main .section-right-home .section-left-item:first-child {
       height: 50%;
       background-image: url("../img/restaurant-2.jpg");
       background-size: 235%;
@@ -422,13 +430,13 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-    #main .section-right .section-left-item:first-child:hover {
+    #main .section-right-home .section-left-item:first-child:hover {
       background-size: 250%; }
-    #main .section-right .section-left-item:first-child:hover .section-title .separator {
+    #main .section-right-home .section-left-item:first-child:hover .section-title .separator {
       width: 100%; }
-    #main .section-right .section-left-item:first-child:hover .overlay {
+    #main .section-right-home .section-left-item:first-child:hover .overlay {
       background: rgba(255, 255, 255, 0.2); }
-    #main .section-right .section-left-item:last-child {
+    #main .section-right-home .section-left-item:last-child {
       height: 50%;
       background-image: url("../img/spa-3.jpg");
       background-size: 180%;
@@ -439,32 +447,45 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-    #main .section-right .section-left-item:last-child:hover {
+    #main .section-right-home .section-left-item:last-child:hover {
       background-size: 200%; }
-    #main .section-right .section-left-item:last-child:hover .section-title .separator {
+    #main .section-right-home .section-left-item:last-child:hover .section-title .separator {
       width: 100%; }
-    #main .section-right .section-left-item:last-child:hover .overlay {
+    #main .section-right-home .section-left-item:last-child:hover .overlay {
       background: rgba(255, 255, 255, 0.2); }
   #main .scroll {
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
-    z-index: 10; }
+    z-index: 5; }
   #main #anchor-1 {
     position: relative;
     bottom: 70px; }
   #main #hotel {
     margin-top: 70px;
     color: #02152E; }
-    #main #hotel h2 {
-      text-transform: uppercase;
-      padding: 10px 0px;
-      font-size: 3em;
-      letter-spacing: -0.08em;
-      font-weight: bold; }
-    #main #hotel img {
-      width: 100%; }
-    #main #hotel .section-hotel {
+    #main #hotel .title {
       text-align: center; }
+      #main #hotel .title p {
+        padding: 15px; }
+      #main #hotel .title h2 {
+        text-transform: uppercase;
+        padding: 10px 0px;
+        font-size: 3em;
+        letter-spacing: -0.08em;
+        font-weight: bold;
+        margin-bottom: 40px; }
+    #main #hotel .text {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #main #hotel .text p:first-child {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.3em;
+        font-style: italic;
+        color: #B69753;
+        margin-bottom: 30px; }
 
 /*# sourceMappingURL=master.css.map */

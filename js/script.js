@@ -13,10 +13,10 @@ $(document).ready(function(){
 
   // REMPLACER PAR FADE TOOGLE EN LAPTOP
 
-  $('.header-booking a').click(function(){
+  $('.header-booking span').click(function(){
     $('.booking-form-container').fadeToggle(300);
   });
-  $('.header-search a').click(function(){
+  $('.header-search span').click(function(){
     $('.search-form-container').fadeToggle(300);
   });
 
