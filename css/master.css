@@ -405,7 +405,8 @@ html {
     text-align: center;
     z-index: 5; }
     #main .section-title h2 {
-      font-family: 'Geometria-Bold', sans-serif;
+      font-family: 'Geometria-Light', sans-serif;
+      font-weight: bold;
       text-transform: uppercase;
       padding: 10px 0px;
       font-size: 3em; }
