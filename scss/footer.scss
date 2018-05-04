@@ -1,3 +1,45 @@
 #footer{
-  
+  font-family: 'Geometria-Light', sans-serif;
+  height: 200px;
+  text-transform: uppercase;
+
+  .row{
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-left{
+    background: #ccc;
+  }
+  .section-center{
+    background: $deepblue;
+    color: $white;
+
+    .container-icon{
+      height: 100px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
+
+      i{
+        color: $gold;
+      }
+
+      p:first-child{
+
+      }
+
+      p:last-child{
+        color: $gold;
+      }
+    }
+
+  }
+  .section-right{
+    background: #aaa;
+  }
 }

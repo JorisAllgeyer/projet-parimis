@@ -2,6 +2,58 @@
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 70px;
 
+// ------------------------------------------- GENERAL
+  .title{
+    text-align: center;
+
+    p{
+      padding: 15px;
+    }
+    h2{
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+  .text{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .serif-gold{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3em;
+    font-style: italic;
+    color: $gold;
+    margin-bottom: 30px;
+  }
+
+  .bloc-link{
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-style: oblique;
+    margin-top: 30px;
+    border: 2px solid $gold;
+    transition: .3s;
+
+    a{
+      padding: 15px;
+      display: block;
+      width: 100%;
+    }
+  }
+  .bloc-link:hover{
+    background: $gold;
+  }
+
 // ------------------------------------------- HOME
   .row{
     padding: 0;
@@ -50,24 +102,6 @@
 
   }
 
-  .bloc-link{
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-style: oblique;
-    margin-top: 30px;
-    border: 2px solid $gold;
-    transition: .3s;
-
-    a{
-      padding: 15px;
-      display: block;
-      width: 100%;
-    }
-  }
-  .bloc-link:hover{
-    background: $gold;
-  }
-
   .section-left-home{
     position: relative;
     background-image: url('../img/room-brigitte-1.jpg');
@@ -80,11 +114,14 @@
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+
+    &:hover{
+      background-size: 400%;
+      .section-title .separator{width: 100%;}
+      .overlay{background: $overlay;}
+    }
   }
 
-  .section-left-home:hover{background-size: 400%;}
-  .section-left-home:hover .section-title .separator{width: 100%;}
-  .section-left-home:hover .overlay{background: $overlay;}
 
   .section-right-home{
     height: calc(100vh - 70px);
@@ -101,10 +138,13 @@
       justify-content: center;
       align-items: center;
       transition: 0.3s;
+
+      &:hover{
+        background-size: 250%;
+        .section-title .separator{width: 100%;}
+        .overlay{background: $overlay;}
+      }
     }
-    .section-left-item:first-child:hover{background-size: 250%;}
-    .section-left-item:first-child:hover .section-title .separator{width: 100%;}
-    .section-left-item:first-child:hover .overlay{background: $overlay;}
 
     .section-left-item:last-child{
       height: 50%;
@@ -117,10 +157,13 @@
       justify-content: center;
       align-items: center;
       transition: 0.3s;
+
+      &:hover{
+        background-size: 200%;
+        .section-title .separator{width: 100%;}
+        .overlay{background: $overlay;}
+      }
     }
-    .section-left-item:last-child:hover{background-size: 200%;}
-    .section-left-item:last-child:hover .section-title .separator{width: 100%;}
-    .section-left-item:last-child:hover .overlay{background: $overlay;}
   }
 
   .scroll{
@@ -137,56 +180,30 @@
   }
 
 // ------------------------------------------- HOTEL
-  .title{
-    text-align: center;
-
-    p{
-      padding: 15px;
-    }
-    h2{
-      text-transform: uppercase;
-      padding: 10px 0px;
-      font-size: 3em;
-      letter-spacing: -0.08em;
-      font-weight: bold;
-      margin-bottom: 50px;
-    }
-  }
 
   #hotel{
     margin-top: 70px;
     color: $deepblue;
     // min-height: 100vh;
 
-    .text{
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .bloc-link{
+      max-width: 150px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-      p:first-child{
-        font-family: 'Roboto Slab', serif;
-        font-size: 1.3em;
-        font-style: italic;
-        color: $gold;
-        margin-bottom: 30px;
-      }
-      p:nth-child(3){
-        align-self: center;
-        text-align: center;
-        width: 150px;
-        margin-bottom: 30px;
-      }
+    .slider{
+      margin-bottom: 30px;
     }
   }
 
-// MAP
+// ------------------------------------------- MAP
 
   #map{
+    background-color: whitesmoke;
+    padding: 20px;
 
     #container-map{
-      width: 80%;
       height: 50vh;
 
       #popup-map{

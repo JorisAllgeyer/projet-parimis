@@ -351,6 +351,43 @@ html {
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 70px; }
+  #main .title {
+    text-align: center; }
+    #main .title p {
+      padding: 15px; }
+    #main .title h2 {
+      text-transform: uppercase;
+      padding: 10px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+      margin-bottom: 50px; }
+  #main .text {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #main .serif-gold {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #B69753;
+    margin-bottom: 30px; }
+  #main .bloc-link {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-style: oblique;
+    margin-top: 30px;
+    border: 2px solid #B69753;
+    transition: .3s; }
+    #main .bloc-link a {
+      padding: 15px;
+      display: block;
+      width: 100%; }
+  #main .bloc-link:hover {
+    background: #B69753; }
   #main .row {
     padding: 0;
     margin: 0; }
@@ -384,19 +421,6 @@ html {
       margin-top: 15px; }
       #main .section-title .bloc-icons i {
         padding: 0 5px; }
-  #main .bloc-link {
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-style: oblique;
-    margin-top: 30px;
-    border: 2px solid #B69753;
-    transition: .3s; }
-    #main .bloc-link a {
-      padding: 15px;
-      display: block;
-      width: 100%; }
-  #main .bloc-link:hover {
-    background: #B69753; }
   #main .section-left-home {
     position: relative;
     background-image: url("../img/room-brigitte-1.jpg");
@@ -409,12 +433,12 @@ html {
     justify-content: center;
     align-items: center;
     transition: 0.3s; }
-  #main .section-left-home:hover {
-    background-size: 400%; }
-  #main .section-left-home:hover .section-title .separator {
-    width: 100%; }
-  #main .section-left-home:hover .overlay {
-    background: rgba(255, 255, 255, 0.2); }
+    #main .section-left-home:hover {
+      background-size: 400%; }
+      #main .section-left-home:hover .section-title .separator {
+        width: 100%; }
+      #main .section-left-home:hover .overlay {
+        background: rgba(255, 255, 255, 0.2); }
   #main .section-right-home {
     height: calc(100vh - 70px);
     padding: 0;
@@ -430,12 +454,12 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-    #main .section-right-home .section-left-item:first-child:hover {
-      background-size: 250%; }
-    #main .section-right-home .section-left-item:first-child:hover .section-title .separator {
-      width: 100%; }
-    #main .section-right-home .section-left-item:first-child:hover .overlay {
-      background: rgba(255, 255, 255, 0.2); }
+      #main .section-right-home .section-left-item:first-child:hover {
+        background-size: 250%; }
+        #main .section-right-home .section-left-item:first-child:hover .section-title .separator {
+          width: 100%; }
+        #main .section-right-home .section-left-item:first-child:hover .overlay {
+          background: rgba(255, 255, 255, 0.2); }
     #main .section-right-home .section-left-item:last-child {
       height: 50%;
       background-image: url("../img/spa-3.jpg");
@@ -447,12 +471,12 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-    #main .section-right-home .section-left-item:last-child:hover {
-      background-size: 200%; }
-    #main .section-right-home .section-left-item:last-child:hover .section-title .separator {
-      width: 100%; }
-    #main .section-right-home .section-left-item:last-child:hover .overlay {
-      background: rgba(255, 255, 255, 0.2); }
+      #main .section-right-home .section-left-item:last-child:hover {
+        background-size: 200%; }
+        #main .section-right-home .section-left-item:last-child:hover .section-title .separator {
+          width: 100%; }
+        #main .section-right-home .section-left-item:last-child:hover .overlay {
+          background: rgba(255, 255, 255, 0.2); }
   #main .scroll {
     position: absolute;
     bottom: 5px;
@@ -462,45 +486,53 @@ html {
   #main #anchor-1 {
     position: relative;
     bottom: 70px; }
-  #main .title {
-    text-align: center; }
-    #main .title p {
-      padding: 15px; }
-    #main .title h2 {
-      text-transform: uppercase;
-      padding: 10px 0px;
-      font-size: 3em;
-      letter-spacing: -0.08em;
-      font-weight: bold;
-      margin-bottom: 50px; }
   #main #hotel {
     margin-top: 70px;
     color: #02152E; }
-    #main #hotel .text {
+    #main #hotel .bloc-link {
+      max-width: 150px;
+      text-align: center;
+      margin-bottom: 30px; }
+    #main #hotel .slider {
+      margin-bottom: 30px; }
+  #main #map {
+    background-color: whitesmoke;
+    padding: 20px; }
+    #main #map #container-map {
+      height: 50vh; }
+      #main #map #container-map #popup-map {
+        font-family: 'Geometria-Light';
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 2em;
+        color: #B69753; }
+
+#footer {
+  font-family: 'Geometria-Light', sans-serif;
+  height: 200px;
+  text-transform: uppercase; }
+  #footer .row {
+    padding: 0;
+    margin: 0; }
+  #footer .section-left {
+    background: #ccc; }
+  #footer .section-center {
+    background: #02152E;
+    color: #FFFFFF; }
+    #footer .section-center .container-icon {
+      height: 100px;
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      #main #hotel .text p:first-child {
-        font-family: 'Roboto Slab', serif;
-        font-size: 1.3em;
-        font-style: italic;
-        color: #B69753;
-        margin-bottom: 30px; }
-      #main #hotel .text p:nth-child(3) {
-        align-self: center;
-        text-align: center;
-        width: 150px;
-        margin-bottom: 30px; }
-  #main #map #container-map {
-    width: 80%;
-    height: 50vh; }
-    #main #map #container-map #popup-map {
-      font-family: 'Geometria-Light';
-      padding: 5px;
-      text-transform: uppercase;
-      font-size: 2em;
-      color: #B69753; }
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em; }
+      #footer .section-center .container-icon i {
+        color: #B69753; }
+      #footer .section-center .container-icon p:last-child {
+        color: #B69753; }
+  #footer .section-right {
+    background: #aaa; }
 
 /*# sourceMappingURL=master.css.map */
