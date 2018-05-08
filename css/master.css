@@ -125,7 +125,6 @@ html {
     top: 0;
     right: 60px;
     color: #02152E;
-    background: #FFFFFF;
     background: rbga(255, 255, 255, 0.9);
     width: 50px;
     height: 60px;
@@ -365,7 +364,7 @@ html {
       font-size: 3em;
       letter-spacing: -0.08em;
       font-weight: bold;
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
   #main .text {
     display: -webkit-flex;
     display: -ms-flex;
@@ -378,7 +377,7 @@ html {
     font-size: 1.3em;
     font-style: italic;
     color: #bc9e48;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   #main .bloc-link {
     display: inline-block;
     font-family: 'Roboto Slab', serif;
@@ -570,7 +569,7 @@ html {
         opacity: .95; }
   #footer .section {
     font-size: 0.8em;
-    padding: 10px;
+    padding: 30px 10px;
     line-height: 20px; }
   #footer .section-left {
     text-align: left; }

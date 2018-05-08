@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$bold".
-        on line 9 of scss/footer.scss
+        on line 10 of scss/footer.scss
 
-4: 
 5:    .row{
 6:     padding: 0;
 7:     margin: 0;
 8:    }
-9:    .bold{font-family: $bold;}
-10:    .gold{color: $gold;}
-11:    .social{
-12:       color: $white;
-13: 
-14:       .container-icon{
+9: 
+10:    .bold{font-family: $bold;}
+11:    .gold{color: $gold;}
+12:    .social{
+13:       color: $white;
+14: 
+15:       .container-icon{
 
 Backtrace:
-scss/footer.scss:9
+scss/footer.scss:10
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bold\".\A         on line 9 of scss/footer.scss\A \A 4: \A 5:    .row{\A 6:     padding: 0;\A 7:     margin: 0;\A 8:    }\A 9:    .bold{font-family: $bold;}\A 10:    .gold{color: $gold;}\A 11:    .social{\A 12:       color: $white;\A 13: \A 14:       .container-icon{"; }
+  content: "Error: Undefined variable: \"$bold\".\A         on line 10 of scss/footer.scss\A \A 5:    .row{\A 6:     padding: 0;\A 7:     margin: 0;\A 8:    }\A 9: \A 10:    .bold{font-family: $bold;}\A 11:    .gold{color: $gold;}\A 12:    .social{\A 13:       color: $white;\A 14: \A 15:       .container-icon{"; }

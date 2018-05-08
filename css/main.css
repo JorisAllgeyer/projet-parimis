@@ -8,7 +8,7 @@ Error: Undefined variable: "$gold".
 33:     font-size: 1.3em;
 34:     font-style: italic;
 35:     color: $gold;
-36:     margin-bottom: 30px;
+36:     margin-bottom: 20px;
 37:   }
 38: 
 39:   .bloc-link{
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gold\".\A         on line 35 of scss/main.scss\A \A 30: \A 31:   .serif-gold{\A 32:     font-family: 'Roboto Slab', serif;\A 33:     font-size: 1.3em;\A 34:     font-style: italic;\A 35:     color: $gold;\A 36:     margin-bottom: 30px;\A 37:   }\A 38: \A 39:   .bloc-link{\A 40:     display: inline-block;"; }
+  content: "Error: Undefined variable: \"$gold\".\A         on line 35 of scss/main.scss\A \A 30: \A 31:   .serif-gold{\A 32:     font-family: 'Roboto Slab', serif;\A 33:     font-size: 1.3em;\A 34:     font-style: italic;\A 35:     color: $gold;\A 36:     margin-bottom: 20px;\A 37:   }\A 38: \A 39:   .bloc-link{\A 40:     display: inline-block;"; }
