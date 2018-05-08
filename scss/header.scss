@@ -63,6 +63,8 @@
     flex: 1;
     width: calc(100% - 120px);
     background: rgba(255, 255, 255, 0.9);
+    height: 70px;
+    background: $white;
 
     .logo{
       padding-top: 5px;
@@ -71,6 +73,7 @@
       letter-spacing: -0.08em;
       font-weight: bold;
       width: 100%;
+      margin: 7px 10px;
     }
 
     .nav-list{
@@ -86,6 +89,7 @@
       .sub-nav{display: none;}
 
       .nav-item, .sub-nav-item{
+        background: $white;
         transition: .3s;
       }
       .nav-item:hover{
@@ -109,8 +113,8 @@
     color: $deepblue;
     background: rbga(255, 255, 255, 0.9);
     width: 50px;
-    height: 140px;
-    line-height: 70px;
+    height: 70px;
+    line-height: 35px;
     text-align: center;
 
     p{
@@ -240,7 +244,6 @@
       .booking-form-item {
         label{
           display: block;
-          padding-bottom: 5px;
           text-align: left;
         }
         input, select{
@@ -319,7 +322,6 @@
 
       .logo{
         width: auto;
-        margin: 7px 10px;
       }
       .nav-list{
         display: -webkit-flex;
@@ -369,8 +371,6 @@
     .lang{
       position: static;
       width: 30px;
-      height: 70px;
-      line-height: 35px;
     }
     .search-form-container, .booking-form-container{
       width: calc(100% - 240px);

@@ -19,5 +19,4 @@ $(document).ready(function(){
   $('.header-search span').click(function(){
     $('.search-form-container').fadeToggle(300);
   });
-
 });

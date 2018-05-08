@@ -87,14 +87,17 @@ html {
     flex-wrap: wrap;
     flex: 1;
     width: calc(100% - 120px);
-    background: rgba(255, 255, 255, 0.9); }
+    background: rgba(255, 255, 255, 0.9);
+    height: 70px;
+    background: #FFFFFF; }
     #header nav .logo {
       padding-top: 5px;
       text-align: center;
       font-size: 3em;
       letter-spacing: -0.08em;
       font-weight: bold;
-      width: 100%; }
+      width: 100%;
+      margin: 7px 10px; }
     #header nav .nav-list {
       text-align: center;
       line-height: 35px;
@@ -107,6 +110,7 @@ html {
       #header nav .nav-list .sub-nav {
         display: none; }
       #header nav .nav-list .nav-item, #header nav .nav-list .sub-nav-item {
+        background: #FFFFFF;
         transition: .3s; }
       #header nav .nav-list .nav-item:hover {
         background: #B69753;
@@ -124,8 +128,8 @@ html {
     color: #02152E;
     background: rbga(255, 255, 255, 0.9);
     width: 50px;
-    height: 140px;
-    line-height: 70px;
+    height: 70px;
+    line-height: 35px;
     text-align: center; }
     #header .lang p {
       width: 100%;
@@ -218,7 +222,6 @@ html {
       padding-top: 20px; }
     #header .booking-form-container .booking-form-item label {
       display: block;
-      padding-bottom: 5px;
       text-align: left; }
     #header .booking-form-container .booking-form-item input, #header .booking-form-container .booking-form-item select {
       display: block;
@@ -272,8 +275,7 @@ html {
     #header nav {
       width: calc(100% - 240px); }
       #header nav .logo {
-        width: auto;
-        margin: 7px 10px; }
+        width: auto; }
       #header nav .nav-list {
         display: -webkit-flex;
         display: -ms-flex;
@@ -309,9 +311,7 @@ html {
           background: #C1A976; }
     #header .lang {
       position: static;
-      width: 30px;
-      height: 70px;
-      line-height: 35px; }
+      width: 30px; }
     #header .search-form-container, #header .booking-form-container {
       width: calc(100% - 240px);
       left: 120px; }
@@ -504,8 +504,15 @@ html {
         font-family: 'Geometria-Light';
         padding: 5px;
         text-transform: uppercase;
-        font-size: 2em;
         color: #B69753; }
+        #main #map #container-map #popup-map h1 {
+          font-size: 2em;
+          color: #02152E;
+          font-weight: bold;
+          letter-spacing: -0.08em; }
+        #main #map #container-map #popup-map .blue {
+          color: #02152E;
+          margin-top: 5px; }
 
 #footer {
   font-family: 'Geometria-Light', sans-serif;
@@ -544,7 +551,8 @@ html {
         background: inherit;
         color: #B69753;
         border: 2px solid;
-        padding: 5px; }
+        padding: 5px;
+        width: 100px; }
       #footer .section-center .container-icon input[type="submit"] {
         background: #B69753;
         color: #FFFFFF;

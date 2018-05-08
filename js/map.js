@@ -4,7 +4,7 @@ function initMap(){
     lat: 48.8650397,
     lng: 2.3020762999999533
   };
-  var content = '<p id="popup-map">Hôtel Parimis<br>1, Avenue Montaigne<br>75008, Paris</p>';
+  var content = '<div id="popup-map"><h1>Hôtel Parimis</h1><p>1, Avenue Montaigne<br>75008, Paris</p><p class="blue">(+33)1 00 00 00 00</p></div>';
 
   map = new google.maps.Map(document.getElementById('container-map'), {
     center: coord,

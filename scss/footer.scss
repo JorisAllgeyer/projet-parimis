@@ -40,6 +40,7 @@
         color: $gold;
         border: 2px solid;
         padding: 5px;
+        width: 100px;
       }
       input[type="submit"]{
         background: $gold;
@@ -55,3 +56,14 @@
 
   }
 }
+
+// MOBILE LANDSCAPE
+@media (min-width: 576px){}
+// TABLET IPAD
+@media (min-width: 768px){}
+// LAPTOP
+@media (min-width: 992px){}
+// LARGE SCREEN
+@media (min-width: 1200px){}
+// X- LARGE SCREEN
+@media (min-width: 1500px){}
