@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$white".
-        on line 22 of scss/footer.scss
+Error: Undefined variable: "$deepblue2".
+        on line 10 of scss/footer.scss
 
-17:       font-weight: bold;
-18:       }
-19:    }
-20: 
-21:    .social{
-22:       color: $white;
-23: 
-24:       .container-icon{
-25:          height: 150px;
-26:          display: -webkit-flex;
-27:          display: -ms-flex;
+5: 
+6:    .row{
+7:     padding: 0;
+8:     margin: 0;
+9:    }
+10:    #si-1, #si-3{background: $deepblue2;}
+11:    #si-2, #si-4{background: $deepblue;}
+12: 
+13:    .section-left{
+14:       h2{
+15:       font-size: 3em;
 
 Backtrace:
-scss/footer.scss:22
+scss/footer.scss:10
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 22 of scss/footer.scss\A \A 17:       font-weight: bold;\A 18:       }\A 19:    }\A 20: \A 21:    .social{\A 22:       color: $white;\A 23: \A 24:       .container-icon{\A 25:          height: 150px;\A 26:          display: -webkit-flex;\A 27:          display: -ms-flex;"; }
+  content: "Error: Undefined variable: \"$deepblue2\".\A         on line 10 of scss/footer.scss\A \A 5: \A 6:    .row{\A 7:     padding: 0;\A 8:     margin: 0;\A 9:    }\A 10:    #si-1, #si-3{background: $deepblue2;}\A 11:    #si-2, #si-4{background: $deepblue;}\A 12: \A 13:    .section-left{\A 14:       h2{\A 15:       font-size: 3em;"; }

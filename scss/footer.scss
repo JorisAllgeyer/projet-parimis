@@ -3,58 +3,60 @@
   height: 300px;
   text-transform: uppercase;
 
-  .row{
+   .row{
     padding: 0;
     margin: 0;
-  }
-  #si-1, #si-4{background: $deepblue2;}
-  #si-2, #si-3{background: $deepblue;}
+   }
+   // #si-1, #si-3{background: $deepblue2;}
+   // #si-2, #si-4{background: $deepblue;}
 
-  .section-left{
-    h2{
+   .section-left{
+      h2{
       font-size: 3em;
       letter-spacing: -0.08em;
       font-weight: bold;
-    }
-
-  }
-  .section-center{
-    color: $white;
-
-    .container-icon{
-      height: 150px;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 0.8em;
-
-      a{color: $gold; padding-bottom: 15px;}
-      p:first-of-type{padding-bottom: 5px;}
-      p:last-child{color: $gold;}
-
-      input[type="text"]{
-        background: inherit;
-        color: $gold;
-        border: 2px solid;
-        padding: 5px;
-        width: 100px;
       }
-      input[type="submit"]{
-        background: $gold;
-        color: $white;
-        padding: 5px;
-        border: 2px solid $gold;
-        cursor: pointer;
+   }
+
+   .social{
+      color: $white;
+
+      .container-icon{
+         height: 150px;
+         display: -webkit-flex;
+         display: -ms-flex;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         font-size: 0.8em;
+
+         a{color: $gold; padding-bottom: 15px;}
+         p:first-of-type{padding-bottom: 5px;}
+         p:last-child{color: $gold;}
+
+         input[type="text"]{
+           background: inherit;
+           color: $gold;
+           border: 2px solid;
+           padding: 5px;
+           width: 100px;
+         }
+         input[type="submit"]{
+           background: $gold;
+           color: $white;
+           padding: 5px;
+           border: 2px solid $gold;
+           cursor: pointer;
+         }
       }
-    }
+      .container-icon:nth-child(odd){background: $deepblue2;}
+      .container-icon:nth-child(even){background: $deepblue;}
 
-  }
-  .section-right{
+   }
+   .section-right{
 
-  }
+   }
 }
 
 // MOBILE LANDSCAPE
