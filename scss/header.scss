@@ -28,7 +28,7 @@
     #button-menu{
       padding: 10px 10px;
       width: 60px;
-      height: 140px;
+      height: 60px;
       cursor: pointer;
       text-align: center;
       background: $gold;
@@ -63,11 +63,11 @@
     flex: 1;
     width: calc(100% - 120px);
     background: rgba(255, 255, 255, 0.9);
-    height: 70px;
+    height: 60px;
     background: $white;
 
     .logo{
-      padding-top: 5px;
+      // padding-top: 5px;
       text-align: center;
       font-size: 3em;
       letter-spacing: -0.08em;
@@ -87,17 +87,17 @@
       display: none;
 
       .sub-nav{display: none;}
-
-      .nav-item, .sub-nav-item{
+      .nav-item{
         background: $white;
-        transition: .3s;
-      }
-      .nav-item:hover{
-        background: $gold;
-        color: $white;
+
+        &:hover{
+           background: $gold;
+           color: $white;
+        }
       }
       .sub-nav-item{
         color: $deepblue;
+        background: $gold;
       }
       .booking-link{
         background: $deepblue;
@@ -111,10 +111,11 @@
     position: absolute;
     top: 0; right: 60px;
     color: $deepblue;
+    background: $white;
     background: rbga(255, 255, 255, 0.9);
     width: 50px;
-    height: 70px;
-    line-height: 35px;
+    height: 60px;
+    line-height: 30px;
     text-align: center;
 
     p{
@@ -130,11 +131,11 @@
 
   .search-form-container{
     position: absolute;
-    top: 70px;
-    left: 60px;
-    width: calc(100% - 120px);
-    height: 70px;
-    line-height: 70px;
+    top: 60px;
+    left: 0;
+    width: calc(100% - 60px);
+    height: 80px;
+    line-height: 80px;
     background: $gold;
     display: none;
 
@@ -239,7 +240,7 @@
         display: -ms-flex;
         display: flex;
         justify-content: space-around;
-        padding-top: 20px;
+        padding-top: 15px;
       }
       .booking-form-item {
         label{
@@ -270,6 +271,8 @@
       height: 80px;
       top: 60px;
       line-height: 80px;
+      left: 60px;
+      width: calc(100% - 120px);
     }
 
     nav{
@@ -319,9 +322,11 @@
 
     nav{
       width: calc(100% - 240px);
+      height: 70px;
 
       .logo{
         width: auto;
+        padding-top: 5px;
       }
       .nav-list{
         display: -webkit-flex;
@@ -371,6 +376,8 @@
     .lang{
       position: static;
       width: 30px;
+      height: 70px;
+      line-height: 35px;
     }
     .search-form-container, .booking-form-container{
       width: calc(100% - 240px);
@@ -384,10 +391,6 @@
     .booking-form-container{
       top: 70px;
       height: 70px;
-
-      .booking-form{
-        padding-top: 15px;
-      }
     }
 
     .header-bloc-right-item{

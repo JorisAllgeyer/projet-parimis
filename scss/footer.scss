@@ -1,28 +1,18 @@
 #footer{
   font-family: 'Geometria-Light', sans-serif;
-  height: 300px;
   text-transform: uppercase;
 
    .row{
     padding: 0;
     margin: 0;
    }
-   // #si-1, #si-3{background: $deepblue2;}
-   // #si-2, #si-4{background: $deepblue;}
-
-   .section-left{
-      h2{
-      font-size: 3em;
-      letter-spacing: -0.08em;
-      font-weight: bold;
-      }
-   }
-
+   .bold{font-family: $bold;}
+   .gold{color: $gold;}
    .social{
       color: $white;
 
       .container-icon{
-         height: 150px;
+         height: 100px;
          display: -webkit-flex;
          display: -ms-flex;
          display: flex;
@@ -31,7 +21,7 @@
          align-items: center;
          font-size: 0.8em;
 
-         a{color: $gold; padding-bottom: 15px;}
+         i{color: $gold; padding-bottom: 10px;}
          p:first-of-type{padding-bottom: 5px;}
          p:last-child{color: $gold;}
 
@@ -40,7 +30,7 @@
            color: $gold;
            border: 2px solid;
            padding: 5px;
-           width: 100px;
+           width: calc(100% - 50px);
          }
          input[type="submit"]{
            background: $gold;
@@ -50,19 +40,59 @@
            cursor: pointer;
          }
       }
-      .container-icon:nth-child(odd){background: $deepblue2;}
-      .container-icon:nth-child(even){background: $deepblue;}
+      .container-icon:nth-child(odd){
+         background: $deepblue2;
+         transition: .3s;
 
+         &:hover{
+            opacity: .95;
+         }
+      }
+      .container-icon:nth-child(even){
+         background: $deepblue;
+         transition: .3s;
+
+         &:hover{
+            opacity: .95;
+         }
+      }
    }
-   .section-right{
 
+   .section{
+      font-size: 0.8em;
+      padding: 10px;
+      line-height: 20px;
+   }
+   .section-left{text-align: left;}
+   .section-center{
+      text-align: center;
+      background: whitesmoke;
+   }
+   .section-right{text-align: center;}
+
+   .logo{
+      padding: 0;
+      img{
+         width: 60px;
+      }
    }
 }
 
 // MOBILE LANDSCAPE
 @media (min-width: 576px){}
 // TABLET IPAD
-@media (min-width: 768px){}
+@media (min-width: 768px){
+   #footer{
+      .social{
+         .container-icon{
+            height: 170px;
+         }
+      }
+      .section-center, .section-right{
+         text-align: left;
+      }
+   }
+}
 // LAPTOP
 @media (min-width: 992px){}
 // LARGE SCREEN

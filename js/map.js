@@ -52,21 +52,10 @@ function initMap(){
     ]
   },
   {
-    "featureType": "landscape",
-    "stylers": [
-      {
-        "color": "#b69753"
-      },
-      {
-        "saturation": -20
-      }
-    ]
-  },
-  {
     "featureType": "poi",
     "stylers": [
       {
-        "saturation": -100
+        "saturation": -35
       },
       {
         "visibility": "on"
@@ -114,7 +103,7 @@ function initMap(){
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#ffffff"
+        "color": "#bc9e48"
       }
     ]
   },
@@ -174,15 +163,19 @@ function initMap(){
   },
   {
     "featureType": "water",
+    "elementType": "geometry",
     "stylers": [
       {
-        "color": "#02152e"
-      },
+        "color": "#02142d"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
       {
-        "saturation": -20
-      },
-      {
-        "visibility": "on"
+        "color": "#9e9e9e"
       }
     ]
   }
