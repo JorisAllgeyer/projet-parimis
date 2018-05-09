@@ -107,7 +107,10 @@ html {
       flex-direction: column;
       display: none; }
       #header nav .nav-list .sub-nav {
-        display: none; }
+        display: none;
+        -webkit-box-shadow: 0px 12px 26px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 12px 26px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 12px 26px -8px rgba(0, 0, 0, 0.75); }
       #header nav .nav-list .nav-item {
         background: #FFFFFF; }
         #header nav .nav-list .nav-item:hover {
@@ -430,7 +433,7 @@ html {
     background-image: url("../img/room-brigitte-1.jpg");
     background-size: 370%;
     background-position: center;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -444,7 +447,7 @@ html {
       #main .section-left-home:hover .overlay {
         background: rgba(255, 255, 255, 0.2); }
   #main .section-right-home {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     padding: 0;
     margin: 0; }
     #main .section-right-home .section-left-item:first-child {

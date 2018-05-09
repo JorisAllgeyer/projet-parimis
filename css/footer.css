@@ -9,10 +9,10 @@ Error: Undefined variable: "$bold".
 9: 
 10:    .bold{font-family: $bold;}
 11:    .gold{color: $gold;}
-12:    .social{
-13:       color: $white;
-14: 
-15:       .container-icon{
+12: 
+13:    .social{
+14:       color: $white;
+15: 
 
 Backtrace:
 scss/footer.scss:10
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bold\".\A         on line 10 of scss/footer.scss\A \A 5:    .row{\A 6:     padding: 0;\A 7:     margin: 0;\A 8:    }\A 9: \A 10:    .bold{font-family: $bold;}\A 11:    .gold{color: $gold;}\A 12:    .social{\A 13:       color: $white;\A 14: \A 15:       .container-icon{"; }
+  content: "Error: Undefined variable: \"$bold\".\A         on line 10 of scss/footer.scss\A \A 5:    .row{\A 6:     padding: 0;\A 7:     margin: 0;\A 8:    }\A 9: \A 10:    .bold{font-family: $bold;}\A 11:    .gold{color: $gold;}\A 12: \A 13:    .social{\A 14:       color: $white;\A 15: "; }

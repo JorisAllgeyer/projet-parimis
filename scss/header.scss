@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 10;
 }
+
 #header{
   font-family: 'Geometria-Light', sans-serif;
   font-size: 0.8em;
@@ -18,7 +19,7 @@
   justify-content: space-between;
   text-transform: uppercase;
   position: relative;
-
+  
   aside{
     max-width: 60px;
     min-width: 60px;
@@ -86,7 +87,12 @@
       flex-direction: column;
       display: none;
 
-      .sub-nav{display: none;}
+      .sub-nav{
+         display: none;
+         -webkit-box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
+         -moz-box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
+         box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
+      }
       .nav-item{
         background: $white;
 
