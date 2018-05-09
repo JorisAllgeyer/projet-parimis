@@ -129,7 +129,7 @@ html {
     right: 60px;
     color: #02152E;
     background: rbga(255, 255, 255, 0.9);
-    width: 50px;
+    width: 30px;
     height: 60px;
     line-height: 30px;
     text-align: center; }
@@ -137,9 +137,9 @@ html {
       width: 100%;
       display: block;
       cursor: pointer; }
-    #header .lang p:hover {
-      background: #bc9e48;
-      color: #FFFFFF; }
+      #header .lang p:hover {
+        background: #bc9e48;
+        color: #FFFFFF; }
   #header .search-form-container {
     position: absolute;
     top: 60px;
@@ -160,15 +160,15 @@ html {
       color: #FFFFFF;
       border: 1px solid #FFFFFF;
       height: 25px; }
-    #header .search-form-container .search-form input:first-child {
-      width: 65%;
-      padding-left: 5px; }
-    #header .search-form-container .search-form input:last-child {
-      margin-left: 2px;
-      background: #FFFFFF;
-      color: #bc9e48;
-      font-weight: bold;
-      cursor: pointer; }
+      #header .search-form-container .search-form input:first-child {
+        width: 65%;
+        padding-left: 5px; }
+      #header .search-form-container .search-form input:last-child {
+        margin-left: 2px;
+        background: #FFFFFF;
+        color: #bc9e48;
+        font-weight: bold;
+        cursor: pointer; }
 
 .break {
   font-size: 2em;
@@ -258,8 +258,7 @@ html {
     display: none; } }
 @media (min-width: 992px) {
   #header {
-    height: 70px;
-    /*nav*/ }
+    height: 70px; }
     #header aside {
       min-width: 120px;
       max-width: 120px; }
@@ -308,16 +307,15 @@ html {
           color: #02152E;
           flex-grow: 1;
           transition: 0.3s; }
-        #header nav .nav-list .sub-nav-item:not(:first-child) {
-          border-left: 1px solid white; }
-        #header nav .nav-list .sub-nav-item a {
-          display: block;
-          width: 100%; }
-        #header nav .nav-list .sub-nav-item:hover {
-          background: #c9af68; }
+          #header nav .nav-list .sub-nav-item a {
+            display: block;
+            width: 100%; }
+          #header nav .nav-list .sub-nav-item:not(:first-child) {
+            border-left: 1px solid white; }
+          #header nav .nav-list .sub-nav-item:hover {
+            background: #c9af68; }
     #header .lang {
       position: static;
-      width: 30px;
       height: 70px;
       line-height: 35px; }
     #header .search-form-container, #header .booking-form-container {
@@ -523,13 +521,13 @@ html {
 #footer {
   font-family: 'Geometria-Light', sans-serif;
   text-transform: uppercase; }
-  #footer .row {
-    padding: 0;
-    margin: 0; }
   #footer .bold {
     font-family: "Geometria-Bold"; }
   #footer .gold {
     color: #bc9e48; }
+  #footer .row {
+    padding: 0;
+    margin: 0; }
   #footer .social {
     color: #FFFFFF; }
     #footer .social .container-icon {
@@ -546,7 +544,7 @@ html {
         padding-bottom: 10px; }
       #footer .social .container-icon p:first-of-type {
         padding-bottom: 5px; }
-      #footer .social .container-icon p:last-child {
+      #footer .social .container-icon p:last-of-type {
         color: #bc9e48; }
       #footer .social .container-icon input[type="text"] {
         background: inherit;
@@ -560,16 +558,14 @@ html {
         padding: 5px;
         border: 2px solid #bc9e48;
         cursor: pointer; }
+    #footer .social .container-icon {
+      transition: .3s; }
+      #footer .social .container-icon:hover {
+        opacity: .95; }
     #footer .social .container-icon:nth-child(odd) {
-      background: #0D2D56;
-      transition: .3s; }
-      #footer .social .container-icon:nth-child(odd):hover {
-        opacity: .95; }
+      background: #0D2D56; }
     #footer .social .container-icon:nth-child(even) {
-      background: #02152E;
-      transition: .3s; }
-      #footer .social .container-icon:nth-child(even):hover {
-        opacity: .95; }
+      background: #02152E; }
   #footer .section {
     font-size: 0.8em;
     padding: 30px 10px;

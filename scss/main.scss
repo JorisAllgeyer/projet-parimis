@@ -24,16 +24,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-
   .serif-gold{
     font-family: 'Roboto Slab', serif;
     font-size: 1.3em;
     font-style: italic;
     color: $gold;
   }
-
   .bloc-link{
     display: inline-block;
     font-family: 'Roboto Slab', serif;
@@ -86,7 +83,6 @@
       background: $deepblue;
       transition: 0.3s;
     }
-
     .subtitle{
       text-transform: uppercase;
       margin-top: 15px;
@@ -145,7 +141,6 @@
         .overlay{background: $overlay;}
       }
     }
-
     .section-left-item:last-child{
       height: 50%;
       background-image: url('../img/spa-3.jpg');
@@ -165,7 +160,7 @@
       }
     }
   }
-
+  
   .scroll{
     position: absolute;
     bottom: 5px;
@@ -173,7 +168,6 @@
     color: $gold;
     z-index: 5;
   }
-
   #anchor-1{
     position: relative;
     bottom: 60px;
@@ -189,7 +183,6 @@
       text-align: center;
       margin-bottom: 30px;
     }
-
     .slider{
       margin-bottom: 30px;
     }
@@ -209,6 +202,7 @@
         padding: 5px;
         text-transform: uppercase;
         color: $gold;
+
         h1{
           font-size: 2em;
           color: $deepblue;

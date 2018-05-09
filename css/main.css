@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$gold".
-        on line 34 of scss/main.scss
+        on line 32 of scss/main.scss
 
-29: 
-30:   .serif-gold{
-31:     font-family: 'Roboto Slab', serif;
-32:     font-size: 1.3em;
-33:     font-style: italic;
-34:     color: $gold;
-35:   }
-36: 
-37:   .bloc-link{
-38:     display: inline-block;
-39:     font-family: 'Roboto Slab', serif;
+27:   }
+28:   .serif-gold{
+29:     font-family: 'Roboto Slab', serif;
+30:     font-size: 1.3em;
+31:     font-style: italic;
+32:     color: $gold;
+33:   }
+34:   .bloc-link{
+35:     display: inline-block;
+36:     font-family: 'Roboto Slab', serif;
+37:     font-style: oblique;
 
 Backtrace:
-scss/main.scss:34
+scss/main.scss:32
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gold\".\A         on line 34 of scss/main.scss\A \A 29: \A 30:   .serif-gold{\A 31:     font-family: 'Roboto Slab', serif;\A 32:     font-size: 1.3em;\A 33:     font-style: italic;\A 34:     color: $gold;\A 35:   }\A 36: \A 37:   .bloc-link{\A 38:     display: inline-block;\A 39:     font-family: 'Roboto Slab', serif;"; }
+  content: "Error: Undefined variable: \"$gold\".\A         on line 32 of scss/main.scss\A \A 27:   }\A 28:   .serif-gold{\A 29:     font-family: 'Roboto Slab', serif;\A 30:     font-size: 1.3em;\A 31:     font-style: italic;\A 32:     color: $gold;\A 33:   }\A 34:   .bloc-link{\A 35:     display: inline-block;\A 36:     font-family: 'Roboto Slab', serif;\A 37:     font-style: oblique;"; }

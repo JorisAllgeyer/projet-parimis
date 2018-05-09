@@ -2,99 +2,80 @@
   font-family: 'Geometria-Light', sans-serif;
   text-transform: uppercase;
 
-   .row{
+  .bold{font-family: $bold;}
+  .gold{color: $gold;}
+  .row{
     padding: 0;
     margin: 0;
-   }
+  }
 
-   .bold{font-family: $bold;}
-   .gold{color: $gold;}
+  .social{
+    color: $white;
 
-   .social{
-      color: $white;
-      
-      .container-icon{
-         height: 100px;
-         display: -webkit-flex;
-         display: -ms-flex;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         font-size: 0.8em;
-
-         i{color: $gold; padding-bottom: 10px;}
-         p:first-of-type{padding-bottom: 5px;}
-         p:last-child{color: $gold;}
-
-         input[type="text"]{
-           background: inherit;
-           color: $gold;
-           border: 2px solid;
-           padding: 5px;
-           width: calc(100% - 50px);
-         }
-         input[type="submit"]{
-           background: $gold;
-           color: $white;
-           padding: 5px;
-           border: 2px solid $gold;
-           cursor: pointer;
-         }
-      }
-      .container-icon:nth-child(odd){
-         background: $deepblue2;
-         transition: .3s;
-
-         &:hover{
-            opacity: .95;
-         }
-      }
-      .container-icon:nth-child(even){
-         background: $deepblue;
-         transition: .3s;
-
-         &:hover{
-            opacity: .95;
-         }
-      }
-   }
-
-   .section{
+    .container-icon{
+      height: 100px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       font-size: 0.8em;
-      padding: 30px 10px;
-      line-height: 20px;
-   }
-   .section-left{text-align: left;}
-   .section-center{
-      text-align: center;
-      background: whitesmoke;
-   }
-   .section-right{text-align: center;}
 
-   .logo{
-      padding: 0;
+      i{color: $gold; padding-bottom: 10px;}
+      p:first-of-type{padding-bottom: 5px;}
+      p:last-of-type{color: $gold;}
 
-      img{
-         width: 60px;
+      input[type="text"]{
+        background: inherit;
+        color: $gold;
+        border: 2px solid;
+        padding: 5px;
+        width: calc(100% - 50px);
       }
-   }
+      input[type="submit"]{
+        background: $gold;
+        color: $white;
+        padding: 5px;
+        border: 2px solid $gold;
+        cursor: pointer;
+      }
+    }
+    .container-icon{
+      transition: .3s;
+      &:hover{opacity: .95;}
+    }
+    .container-icon:nth-child(odd){background: $deepblue2;}
+    .container-icon:nth-child(even){background: $deepblue;}
+  }
+  .section{
+    font-size: 0.8em;
+    padding: 30px 10px;
+    line-height: 20px;
+  }
+  .section-left{text-align: left;}
+  .section-center{
+    text-align: center;
+    background: whitesmoke;
+  }
+  .section-right{text-align: center;}
+
+  .logo{
+    padding: 0;
+    img{width: 60px;}
+  }
 }
 
 // MOBILE LANDSCAPE
 @media (min-width: 576px){}
 // TABLET IPAD
 @media (min-width: 768px){
-   #footer{
-      .social{
-         .container-icon{
-            height: 170px;
-         }
-      }
-      .section-center, .section-right{
-         text-align: left;
-      }
-   }
+  #footer{
+    .social{
+      .container-icon{height: 170px;}
+    }
+    .section-center, .section-right{text-align: left;}
+  }
 }
 // LAPTOP
 @media (min-width: 992px){}

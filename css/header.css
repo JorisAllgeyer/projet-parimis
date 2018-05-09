@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$deepblue".
-        on line 15 of scss/header.scss
+        on line 14 of scss/header.scss
 
+9:   z-index: 10;
 10: }
-11: 
-12: #header{
-13:   font-family: 'Geometria-Light', sans-serif;
-14:   font-size: 0.8em;
-15:   color: $deepblue;
-16:   display: -webkit-flex;
-17:   display: -ms-flex;
-18:   display: flex;
-19:   justify-content: space-between;
-20:   text-transform: uppercase;
+11: #header{
+12:   font-family: 'Geometria-Light', sans-serif;
+13:   font-size: 0.8em;
+14:   color: $deepblue;
+15:   display: -webkit-flex;
+16:   display: -ms-flex;
+17:   display: flex;
+18:   justify-content: space-between;
+19:   text-transform: uppercase;
 
 Backtrace:
-scss/header.scss:15
+scss/header.scss:14
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$deepblue\".\A         on line 15 of scss/header.scss\A \A 10: }\A 11: \A 12: #header{\A 13:   font-family: 'Geometria-Light', sans-serif;\A 14:   font-size: 0.8em;\A 15:   color: $deepblue;\A 16:   display: -webkit-flex;\A 17:   display: -ms-flex;\A 18:   display: flex;\A 19:   justify-content: space-between;\A 20:   text-transform: uppercase;"; }
+  content: "Error: Undefined variable: \"$deepblue\".\A         on line 14 of scss/header.scss\A \A 9:   z-index: 10;\A 10: }\A 11: #header{\A 12:   font-family: 'Geometria-Light', sans-serif;\A 13:   font-size: 0.8em;\A 14:   color: $deepblue;\A 15:   display: -webkit-flex;\A 16:   display: -ms-flex;\A 17:   display: flex;\A 18:   justify-content: space-between;\A 19:   text-transform: uppercase;"; }

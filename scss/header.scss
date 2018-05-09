@@ -8,7 +8,6 @@
   width: 100%;
   z-index: 10;
 }
-
 #header{
   font-family: 'Geometria-Light', sans-serif;
   font-size: 0.8em;
@@ -35,10 +34,9 @@
       background: $gold;
       color: $deepblue;
     }
-    .header-booking{
-      display: none;
-    }
+    .header-booking{display: none;}
   }
+
   .header-bloc-right{
     height: 140px;
     background: $deepblue;
@@ -51,9 +49,7 @@
       line-height: 70px;
       cursor: pointer;
     }
-    #text-search, #text-basket{
-      display: none;
-    }
+    #text-search, #text-basket{display: none;}
   }
 
   nav{
@@ -68,7 +64,6 @@
     background: $white;
 
     .logo{
-      // padding-top: 5px;
       text-align: center;
       font-size: 3em;
       letter-spacing: -0.08em;
@@ -76,7 +71,6 @@
       width: 100%;
       margin: 7px 10px;
     }
-
     .nav-list{
       text-align: center;
       line-height: 35px;
@@ -88,10 +82,10 @@
       display: none;
 
       .sub-nav{
-         display: none;
-         -webkit-box-shadow: $boxshadow;
-         -moz-box-shadow: $boxshadow;
-         box-shadow: $boxshadow;
+        display: none;
+        -webkit-box-shadow: $boxshadow;
+        -moz-box-shadow: $boxshadow;
+        box-shadow: $boxshadow;
       }
       .nav-item{
         background: $white;
@@ -118,7 +112,7 @@
     top: 0; right: 60px;
     color: $deepblue;
     background: rbga(255, 255, 255, 0.9);
-    width: 50px;
+    width: 30px;
     height: 60px;
     line-height: 30px;
     text-align: center;
@@ -127,10 +121,11 @@
       width: 100%;
       display: block;
       cursor: pointer;
-    }
-    p:hover{
-      background: $gold;
-      color: $white;
+
+      &:hover{
+        background: $gold;
+        color: $white;
+      }
     }
   }
 
@@ -145,13 +140,11 @@
     display: none;
 
     .search-form{
-      label{
-        i{
-          position: relative;
-          top: 2px;
-          left: 8px;
-          display: none;
-        }
+      label i{
+        position: relative;
+        top: 2px;
+        left: 8px;
+        display: none;
       }
       input{
         font-size: 1.2em;
@@ -159,17 +152,18 @@
         color: $white;
         border: 1px solid $white;
         height: 25px;
-      }
-      input:first-child{
-        width: 65%;
-        padding-left: 5px;
-      }
-      input:last-child{
-        margin-left: 2px;
-        background: $white;
-        color: $gold;
-        font-weight: bold;
-        cursor: pointer;
+
+        &:first-child{
+          width: 65%;
+          padding-left: 5px;
+        }
+        &:last-child{
+          margin-left: 2px;
+          background: $white;
+          color: $gold;
+          font-weight: bold;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -222,7 +216,6 @@
         top: 28px;
         cursor: pointer;
       }
-
       #booking-text{
         display: none;
         cursor: pointer;
@@ -247,7 +240,7 @@
         justify-content: space-around;
         padding-top: 15px;
       }
-      .booking-form-item {
+      .booking-form-item{
         label{
           display: block;
           text-align: left;
@@ -271,7 +264,6 @@
         transition: 0.3s;
       }
     }
-
     .search-form-container{
       height: 80px;
       top: 60px;
@@ -290,9 +282,9 @@
       }
     }
   }
-  // ----------------------------------
-  .b2{display: block;}
-  .b0,.b1,.b3,.b4{display: none;}
+// ----------------------------------
+.b2{display: block;}
+.b0,.b1,.b3,.b4{display: none;}
 }
 
 // LAPTOP
@@ -333,7 +325,6 @@
         width: auto;
         padding-top: 5px;
       }
-
       .nav-list{
         display: -webkit-flex;
         display: -ms-flex;
@@ -358,30 +349,24 @@
           display: flex;
           justify-content: space-between;
         }
-        // .sub-nav{display: none;}
-
         .sub-nav-item{
           background: $gold;
           color: $deepblue;
           flex-grow: 1;
           transition: 0.3s;
-        }
-        .sub-nav-item:not(:first-child){
-          border-left: 1px solid white;
-        }
-        .sub-nav-item a{
-          display: block;
-          width: 100%;
-        }
-        .sub-nav-item:hover{
-          background: $lightgold;
+
+          a{
+            display: block;
+            width: 100%;
+          }
+          &:not(:first-child){border-left: 1px solid white;}
+          &:hover{background: $lightgold;}
         }
       }
+    }
 
-    }/*nav*/
     .lang{
       position: static;
-      width: 30px;
       height: 70px;
       line-height: 35px;
     }
@@ -398,7 +383,6 @@
       top: 70px;
       height: 70px;
     }
-
     .header-bloc-right-item{
       #text-search, #text-basket{
         display: block;
@@ -408,7 +392,6 @@
       }
     }
   }
-
 // ----------------------------------
   .b3{display: block;}
   .b0,.b1,.b2,.b4{display: none;}
@@ -416,6 +399,7 @@
 
 // LARGE SCREEN
 @media (min-width: 1200px){
+
   #header{
     nav{
       .logo{
@@ -426,7 +410,6 @@
       width: 50px;
     }
   }
-
 // ----------------------------------
   .b4{display: block;}
   .b0,.b1,.b2,.b3{display: none;}
@@ -441,5 +424,4 @@
       }
     }
   }
-
 }
