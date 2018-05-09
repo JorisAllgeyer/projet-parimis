@@ -285,7 +285,7 @@ html {
       #header nav .nav-list {
         display: -webkit-flex;
         display: -ms-flex;
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         flex-grow: 1;
         width: auto;
