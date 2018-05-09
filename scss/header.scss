@@ -89,9 +89,9 @@
 
       .sub-nav{
          display: none;
-         -webkit-box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
-         -moz-box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
-         box-shadow: 0px 12px 26px -8px rgba(0,0,0,0.75);
+         -webkit-box-shadow: $boxshadow;
+         -moz-box-shadow: $boxshadow;
+         box-shadow: $boxshadow;
       }
       .nav-item{
         background: $white;
@@ -344,7 +344,7 @@
         line-height: 70px;
 
         .nav-item, .sub-nav-item{
-          padding: 0 10px;
+          padding: 0 8px;
           flex-grow: 1;
         }
         .sub-nav{

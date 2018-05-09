@@ -15,7 +15,6 @@
       font-size: 3em;
       letter-spacing: -0.08em;
       font-weight: bold;
-      margin-bottom: 30px;
     }
   }
   .text{
@@ -33,7 +32,6 @@
     font-size: 1.3em;
     font-style: italic;
     color: $gold;
-    margin-bottom: 20px;
   }
 
   .bloc-link{
@@ -101,13 +99,14 @@
       }
     }
   }
-  
+
   .section-left-home{
     position: relative;
     background-image: url('../img/room-brigitte-1.jpg');
     background-size: 370%;
     background-position: center;
     height: calc(100vh - 60px);
+    min-height: 450px;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -125,6 +124,7 @@
 
   .section-right-home{
     height: calc(100vh - 60px);
+    min-height: 450px;
     padding: 0; margin: 0;
 
     .section-left-item:first-child{
