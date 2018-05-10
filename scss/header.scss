@@ -83,9 +83,7 @@
 
       .sub-nav{
         display: none;
-        -webkit-box-shadow: $boxshadow;
-        -moz-box-shadow: $boxshadow;
-        box-shadow: $boxshadow;
+        @include box-shadow($shadow);
       }
       .nav-item{
         background: $white;
