@@ -44,9 +44,10 @@
       display: block;
       width: 100%;
     }
-  }
-  .bloc-link:hover{
-    background: $gold;
+    &:hover{
+      background: $gold;
+      @include box-shadow($shadow);
+    }
   }
 
 // ------------------------------------------- HOME

@@ -49,6 +49,9 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -69,11 +72,11 @@
             <form class="booking-form" action="header.html" method="post"><!-- FORMULAIRE RESERVATION -->
               <div class="booking-form-item">
                 <label for="arrival">Arrivée</label>
-                <input type="date" name="" value="" id="arrival">
+                <input type="text" name="" value="" id="arrival">
               </div>
               <div class="booking-form-item">
                 <label for="departure">Départ</label>
-                <input type="date" name="" value="" id="departure">
+                <input type="text" name="" value="" id="departure">
               </div>
               <div class="booking-form-item">
                 <label for="room">Chambre</label>
@@ -352,19 +355,27 @@
     </footer>
   </div><!-- /FOOTER -->
 
-  <!-- <div class="break">
+  <div class="break">
     <span class="b0">Mobile</span>
     <span class="b1">Mobile Paysage</span>
     <span class="b2">Tablet</span>
     <span class="b3">Laptop</span>
     <span class="b4">Large</span>
-  </div> -->
+  </div>
 
+<!-- GOOGLE MAPS -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuakcGRgZHKfK-1N-rchnEcofVpHZTR7Y&callback=initMap" async defer></script>
   <script src="js/map.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- JQUERY -->
+  <script src="jquery/external/jquery/jquery.js"></script>
+  <script
+  src="jquery/jquery-ui.min.js"></script>
+
   <script src="bootstrap/js/bootstrap.min.js"></script>
+
   <script src="js/script.js"></script>
+  <script src="js/datepicker.js"></script>
   <noscript>
     <p>Activez JavaScript</p>
   </noscript>
