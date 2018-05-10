@@ -1,3 +1,4 @@
+function initMap(){}//Init function
 var map;
 function initMap(){
   var coord = {

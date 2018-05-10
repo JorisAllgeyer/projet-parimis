@@ -9,6 +9,7 @@ $(document).ready(function(){
   });
   $('.nav-item').hover(function(){
     $(this).find('.sub-nav').stop(true).slideToggle(300);
+    
   });
 
 // TOGGLE BOOKING FORM
