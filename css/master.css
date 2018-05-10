@@ -163,7 +163,7 @@ html {
       #header .search-form-container .search-form input:first-child {
         width: 65%;
         padding-left: 5px; }
-      #header .search-form-container .search-form input:last-child {
+      #header .search-form-container .search-form input[type="submit"] {
         margin-left: 2px;
         background: #FFFFFF;
         color: #bc9e48;
@@ -581,6 +581,12 @@ html {
     padding: 0; }
     #footer .logo img {
       width: 60px; }
+  #footer .infos {
+    text-transform: none;
+    font-size: 0.7em;
+    padding: 5px;
+    background: whitesmoke;
+    text-align: center; }
 
 @media (min-width: 768px) {
   #footer .social .container-icon {

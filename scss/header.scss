@@ -155,7 +155,7 @@
           width: 65%;
           padding-left: 5px;
         }
-        &:last-child{
+        &[type="submit"]{
           margin-left: 2px;
           background: $white;
           color: $gold;
