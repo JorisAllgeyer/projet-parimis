@@ -209,9 +209,9 @@
         </div>
       </section>
     </div>
-    <div class="scroll"><a href="#next"><i class="fas fa-angle-down fa-3x"></i></a></div>
+    <div class="scroll"><a href="#down"><i class="fas fa-angle-down fa-3x"></i></a></div>
 
-    <div id="next"></div>
+    <div id="down"></div>
     <div class="container">
       <section class="row">
         <div class="col-12">
@@ -227,7 +227,7 @@
       <div id="classique"></div>
       <section class="container-room">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 info-room">
+          <div class="col-lg-5 info-room slide-left">
             <h2>Chambre Classique</h2>
             <p>17 m² · 2 personnes · Lit Queen size</p>
             <p>Nos chambres Classiques d'une superficie de 17 m² sont confortables, lumineuses et offrent une vue magnifique sur la cour. Elles sont équipées d'un lit queen size (160 cm), et d'une salle de bain claire et spacieuse.</p>
@@ -266,7 +266,7 @@
       <div id="confort"></div>
       <section class="container-room">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 info-room">
+          <div class="col-lg-5 info-room slide-right">
             <h2>Chambre Confort</h2>
             <p>20 m² · 2 personnes · 2 Lits Twins</p>
             <p>Les chambres Confort, d'une superficie de 20 m² sont confortables, lumineuses et offrent une vue sur la rue ou sur notre cour intérieure. Ambiance <span class="gold">Serge Gainsbourg</span> ou <span class="gold">Brigitte Bardot</span>. Elles sont équipées d'un lit queen size (160 cm) ou de deux lits twins.</p>
@@ -308,7 +308,7 @@
       <div id="deluxe"></div>
       <section class="container-room">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 info-room">
+          <div class="col-lg-5 info-room slide-left">
             <h2>Chambre Deluxe</h2>
             <p>25 m² · 2 personnes · 2 Lits Twins</p>
             <p>Nos chambres Deluxes, d'une superficie de 25 m² sont spacieuses, confortables et offrent une vue sur la rue. Elles sont équipées d'un lit double & d'un bureau en marbre et bois.
@@ -348,7 +348,7 @@
       <div id="suite"></div>
       <section class="container-room">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 info-room">
+          <div class="col-lg-5 info-room slide-right">
             <h2>Suite Parisienne</h2>
             <p>50 m² · 4 personnes · Lits King Size</p>
             <p>Nos suites parisiennes donnent sur la rue offrent une vue imprenable sur la tour Eiffel. L’entrée donne sur un salon doté d’un sofa, d'un bureau sur mesure en marbre et bois, d'un téléviseur 48 pouces (122 cms) LED écran plat Samsung.
@@ -448,26 +448,34 @@
     </footer>
   </div><!-- /FOOTER -->
 
-  <div class="break">
+  <!-- <div class="break">
     <span class="b0">Mobile</span>
     <span class="b1">Mobile Paysage</span>
     <span class="b2">Tablet</span>
     <span class="b3">Laptop</span>
     <span class="b4">Large</span>
     <span class="b5">X-Large</span>
-  </div>
+  </div> -->
 
 <!-- JQUERY -->
   <script src="jquery/external/jquery/jquery.js"></script>
   <script
   src="jquery/jquery-ui.min.js"></script>
 
+  <script src="jquery/fadethis/jquery.fadethis.min.js"></script>
+  <script>
+    $(window).fadeThis({
+      reverse: false,
+      offset: -100
+    });
+  </script>
+
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
   <script src="js/script.js"></script>
   <script src="js/datepicker.js"></script>
   <noscript>
-    <p>Activez JavaScript</p>
+    <p>Activez JavaScript pour profiter pleinement des fonctionnalités du site.</p>
   </noscript>
 </body>
 </html>

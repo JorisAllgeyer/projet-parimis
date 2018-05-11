@@ -233,18 +233,18 @@
           </div>
         </section>
       </div>
-      <div class="scroll"><a href="#anchor-1"><i class="fas fa-angle-down fa-3x"></i></a></div>
+      <div class="scroll"><a href="#down"><i class="fas fa-angle-down fa-3x"></i></a></div>
     </div>
 
-    <div id="anchor-1"></div>
+    <div id="down"></div>
 <!-- HOTEL -->
     <div class="container" id="hotel">
-      <section class="col-12 title">
+      <section class="col-12 title slide-top">
         <p>1 avenue Montaigne, 75008 Paris</p>
         <h2>Bienvenue à l'hôtel Parimis<br>* * * * *</h2>
       </section>
       <div class="row">
-        <section class="col-md-6 text">
+        <section class="col-md-6 text slide-left">
           <p class="serif-gold">«Situé dans le quartier des Champs Elysées, l’hôtel Parimis offre l’expérience d’un art de vivre parisien.»</p>
           <p>Disposant d’une vingtaine de chambre toutes différentes et contemporaines, respectant les sinuosités de l’immeuble pour leur disposition, notre décoratrice a su créer une atmosphère intime au sein d’un environnement sophistiqué.
           </p>
@@ -279,7 +279,7 @@
 <!-- MAP -->
     <div class="container-fluid" id="map">
       <div class="row">
-        <section class="col-md-6 offset-md-3 title">
+        <section class="col-md-6 offset-md-3 title slide-top">
           <p class="serif-gold">«Entrez dans la légende des Champs-Elysées.»</p>
           <h2>Nous Trouver</h2>
           <p>Foulez le mythique boulevard qui relie l'Arc de Triomphe à la Concorde. Découvrez l'autre face des Champs, celle d'un quartier florissant, chargé d'histoire, de fragrances capiteuses et de délicieuses effluves de cappuccinos.</p>
@@ -351,14 +351,14 @@
     </footer>
   </div><!-- /FOOTER -->
 
-  <div class="break">
+  <!-- <div class="break">
     <span class="b0">Mobile</span>
     <span class="b1">Mobile Paysage</span>
     <span class="b2">Tablet</span>
     <span class="b3">Laptop</span>
     <span class="b4">Large</span>
     <span class="b5">X-Large</span>
-  </div>
+  </div> -->
 
 <!-- GOOGLE MAPS -->
   <script src="js/map.js"></script>
@@ -366,8 +366,15 @@
 
 <!-- JQUERY -->
   <script src="jquery/external/jquery/jquery.js"></script>
-  <script
-  src="jquery/jquery-ui.min.js"></script>
+  <script src="jquery/jquery-ui.min.js"></script>
+
+  <script src="jquery/fadethis/jquery.fadethis.min.js"></script>
+  <script>
+    $(window).fadeThis({
+      reverse: false,
+      offset: -100
+    });
+  </script>
 
   <script src="bootstrap/js/bootstrap.min.js"></script>
 
