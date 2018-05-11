@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$deepblue".
-        on line 8 of scss/main.scss
+        on line 14 of scss/main.scss
 
-3:   margin-top: 60px;
-4: 
-5: // ------------------------------------------- GENERAL
-6:   .title{
-7:     text-align: center;
-8:     color: $deepblue;
-9: 
-10:     p{
-11:       padding: 15px;
-12:     }
-13:     h2{
+9:   }
+10: 
+11: // ------------------------------------------- GENERAL
+12:   .title{
+13:     text-align: center;
+14:     color: $deepblue;
+15: 
+16:     p{
+17:       padding: 15px;
+18:     }
+19:     h2{
 
 Backtrace:
-scss/main.scss:8
+scss/main.scss:14
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$deepblue\".\A         on line 8 of scss/main.scss\A \A 3:   margin-top: 60px;\A 4: \A 5: // ------------------------------------------- GENERAL\A 6:   .title{\A 7:     text-align: center;\A 8:     color: $deepblue;\A 9: \A 10:     p{\A 11:       padding: 15px;\A 12:     }\A 13:     h2{"; }
+  content: "Error: Undefined variable: \"$deepblue\".\A         on line 14 of scss/main.scss\A \A 9:   }\A 10: \A 11: // ------------------------------------------- GENERAL\A 12:   .title{\A 13:     text-align: center;\A 14:     color: $deepblue;\A 15: \A 16:     p{\A 17:       padding: 15px;\A 18:     }\A 19:     h2{"; }

@@ -1,6 +1,12 @@
+.container-fluid{padding: 0;}
 #main{
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px;
+
+  #next, #classique, #confort, #deluxe, #suite, #restaurant, #bar{
+    position: relative;
+    bottom: 60px
+  }
 
 // ------------------------------------------- GENERAL
   .title{
@@ -35,10 +41,15 @@
   }
   .deepblue{color: $deepblue;}
   .gold{color: $gold;}
-  .separator100{
+  .separator100px{
     height: 5px;
-    width: 100%;
+    width: 100px;
     background: $deepblue;
+  }
+  .separator100g{
+    height: 5px;
+    width: 100px;
+    background: $gold;
   }
   .bloc-link{
     display: inline-block;
@@ -104,13 +115,6 @@
     .subtitle{
       text-transform: uppercase;
       margin-top: 15px;
-    }
-    .bloc-icons{
-      margin-top: 15px;
-
-      i{
-        padding: 0 5px;
-      }
     }
   }
 
@@ -185,10 +189,6 @@
     color: $gold;
     z-index: 5;
   }
-  #anchor-1{
-    position: relative;
-    bottom: 60px;
-  }
 
 // ------------------------------------------- HOTEL
 
@@ -242,7 +242,7 @@
   }
   .container-room{
     margin: 40px 0;
-    
+
     .info-room{
       text-align: center;
       h2{
@@ -256,6 +256,36 @@
       p:last-of-type{
         text-align: center;
         margin-bottom: 20px;
+      }
+    }
+  }
+// ------------------------------------------- RESTAURANT
+  .section-full-page-restaurant{
+    background-image: url('../img/restaurant-1.jpg');
+    background-size: 280%;
+    background-position: center;
+  }
+  #rest{
+    .section-left{
+      padding: 0;
+    }
+    .section-right{
+      background: $deepblue;
+    }
+    .menu{
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      h2{
+        font-size: 2em;
+        padding: 15px 0;
+      }
+      h3{
+        font-size: 1.2em;
+        padding: 10px 0;
+      }
+      li{
+        font-size: 0.8em;
       }
     }
   }
@@ -287,9 +317,11 @@
     }
 // CHAMBRES
     .section-full-page-room{
-      background-image: url('../img/room-grey-1.jpg');
       background-size: 270%;
-      background-position: center;
+    }
+//RESTAURANT
+    .section-full-page-restaurant{
+      background-size: 220%;
     }
   }
 }
@@ -318,9 +350,11 @@
     }
 // CHAMBRES
     .section-full-page-room{
-      background-image: url('../img/room-grey-1.jpg');
       background-size: 200%;
-      background-position: center;
+    }
+//RESTAURANT
+    .section-full-page-restaurant{
+      background-size: 180%;
     }
   }
 }
@@ -352,14 +386,16 @@
 
     }
     // inverse la disposition du carousel et de la description
-    .container-room:nth-child(odd){
+    .container-room:nth-child(even){
       .info-room{order: 2;}
     }
 // CHAMBRES
     .section-full-page-room{
-      background-image: url('../img/room-grey-1.jpg');
       background-size: 150%;
-      background-position: center;
+    }
+//RESTAURANT
+    .section-full-page-restaurant{
+      background-size: 140%;
     }
   }
 }
@@ -388,9 +424,11 @@
     }
 // CHAMBRES
     .section-full-page-room{
-      background-image: url('../img/room-grey-1.jpg');
       background-size: 100%;
-      background-position: center;
+    }
+//RESTAURANT
+    .section-full-page-restaurant{
+      background-size: 120%;
     }
   }
 }

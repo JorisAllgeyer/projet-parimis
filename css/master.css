@@ -368,9 +368,15 @@ html {
 
   .b0, .b1, .b2, .b3, .b4 {
     display: none; } }
+.container-fluid {
+  padding: 0; }
+
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
+  #main #next, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar {
+    position: relative;
+    bottom: 60px; }
   #main .title {
     text-align: center;
     color: #02152E; }
@@ -399,10 +405,14 @@ html {
     color: #02152E; }
   #main .gold {
     color: #bc9e48; }
-  #main .separator100 {
+  #main .separator100px {
     height: 5px;
-    width: 100%;
+    width: 100px;
     background: #02152E; }
+  #main .separator100g {
+    height: 5px;
+    width: 100px;
+    background: #bc9e48; }
   #main .bloc-link {
     display: inline-block;
     font-family: 'Roboto Slab', serif;
@@ -457,10 +467,6 @@ html {
     #main .section-title .subtitle {
       text-transform: uppercase;
       margin-top: 15px; }
-    #main .section-title .bloc-icons {
-      margin-top: 15px; }
-      #main .section-title .bloc-icons i {
-        padding: 0 5px; }
   #main .section-left-home {
     position: relative;
     background-image: url("../img/room-blue-1.jpg");
@@ -525,9 +531,6 @@ html {
     left: calc(50% - 15px);
     color: #bc9e48;
     z-index: 5; }
-  #main #anchor-1 {
-    position: relative;
-    bottom: 60px; }
   #main #hotel {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -572,6 +575,26 @@ html {
       #main .container-room .info-room p:last-of-type {
         text-align: center;
         margin-bottom: 20px; }
+  #main .section-full-page-restaurant {
+    background-image: url("../img/restaurant-1.jpg");
+    background-size: 280%;
+    background-position: center; }
+  #main #rest .section-left {
+    padding: 0; }
+  #main #rest .section-right {
+    background: #02152E; }
+  #main #rest .menu {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center; }
+    #main #rest .menu h2 {
+      font-size: 2em;
+      padding: 15px 0; }
+    #main #rest .menu h3 {
+      font-size: 1.2em;
+      padding: 10px 0; }
+    #main #rest .menu li {
+      font-size: 0.8em; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
@@ -587,9 +610,9 @@ html {
     #main .section-right-home .section-right-item:last-child:hover {
       background-size: 170%; }
   #main .section-full-page-room {
-    background-image: url("../img/room-grey-1.jpg");
-    background-size: 270%;
-    background-position: center; } }
+    background-size: 270%; }
+  #main .section-full-page-restaurant {
+    background-size: 220%; } }
 @media (min-width: 768px) {
   #main .section-left-home {
     background-size: 380%; }
@@ -604,9 +627,9 @@ html {
     #main .section-right-home .section-right-item:last-child:hover {
       background-size: 260%; }
   #main .section-full-page-room {
-    background-image: url("../img/room-grey-1.jpg");
-    background-size: 200%;
-    background-position: center; } }
+    background-size: 200%; }
+  #main .section-full-page-restaurant {
+    background-size: 180%; } }
 @media (min-width: 992px) {
   #main .section-left-home {
     background-size: 300%; }
@@ -622,12 +645,12 @@ html {
       background-size: 170%; }
   #main .section-right-home .section-full-page {
     min-height: calc(100vh - 70px;); }
-  #main .container-room:nth-child(odd) .info-room {
+  #main .container-room:nth-child(even) .info-room {
     order: 2; }
   #main .section-full-page-room {
-    background-image: url("../img/room-grey-1.jpg");
-    background-size: 150%;
-    background-position: center; } }
+    background-size: 150%; }
+  #main .section-full-page-restaurant {
+    background-size: 140%; } }
 @media (min-width: 1200px) {
   #main .section-left-home {
     background-size: 240%; }
@@ -642,9 +665,9 @@ html {
     #main .section-right-home .section-right-item:last-child:hover {
       background-size: 150%; }
   #main .section-full-page-room {
-    background-image: url("../img/room-grey-1.jpg");
-    background-size: 100%;
-    background-position: center; } }
+    background-size: 100%; }
+  #main .section-full-page-restaurant {
+    background-size: 120%; } }
 @media (min-width: 1500px) {
   #main .section-left-home {
     background-size: 200%; }
