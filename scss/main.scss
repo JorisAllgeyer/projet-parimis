@@ -49,7 +49,15 @@
       @include box-shadow($shadow);
     }
   }
-
+  .section-full-page{
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 // ------------------------------------------- HOME
   .row{
     padding: 0;
@@ -99,7 +107,7 @@
 
   .section-left-home{
     position: relative;
-    background-image: url('../img/room-brigitte-1.jpg');
+    background-image: url('../img/room-blue-1.jpg');
     background-size: 370%;
     background-position: center;
     height: calc(100vh - 60px);
@@ -117,7 +125,6 @@
       .overlay{background: $overlay;}
     }
   }
-
 
   .section-right-home{
     height: calc(100vh - 60px);
@@ -177,7 +184,8 @@
 // ------------------------------------------- HOTEL
 
   #hotel{
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: $deepblue;
 
     .bloc-link{
@@ -217,4 +225,107 @@
       }
     }
   }
+// ------------------------------------------- CHAMBRES
+  .section-full-page-room{
+    background-image: url('../img/room-grey-1.jpg');
+    background-size: 270%;
+    background-position: center;
+  }
 }
+// MOBILE LANDSCAPE
+@media (min-width: 576px){
+  #main{
+    .section-left-home{
+      background-size: 230%;
+      &:hover{
+        background-size: 250%;
+      }
+    }
+    .section-right-home:first-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+    .section-right-home:last-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+  }
+}
+// TABLET IPAD
+@media (min-width: 768px){
+  #main{
+    .section-left-home{
+      background-size: 350%;
+      &:hover{
+        background-size: 370%;
+      }
+    }
+    .section-right-home:first-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+    .section-right-home:last-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+  }
+}
+// LAPTOP
+@media (min-width: 992px){
+  #main{
+    .section-left-home{
+      background-size: 280%;
+      &:hover{
+        background-size:300%;
+      }
+    }
+    .section-right-home:first-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+    .section-right-home:last-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+    .section-full-page{
+      min-height: calc(100vh - 70px;)
+    }
+  }
+}
+// LARGE SCREEN
+@media (min-width: 1200px){
+  #main{
+    .section-left-home{
+      background-size: 220%;
+      &:hover{
+        background-size:240%;
+      }
+    }
+    .section-right-home:first-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+    .section-right-home:last-child{
+      background-size:100%;
+      &:hover{
+        background-size:100%;
+      }
+    }
+  }
+}
+// X- LARGE SCREEN
+@media (min-width: 1500px){}
