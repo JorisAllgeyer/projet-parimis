@@ -179,14 +179,14 @@ html {
   position: fixed;
   bottom: 0; }
 
-.b1, .b2, .b3, .b4 {
+.b1, .b2, .b3, .b4, .b5 {
   display: none; }
 
 @media (min-width: 576px) {
   .b1 {
     display: block; }
 
-  .b0, .b2, .b3, .b4 {
+  .b0, .b2, .b3, .b4, .b5 {
     display: none; } }
 @media (min-width: 768px) {
   #header aside {
@@ -264,7 +264,7 @@ html {
   .b2 {
     display: block; }
 
-  .b0, .b1, .b3, .b4 {
+  .b0, .b1, .b3, .b4, .b5 {
     display: none; } }
 @media (min-width: 992px) {
   #header {
@@ -346,7 +346,7 @@ html {
   .b3 {
     display: block; }
 
-  .b0, .b1, .b2, .b4 {
+  .b0, .b1, .b2, .b4, .b5 {
     display: none; } }
 @media (min-width: 1200px) {
   #header nav .logo {
@@ -357,21 +357,28 @@ html {
   .b4 {
     display: block; }
 
-  .b0, .b1, .b2, .b3 {
+  .b0, .b1, .b2, .b3, .b5 {
     display: none; } }
 @media (min-width: 1500px) {
   #header nav .logo {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+
+  .b5 {
+    display: block; }
+
+  .b0, .b1, .b2, .b3, .b4 {
+    display: none; } }
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
   #main .title {
-    text-align: center; }
+    text-align: center;
+    color: #02152E; }
     #main .title p {
       padding: 15px; }
     #main .title h2 {
       text-transform: uppercase;
-      padding: 10px 0px;
+      padding: 20px 0px;
       font-size: 3em;
       letter-spacing: -0.08em;
       font-weight: bold; }
@@ -386,7 +393,16 @@ html {
     font-family: 'Roboto Slab', serif;
     font-size: 1.3em;
     font-style: italic;
+    color: #bc9e48;
+    margin-bottom: 10px; }
+  #main .deepblue {
+    color: #02152E; }
+  #main .gold {
     color: #bc9e48; }
+  #main .separator100 {
+    height: 5px;
+    width: 100%;
+    background: #02152E; }
   #main .bloc-link {
     display: inline-block;
     font-family: 'Roboto Slab', serif;
@@ -469,7 +485,7 @@ html {
     min-height: 450px;
     padding: 0;
     margin: 0; }
-    #main .section-right-home .section-left-item:first-child {
+    #main .section-right-home .section-right-item:first-child {
       height: 50%;
       background-image: url("../img/restaurant-2.jpg");
       background-size: 235%;
@@ -480,13 +496,13 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-      #main .section-right-home .section-left-item:first-child:hover {
+      #main .section-right-home .section-right-item:first-child:hover {
         background-size: 250%; }
-        #main .section-right-home .section-left-item:first-child:hover .section-title .separator {
+        #main .section-right-home .section-right-item:first-child:hover .section-title .separator {
           width: 100%; }
-        #main .section-right-home .section-left-item:first-child:hover .overlay {
+        #main .section-right-home .section-right-item:first-child:hover .overlay {
           background: rgba(255, 255, 255, 0.2); }
-    #main .section-right-home .section-left-item:last-child {
+    #main .section-right-home .section-right-item:last-child {
       height: 50%;
       background-image: url("../img/spa-3.jpg");
       background-size: 180%;
@@ -497,11 +513,11 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s; }
-      #main .section-right-home .section-left-item:last-child:hover {
+      #main .section-right-home .section-right-item:last-child:hover {
         background-size: 200%; }
-        #main .section-right-home .section-left-item:last-child:hover .section-title .separator {
+        #main .section-right-home .section-right-item:last-child:hover .section-title .separator {
           width: 100%; }
-        #main .section-right-home .section-left-item:last-child:hover .overlay {
+        #main .section-right-home .section-right-item:last-child:hover .overlay {
           background: rgba(255, 255, 255, 0.2); }
   #main .scroll {
     position: absolute;
@@ -541,63 +557,107 @@ html {
           margin-top: 5px; }
   #main .section-full-page-room {
     background-image: url("../img/room-grey-1.jpg");
-    background-size: 270%;
+    background-size: 350%;
     background-position: center; }
+  #main .container-room {
+    margin: 40px 0; }
+    #main .container-room .info-room {
+      text-align: center; }
+      #main .container-room .info-room h2 {
+        font-size: 2em;
+        text-transform: uppercase; }
+      #main .container-room .info-room p:first-of-type {
+        color: #bc9e48;
+        margin: 15px 0; }
+      #main .container-room .info-room p:last-of-type {
+        text-align: center;
+        margin-bottom: 20px; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
-    background-size: 230%; }
-    #main .section-left-home:hover {
-      background-size: 250%; }
-  #main .section-right-home:first-child {
-    background-size: 100%; }
-    #main .section-right-home:first-child:hover {
-      background-size: 100%; }
-  #main .section-right-home:last-child {
-    background-size: 100%; }
-    #main .section-right-home:last-child:hover {
-      background-size: 100%; } }
-@media (min-width: 768px) {
-  #main .section-left-home {
-    background-size: 350%; }
-    #main .section-left-home:hover {
-      background-size: 370%; }
-  #main .section-right-home:first-child {
-    background-size: 100%; }
-    #main .section-right-home:first-child:hover {
-      background-size: 100%; }
-  #main .section-right-home:last-child {
-    background-size: 100%; }
-    #main .section-right-home:last-child:hover {
-      background-size: 100%; } }
-@media (min-width: 992px) {
-  #main .section-left-home {
     background-size: 280%; }
     #main .section-left-home:hover {
-      background-size: 300%; }
-  #main .section-right-home:first-child {
-    background-size: 100%; }
-    #main .section-right-home:first-child:hover {
-      background-size: 100%; }
-  #main .section-right-home:last-child {
-    background-size: 100%; }
-    #main .section-right-home:last-child:hover {
-      background-size: 100%; }
-  #main .section-full-page {
-    min-height: calc(100vh - 70px;); } }
+      background-size: 290%; }
+  #main .section-right-home .section-right-item:first-child {
+    background-size: 180%; }
+    #main .section-right-home .section-right-item:first-child:hover {
+      background-size: 200%; }
+  #main .section-right-home .section-right-item:last-child {
+    background-size: 150%; }
+    #main .section-right-home .section-right-item:last-child:hover {
+      background-size: 170%; }
+  #main .section-full-page-room {
+    background-image: url("../img/room-grey-1.jpg");
+    background-size: 270%;
+    background-position: center; } }
+@media (min-width: 768px) {
+  #main .section-left-home {
+    background-size: 380%; }
+    #main .section-left-home:hover {
+      background-size: 400%; }
+  #main .section-right-home .section-right-item:first-child {
+    background-size: 240%; }
+    #main .section-right-home .section-right-item:first-child:hover {
+      background-size: 260%; }
+  #main .section-right-home .section-right-item:last-child {
+    background-size: 240%; }
+    #main .section-right-home .section-right-item:last-child:hover {
+      background-size: 260%; }
+  #main .section-full-page-room {
+    background-image: url("../img/room-grey-1.jpg");
+    background-size: 200%;
+    background-position: center; } }
+@media (min-width: 992px) {
+  #main .section-left-home {
+    background-size: 300%; }
+    #main .section-left-home:hover {
+      background-size: 320%; }
+  #main .section-right-home .section-right-item:first-child {
+    background-size: 200%; }
+    #main .section-right-home .section-right-item:first-child:hover {
+      background-size: 220%; }
+  #main .section-right-home .section-right-item:last-child {
+    background-size: 150%; }
+    #main .section-right-home .section-right-item:last-child:hover {
+      background-size: 170%; }
+  #main .section-right-home .section-full-page {
+    min-height: calc(100vh - 70px;); }
+  #main .container-room:nth-child(odd) .info-room {
+    order: 2; }
+  #main .section-full-page-room {
+    background-image: url("../img/room-grey-1.jpg");
+    background-size: 150%;
+    background-position: center; } }
 @media (min-width: 1200px) {
   #main .section-left-home {
-    background-size: 220%; }
+    background-size: 240%; }
     #main .section-left-home:hover {
-      background-size: 240%; }
-  #main .section-right-home:first-child {
-    background-size: 100%; }
-    #main .section-right-home:first-child:hover {
-      background-size: 100%; }
-  #main .section-right-home:last-child {
-    background-size: 100%; }
-    #main .section-right-home:last-child:hover {
-      background-size: 100%; } }
+      background-size: 260%; }
+  #main .section-right-home .section-right-item:first-child {
+    background-size: 160%; }
+    #main .section-right-home .section-right-item:first-child:hover {
+      background-size: 170%; }
+  #main .section-right-home .section-right-item:last-child {
+    background-size: 130%; }
+    #main .section-right-home .section-right-item:last-child:hover {
+      background-size: 150%; }
+  #main .section-full-page-room {
+    background-image: url("../img/room-grey-1.jpg");
+    background-size: 100%;
+    background-position: center; } }
+@media (min-width: 1500px) {
+  #main .section-left-home {
+    background-size: 200%; }
+    #main .section-left-home:hover {
+      background-size: 220%; }
+  #main .section-right-home .section-right-item:first-child {
+    background-size: 150%; }
+    #main .section-right-home .section-right-item:first-child:hover {
+      background-size: 170%; }
+  #main .section-right-home .section-right-item:last-child {
+    background-size: 150%; }
+    #main .section-right-home .section-right-item:last-child:hover {
+      background-size: 170%; } }
 #footer {
   font-family: 'Geometria-Light', sans-serif;
   text-transform: uppercase; }
