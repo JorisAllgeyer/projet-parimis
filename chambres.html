@@ -448,14 +448,14 @@
     </footer>
   </div><!-- /FOOTER -->
 
-  <div class="break">
+  <!-- <div class="break">
     <span class="b0">Mobile</span>
     <span class="b1">Mobile Paysage</span>
     <span class="b2">Tablet</span>
     <span class="b3">Laptop</span>
     <span class="b4">Large</span>
     <span class="b5">X-Large</span>
-  </div>
+  </div> -->
 
 <!-- JQUERY -->
   <script src="jquery/external/jquery/jquery.js"></script>
@@ -463,10 +463,14 @@
   src="jquery/jquery-ui.min.js"></script>
 <!-- Fade This -->
   <script src="jquery/fadethis/jquery.fadethis.min.js"></script>
-  <script class="fadeunable">
-    $(window).fadeThis({
-      reverse: false,
-      offset: -100,
+  <script>
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 630){ //Bloque l'overflow en slide-right
+        $(window).fadeThis({
+          reverse: false,
+          offset: -150,
+        });
+      }
     });
   </script>
 <!-- Bootstrap -->

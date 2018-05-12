@@ -370,9 +370,13 @@
 <!-- Fade This -->
   <script src="jquery/fadethis/jquery.fadethis.min.js"></script>
   <script>
-    $(window).fadeThis({
-      reverse: false,
-      offset: -100
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 630){ //Bloque l'overflow en slide-right
+        $(window).fadeThis({
+          reverse: false,
+          offset: -150,
+        });
+      }
     });
   </script>
 <!-- Bootstrap -->

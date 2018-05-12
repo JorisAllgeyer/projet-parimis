@@ -27,10 +27,6 @@ input, select {
 html {
   scroll-behavior: smooth; }
 
-body {
-  overflow-x: hidden;
-  max-width: 100vw !important; }
-
 @font-face {
   font-family: 'Geometria-Light';
   src: url("../fonts/webfonts/367441_0_0.eot");
