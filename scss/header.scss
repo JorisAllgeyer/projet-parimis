@@ -24,6 +24,7 @@
     min-width: 60px;
     text-align: center;
     color: $white;
+    @include box-shadow($shadow);
 
     #button-menu{
       padding: 10px 10px;
@@ -38,7 +39,7 @@
   }
 
   .header-bloc-right{
-    height: 140px;
+    height: 60px;
     background: $deepblue;
   }
   .header-bloc-right-item{
@@ -46,7 +47,7 @@
       display: block;
       width: 100%;
       height: 70px;
-      line-height: 70px;
+      line-height: 60px;
       cursor: pointer;
     }
     #text-search, #text-basket{display: none;}
@@ -62,6 +63,7 @@
     background: rgba(255, 255, 255, 0.9);
     height: 60px;
     background: $white;
+    @include box-shadow($shadow);
 
     .logo{
       text-align: center;
@@ -126,7 +128,10 @@
       }
     }
   }
-
+  #icon-search{
+    display: none;
+  }
+  #icon-basket{height: 60px;}
   .search-form-container{
     position: absolute;
     top: 60px;
@@ -269,12 +274,23 @@
         transition: 0.3s;
       }
     }
+
+    #icon-basket{height: 70px;}
+    #icon-search{display: block;}
     .search-form-container{
       height: 80px;
       top: 60px;
       line-height: 80px;
       left: 60px;
       width: calc(100% - 120px);
+    }
+    .header-bloc-right{
+      height: 140px;
+    }
+    .header-bloc-right-item{
+      a, span{
+        line-height: 70px;
+      }
     }
 
     nav{
