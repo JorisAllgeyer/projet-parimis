@@ -53,15 +53,15 @@ html {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
   #header aside {
     max-width: 60px;
     min-width: 60px;
     text-align: center;
-    color: #FFFFFF;
-    -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+    color: #FFFFFF; }
     #header aside #button-menu {
       padding: 10px 10px;
       width: 60px;
@@ -92,10 +92,7 @@ html {
     width: calc(100% - 120px);
     background: rgba(255, 255, 255, 0.9);
     height: 60px;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+    background: #FFFFFF; }
     #header nav .logo {
       text-align: center;
       font-size: 3em;
@@ -111,12 +108,12 @@ html {
       display: -ms-flex;
       display: flex;
       flex-direction: column;
-      display: none; }
+      display: none;
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
       #header nav .nav-list .sub-nav {
-        display: none;
-        -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+        display: none; }
       #header nav .nav-list .nav-item {
         background: #FFFFFF; }
         #header nav .nav-list .nav-item:hover {
@@ -151,37 +148,7 @@ html {
   #header #icon-basket {
     height: 60px; }
   #header .search-form-container {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: calc(100% - 60px);
-    height: 80px;
-    line-height: 80px;
-    background: #bc9e48;
-    -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
     display: none; }
-    #header .search-form-container .search-form label i {
-      position: relative;
-      top: 2px;
-      left: 8px;
-      display: none; }
-    #header .search-form-container .search-form input {
-      font-size: 1.2em;
-      background: inherit;
-      color: #FFFFFF;
-      border: 1px solid #FFFFFF;
-      height: 25px; }
-      #header .search-form-container .search-form input:first-child {
-        width: 65%;
-        padding-left: 5px; }
-      #header .search-form-container .search-form input[type="submit"] {
-        margin-left: 2px;
-        background: #FFFFFF;
-        color: #bc9e48;
-        font-weight: bold;
-        cursor: pointer; }
 
 .break {
   font-size: 2em;
@@ -199,85 +166,120 @@ html {
   .b0, .b2, .b3, .b4, .b5 {
     display: none; } }
 @media (min-width: 768px) {
-  #header aside {
-    flex-grow: 1; }
-    #header aside #button-menu {
-      height: 60px; }
-  #header .header-bloc-left {
-    height: 140px;
-    background: #02152E; }
-    #header .header-bloc-left .header-booking {
-      display: block; }
-      #header .header-bloc-left .header-booking span {
-        display: block;
-        width: 100%;
-        padding-bottom: 40px; }
-    #header .header-bloc-left #booking-icon {
-      position: relative;
-      top: 28px;
-      cursor: pointer; }
-    #header .header-bloc-left #booking-text {
+  #header {
+    box-shadow: none; }
+    #header aside {
+      flex-grow: 1;
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #header aside #button-menu {
+        height: 60px; }
+    #header .header-bloc-left {
+      height: 140px;
+      background: #02152E; }
+      #header .header-bloc-left .header-booking {
+        display: block; }
+        #header .header-bloc-left .header-booking span {
+          display: block;
+          width: 100%;
+          padding-bottom: 40px; }
+      #header .header-bloc-left #booking-icon {
+        position: relative;
+        top: 28px;
+        cursor: pointer; }
+      #header .header-bloc-left #booking-text {
+        display: none;
+        cursor: pointer; }
+    #header .booking-form-container {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      width: calc(100% - 120px);
+      height: 80px;
+      background: #bc9e48;
+      color: #FFFFFF;
       display: none;
-      cursor: pointer; }
-  #header .booking-form-container {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    width: calc(100% - 120px);
-    height: 80px;
-    background: #bc9e48;
-    color: #FFFFFF;
-    display: none;
-    z-index: 2;
-    -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
-    #header .booking-form-container .booking-form {
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      justify-content: space-around;
-      padding-top: 15px; }
-    #header .booking-form-container .booking-form-item label {
-      display: block;
-      text-align: left; }
-    #header .booking-form-container .booking-form-item input, #header .booking-form-container .booking-form-item select {
-      display: block;
-      background: inherit;
-      border: 1px solid white;
-      color: #02152E; }
-    #header .booking-form-container .booking-form-item #arrival, #header .booking-form-container .booking-form-item #departure {
-      position: relative;
-      z-index: 10;
-      background: #bc9e48; }
-    #header .booking-form-container #submit-button {
-      cursor: pointer;
-      padding: 0;
-      border: 1px solid;
-      background: #FFFFFF;
-      color: #bc9e48;
-      width: 50px;
-      font-size: 1.2em;
-      font-weight: bold;
-      transition: 0.3s; }
-  #header #icon-basket {
-    height: 70px; }
-  #header #icon-search {
-    display: block; }
-  #header .search-form-container {
-    height: 80px;
-    top: 60px;
-    line-height: 80px;
-    left: 60px;
-    width: calc(100% - 120px); }
-  #header .header-bloc-right {
-    height: 140px; }
-  #header .header-bloc-right-item a, #header .header-bloc-right-item span {
-    line-height: 70px; }
-  #header nav .nav-list {
-    margin: 0; }
-    #header nav .nav-list .booking-link {
-      display: none; }
+      z-index: 2;
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #header .booking-form-container .booking-form {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px; }
+      #header .booking-form-container .booking-form-item label {
+        display: block;
+        text-align: left; }
+      #header .booking-form-container .booking-form-item input, #header .booking-form-container .booking-form-item select {
+        display: block;
+        background: inherit;
+        border: 1px solid white;
+        color: #02152E; }
+      #header .booking-form-container .booking-form-item #arrival, #header .booking-form-container .booking-form-item #departure {
+        position: relative;
+        z-index: 10;
+        background: #bc9e48; }
+      #header .booking-form-container #submit-button {
+        cursor: pointer;
+        padding: 0;
+        border: 1px solid;
+        background: #FFFFFF;
+        color: #bc9e48;
+        width: 50px;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: 0.3s; }
+    #header #icon-basket {
+      height: 70px; }
+    #header #icon-search {
+      display: block; }
+    #header .search-form-container {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      height: 80px;
+      line-height: 80px;
+      width: calc(100% - 120px);
+      background: #bc9e48;
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #header .search-form-container .search-form label i {
+        position: relative;
+        top: 2px;
+        left: 8px;
+        display: none; }
+      #header .search-form-container .search-form input {
+        font-size: 1.2em;
+        background: inherit;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        height: 25px; }
+        #header .search-form-container .search-form input:first-child {
+          width: 65%;
+          padding-left: 5px; }
+        #header .search-form-container .search-form input[type="submit"] {
+          margin-left: 2px;
+          background: #FFFFFF;
+          color: #bc9e48;
+          font-weight: bold;
+          cursor: pointer; }
+    #header .header-bloc-right {
+      height: 140px; }
+    #header .header-bloc-right-item a, #header .header-bloc-right-item span {
+      line-height: 70px; }
+    #header nav {
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #header nav .nav-list {
+        margin: 0;
+        box-shadow: none; }
+        #header nav .nav-list .booking-link {
+          display: none; }
 
   .b2 {
     display: block; }
@@ -329,7 +331,10 @@ html {
           display: -webkit-flex;
           display: -ms-flex;
           display: flex;
-          justify-content: space-between; }
+          justify-content: space-between;
+          -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+          -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
         #header nav .nav-list .sub-nav-item {
           background: #bc9e48;
           color: #02152E;
@@ -395,7 +400,7 @@ html {
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
-  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #bar, #main #brasserie, #main #degusation {
+  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #bar {
     position: relative;
     bottom: 60px; }
   #main .title {
@@ -605,7 +610,7 @@ html {
     background-image: url("../img/restaurant-5.jpg");
     background-position: center;
     background-size: 300%; }
-  #main #rest .menu {
+  #main #rest .menu-container {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -613,20 +618,35 @@ html {
     justify-content: center;
     margin: 30px 15px;
     height: calc(100% - 60px);
-    border: 3px solid #bc9e48;
+    border: 2px solid #bc9e48;
     background: rgba(2, 21, 46, 0.9);
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center; }
-    #main #rest .menu h2 {
+    #main #rest .menu-container header {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex; }
+      #main #rest .menu-container header .menu-brasserie-title, #main #rest .menu-container header .menu-degustation-title {
+        width: 50%;
+        height: 60px;
+        line-height: 60px; }
+      #main #rest .menu-container header p {
+        display: block;
+        width: 100%;
+        background: #bc9e48;
+        cursor: pointer; }
+    #main #rest .menu-container #degustation {
+      display: none; }
+    #main #rest .menu-container h2 {
       font-size: 2em;
       padding: 15px 0; }
-    #main #rest .menu h3 {
+    #main #rest .menu-container h3 {
       font-size: 1.2em;
       padding: 10px 0; }
-    #main #rest .menu li {
+    #main #rest .menu-container li {
       font-size: 0.8em; }
-    #main #rest .menu .prices {
+    #main #rest .menu-container .prices {
       font-size: 0.6em;
       padding: 10px; }
 

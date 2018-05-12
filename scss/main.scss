@@ -5,7 +5,7 @@
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px;
 
-  #down, #classique, #confort, #deluxe, #suite, #bar, #brasserie, #degusation{
+  #down, #classique, #confort, #deluxe, #suite, #bar{
     position: relative;
     bottom: 60px;
   }
@@ -274,7 +274,7 @@
     background-size: 300%;
   }
   #rest{
-    .menu{
+    .menu-container{
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
@@ -282,12 +282,31 @@
       justify-content: center;
       margin: 30px 15px;
       height: calc(100% - 60px);
-      border: 3px solid $gold;
+      border: 2px solid $gold;
       background: $overlayb;
       color: $white;
       text-transform: uppercase;
       text-align: center;
 
+      header{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+
+        .menu-brasserie-title, .menu-degustation-title{
+          width: 50%;
+          height: 60px;
+          line-height: 60px;
+        }
+        p{
+          display: block;
+          width: 100%;
+          background: $gold;
+          cursor: pointer;
+        }
+
+      }
+      #degustation{display: none;}
       h2{
         font-size: 2em;
         padding: 15px 0;

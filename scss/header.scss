@@ -18,13 +18,13 @@
   justify-content: space-between;
   text-transform: uppercase;
   position: relative;
+  @include box-shadow($shadow);
 
   aside{
     max-width: 60px;
     min-width: 60px;
     text-align: center;
     color: $white;
-    @include box-shadow($shadow);
 
     #button-menu{
       padding: 10px 10px;
@@ -63,7 +63,6 @@
     background: rgba(255, 255, 255, 0.9);
     height: 60px;
     background: $white;
-    @include box-shadow($shadow);
 
     .logo{
       text-align: center;
@@ -82,10 +81,10 @@
       display: flex;
       flex-direction: column;
       display: none;
+      @include box-shadow($shadow);
 
       .sub-nav{
         display: none;
-        @include box-shadow($shadow);
       }
       .nav-item{
         background: $white;
@@ -132,44 +131,9 @@
     display: none;
   }
   #icon-basket{height: 60px;}
+
   .search-form-container{
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: calc(100% - 60px);
-    height: 80px;
-    line-height: 80px;
-    background: $gold;
-    @include box-shadow($shadow);
     display: none;
-
-    .search-form{
-      label i{
-        position: relative;
-        top: 2px;
-        left: 8px;
-        display: none;
-      }
-      input{
-        font-size: 1.2em;
-        background: inherit;
-        color: $white;
-        border: 1px solid $white;
-        height: 25px;
-
-        &:first-child{
-          width: 65%;
-          padding-left: 5px;
-        }
-        &[type="submit"]{
-          margin-left: 2px;
-          background: $white;
-          color: $gold;
-          font-weight: bold;
-          cursor: pointer;
-        }
-      }
-    }
   }
 }
 
@@ -193,8 +157,11 @@
 @media (min-width: 768px){
 
   #header{
+    box-shadow: none;
+
     aside{
       flex-grow: 1;
+      @include box-shadow($shadow);
 
       #button-menu{
         height: 60px;
@@ -277,12 +244,44 @@
 
     #icon-basket{height: 70px;}
     #icon-search{display: block;}
+
     .search-form-container{
-      height: 80px;
+      position: absolute;
       top: 60px;
-      line-height: 80px;
       left: 60px;
+      height: 80px;
+      line-height: 80px;
       width: calc(100% - 120px);
+      background: $gold;
+      @include box-shadow($shadow);
+
+      .search-form{
+        label i{
+          position: relative;
+          top: 2px;
+          left: 8px;
+          display: none;
+        }
+        input{
+          font-size: 1.2em;
+          background: inherit;
+          color: $white;
+          border: 1px solid $white;
+          height: 25px;
+
+          &:first-child{
+            width: 65%;
+            padding-left: 5px;
+          }
+          &[type="submit"]{
+            margin-left: 2px;
+            background: $white;
+            color: $gold;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
     }
     .header-bloc-right{
       height: 140px;
@@ -294,8 +293,11 @@
     }
 
     nav{
+      @include box-shadow($shadow);
+
       .nav-list{
         margin: 0;
+        box-shadow: none;
 
         .booking-link{
           display: none;
@@ -368,6 +370,7 @@
           display: -ms-flex;
           display: flex;
           justify-content: space-between;
+          @include box-shadow($shadow);
         }
         .sub-nav-item{
           background: $gold;
