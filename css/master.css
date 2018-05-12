@@ -28,7 +28,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 100%; }
 
 @font-face {
   font-family: 'Geometria-Light';
