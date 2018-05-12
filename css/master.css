@@ -16,7 +16,7 @@ a, a:hover {
   text-decoration: none; }
 
 strong {
-  font-weight: normal; }
+  font-weight: inherit; }
 
 ul {
   list-style-type: none; }
@@ -26,6 +26,9 @@ input, select {
 
 html {
   scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden; }
 
 @font-face {
   font-family: 'Geometria-Light';
@@ -41,7 +44,7 @@ html {
 #bloc-header {
   position: fixed;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   z-index: 10; }
 
 #header {
@@ -389,6 +392,9 @@ html {
 .container-fluid {
   padding: 0; }
 
+.breakword {
+  word-break: break-all; }
+
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
@@ -611,7 +617,7 @@ html {
     margin: 30px 15px;
     height: calc(100% - 60px);
     border: 3px solid #bc9e48;
-    background: rgba(2, 21, 46, 0.5);
+    background: rgba(2, 21, 46, 0.9);
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center; }
