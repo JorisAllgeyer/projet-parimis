@@ -5,7 +5,7 @@
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px;
 
-  #down, #classique, #confort, #deluxe, #suite, #restaurant, #bar{
+  #down, #classique, #confort, #deluxe, #suite, #restaurant, #bar, #detente, #découvrete, #relaxant, #plaisir, #evasion{
     position: relative;
     bottom: 60px;
   }
@@ -148,7 +148,7 @@
 
     .section-right-item:first-child{
       height: 50%;
-      background-image: url('../img/restaurant-2.jpg');
+      background-image: url('../img/restaurant-5.jpg');
       background-size: 235%;
       background-position: center;
       display: -webkit-flex;
@@ -166,7 +166,7 @@
     }
     .section-right-item:last-child{
       height: 50%;
-      background-image: url('../img/spa-3.jpg');
+      background-image: url('../img/spa-6.jpg');
       background-size: 180%;
       background-position: center;
       display: -webkit-flex;
@@ -241,6 +241,7 @@
     background-image: url('../img/room-grey-1.jpg');
     background-size: 350%;
     background-position: center;
+    background-repeat: no-repeat;
   }
   .container-room{
     margin: 40px 0;
@@ -266,12 +267,14 @@
     background-image: url('../img/restaurant-1.jpg');
     background-size: 280%;
     background-position: center;
+    background-repeat: no-repeat;
   }
   .section-menu{
     min-height: calc(100vh - 60px);
     background-image: url('../img/restaurant-5.jpg');
     background-position: center;
     background-size: 300%;
+    background-repeat: no-repeat;
   }
   #rest{
     .menu-container{
@@ -293,7 +296,7 @@
         display: -ms-flex;
         display: flex;
 
-        #menu-brasserie-title, #menu-degustation-title{
+        #menu-midi-title, #menu-soir-title{
           width: 50%;
           height: 60px;
           cursor: pointer;
@@ -327,6 +330,33 @@
   .container-bar{
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+// ------------------------------------------- SPA
+  .section-full-page-spa{
+    background-image: url('../img/spa-6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+  }
+  .container-spa{
+    margin: 40px 0;
+
+    .info-spa{
+      text-align: center;
+      h2{
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      p:first-of-type{
+        color: $gold;
+        margin: 15px 0;
+      }
+      p:last-of-type{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    img{width: 100%;}
   }
 }
 
@@ -365,6 +395,10 @@
     .section-menu{
       background-size: 250%;
     }
+//SPA
+    .section-full-page-spa{
+      background-size: 250%;
+    }
   }
 }
 // TABLET IPAD
@@ -401,6 +435,10 @@
     .section-menu{
       background-size: 200%;
     }
+//SPA
+    .section-full-page-spa{
+      background-size: 200%;
+    }
   }
 }
 // LAPTOP
@@ -431,7 +469,7 @@
 
     }
     // inverse la disposition du carousel et de la description
-    .container-room:nth-child(even){
+    .container-room:nth-child(even),{
       .info-room{order: 2;}
     }
 // CHAMBRES
@@ -444,6 +482,13 @@
     }
     .section-menu{
       background-size: 150%;
+    }
+//SPA
+    .section-full-page-spa{
+      background-size: 150%;
+    }
+    .container-spa:nth-child(even),{
+      .info-spa{order: 2;}
     }
   }
 }
@@ -481,6 +526,10 @@
     .section-menu{
       background-size: 100%;
     }
+//SPA
+    .section-full-page-spa{
+      background-size: 120%;
+    }
   }
 }
 // X- LARGE SCREEN
@@ -505,6 +554,10 @@
           background-size: 170%;
         }
       }
+    }
+//SPA
+    .section-full-page-spa{
+      background-size: 100%;
     }
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300");
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   margin: 0;
@@ -400,7 +401,7 @@ html {
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
-  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar {
+  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar, #main #detente, #main #d├®couvrete, #main #relaxant, #main #plaisir, #main #evasion {
     position: relative;
     bottom: 60px; }
   #main .title {
@@ -519,7 +520,7 @@ html {
     margin: 0; }
     #main .section-right-home .section-right-item:first-child {
       height: 50%;
-      background-image: url("../img/restaurant-2.jpg");
+      background-image: url("../img/restaurant-5.jpg");
       background-size: 235%;
       background-position: center;
       display: -webkit-flex;
@@ -536,7 +537,7 @@ html {
           background: rgba(255, 255, 255, 0.2); }
     #main .section-right-home .section-right-item:last-child {
       height: 50%;
-      background-image: url("../img/spa-3.jpg");
+      background-image: url("../img/spa-6.jpg");
       background-size: 180%;
       background-position: center;
       display: -webkit-flex;
@@ -587,7 +588,8 @@ html {
   #main .section-full-page-room {
     background-image: url("../img/room-grey-1.jpg");
     background-size: 350%;
-    background-position: center; }
+    background-position: center;
+    background-repeat: no-repeat; }
   #main .container-room {
     margin: 40px 0; }
     #main .container-room .info-room {
@@ -604,12 +606,14 @@ html {
   #main .section-full-page-restaurant {
     background-image: url("../img/restaurant-1.jpg");
     background-size: 280%;
-    background-position: center; }
+    background-position: center;
+    background-repeat: no-repeat; }
   #main .section-menu {
     min-height: calc(100vh - 60px);
     background-image: url("../img/restaurant-5.jpg");
     background-position: center;
-    background-size: 300%; }
+    background-size: 300%;
+    background-repeat: no-repeat; }
   #main #rest .menu-container {
     display: -webkit-flex;
     display: -ms-flex;
@@ -627,7 +631,7 @@ html {
       display: -webkit-flex;
       display: -ms-flex;
       display: flex; }
-      #main #rest .menu-container header #menu-brasserie-title, #main #rest .menu-container header #menu-degustation-title {
+      #main #rest .menu-container header #menu-midi-title, #main #rest .menu-container header #menu-soir-title {
         width: 50%;
         height: 60px;
         cursor: pointer; }
@@ -652,6 +656,26 @@ html {
   #main .container-bar {
     margin-top: 30px;
     margin-bottom: 30px; }
+  #main .section-full-page-spa {
+    background-image: url("../img/spa-6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%; }
+  #main .container-spa {
+    margin: 40px 0; }
+    #main .container-spa .info-spa {
+      text-align: center; }
+      #main .container-spa .info-spa h2 {
+        font-size: 2em;
+        text-transform: uppercase; }
+      #main .container-spa .info-spa p:first-of-type {
+        color: #bc9e48;
+        margin: 15px 0; }
+      #main .container-spa .info-spa p:last-of-type {
+        text-align: center;
+        margin-bottom: 20px; }
+    #main .container-spa img {
+      width: 100%; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
@@ -671,6 +695,8 @@ html {
   #main .section-full-page-restaurant {
     background-size: 220%; }
   #main .section-menu {
+    background-size: 250%; }
+  #main .section-full-page-spa {
     background-size: 250%; } }
 @media (min-width: 768px) {
   #main .section-left-home {
@@ -690,6 +716,8 @@ html {
   #main .section-full-page-restaurant {
     background-size: 180%; }
   #main .section-menu {
+    background-size: 200%; }
+  #main .section-full-page-spa {
     background-size: 200%; } }
 @media (min-width: 992px) {
   #main .section-left-home {
@@ -713,7 +741,11 @@ html {
   #main .section-full-page-restaurant {
     background-size: 140%; }
   #main .section-menu {
-    background-size: 150%; } }
+    background-size: 150%; }
+  #main .section-full-page-spa {
+    background-size: 150%; }
+  #main .container-spa:nth-child(even) .info-spa {
+    order: 2; } }
 @media (min-width: 1200px) {
   #main .section-left-home {
     background-size: 240%; }
@@ -732,7 +764,9 @@ html {
   #main .section-full-page-restaurant {
     background-size: 120%; }
   #main .section-menu {
-    background-size: 100%; } }
+    background-size: 100%; }
+  #main .section-full-page-spa {
+    background-size: 120%; } }
 @media (min-width: 1500px) {
   #main .section-left-home {
     background-size: 200%; }
@@ -745,7 +779,9 @@ html {
   #main .section-right-home .section-right-item:last-child {
     background-size: 150%; }
     #main .section-right-home .section-right-item:last-child:hover {
-      background-size: 170%; } }
+      background-size: 170%; }
+  #main .section-full-page-spa {
+    background-size: 100%; } }
 #footer {
   font-family: 'Geometria-Light', sans-serif;
   text-transform: uppercase; }

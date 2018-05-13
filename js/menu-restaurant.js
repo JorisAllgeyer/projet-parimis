@@ -1,40 +1,41 @@
 $(document).ready(function(){
+  $('#menu-midi-title p').css('background','transparent');
 
-  $('#menu-brasserie-title p').click(function(){
+  $('#menu-midi-title p').click(function(){
     $(this).css('background','transparent');
-    $('#menu-degustation-title p').css('background','#bc9e48');
+    $('#menu-soir-title p').css('background','#bc9e48');
 
-    $('#degustation').hide();
-    $('#brasserie').show();
+    $('#soir').hide();
+    $('#midi').show();
   });
 
-  $('#menu-degustation-title p').click(function(){
+  $('#menu-soir-title p').click(function(){
     $(this).css('background','transparent');
-    $('#menu-brasserie-title p').css('background','#bc9e48');
+    $('#menu-midi-title p').css('background','#bc9e48');
 
-    $('#brasserie').hide();
-    $('#degustation').show();
+    $('#midi').hide();
+    $('#soir').show();
   });
 });
 
 // document.ready = function(){
-//   var buttonBrasserie = document.getElementById('menu-brasserie-title');
-//   var buttonDegustation = document.getElementById('menu-degustation-title');
-//   var menuBrasserie = document.getElementById('brasserie');
-//   var menuDegustation = document.getElementById('degustation');
+//   var buttonmidi = document.getElementById('menu-midi-title');
+//   var buttonsoir = document.getElementById('menu-soir-title');
+//   var menumidi = document.getElementById('midi');
+//   var menusoir = document.getElementById('soir');
 //
-//   buttonBrasserie.onCick() = function(){
-//     if (menuBrasserie.style.display === 'none') {
-//       menuBrasserie.style.display = 'block';
+//   buttonmidi.onCick() = function(){
+//     if (menumidi.style.display === 'none') {
+//       menumidi.style.display = 'block';
 //     } else {
-//       menuBrasserie.style.display = 'none';
+//       menumidi.style.display = 'none';
 //     }
 //   };
-//   buttonDegustation.onCick() = function(){
-//     if (menuDegustation.style.display === 'none') {
-//       menuDegustation.style.display = 'block';
+//   buttonsoir.onCick() = function(){
+//     if (menusoir.style.display === 'none') {
+//       menusoir.style.display = 'block';
 //     } else {
-//       menuDegustation.style.display = 'none';
+//       menusoir.style.display = 'none';
 //     }
 //   };
 // };
