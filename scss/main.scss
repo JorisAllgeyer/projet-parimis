@@ -273,7 +273,7 @@
     min-height: calc(100vh - 60px);
     background-image: url('../img/restaurant-5.jpg');
     background-position: center;
-    background-size: 300%;
+    background-size: 330%;
     background-repeat: no-repeat;
   }
   #rest{
@@ -284,7 +284,7 @@
       flex-direction: column;
       justify-content: center;
       margin: 30px 15px;
-      height: calc(100% - 60px);
+      min-height: calc(100% - 60px);
       border: 2px solid $gold;
       background: $overlayb;
       color: $white;
@@ -336,6 +336,8 @@
     min-height: calc(100vh - 60px);
   }
   .container-bar{
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 30px;
     background: $deepblue;
     min-height: calc(100vh - 60px);
@@ -350,7 +352,6 @@
     .bloc-link{
       margin-top: 0;
       margin-bottom: 20px;
-
     }
   }
 // ------------------------------------------- SPA
