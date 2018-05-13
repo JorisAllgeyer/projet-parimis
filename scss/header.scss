@@ -89,6 +89,11 @@
       .nav-item{
         background: $white;
 
+        a{
+          display: block;
+          width: 100%;
+        }
+
         &:hover{
            background: $gold;
            color: $white;

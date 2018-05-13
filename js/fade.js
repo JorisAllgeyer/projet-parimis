@@ -3,7 +3,7 @@ $(document).ready(function(){
   if( width > 630) {
     $(window).fadeThis({
       reverse: false,
-      offset: -130,
+      offset: -100,
       distance: 50,
       speed: 300
     });
