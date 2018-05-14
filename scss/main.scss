@@ -273,10 +273,11 @@
     min-height: calc(100vh - 60px);
     background-image: url('../img/restaurant-5.jpg');
     background-position: center;
-    background-size: 330%;
+    background-size: 380%;
     background-repeat: no-repeat;
   }
   #rest{
+
     .menu-container{
       display: -webkit-flex;
       display: -ms-flex;
@@ -284,7 +285,6 @@
       flex-direction: column;
       justify-content: center;
       margin: 30px 15px;
-      min-height: calc(100% - 60px);
       border: 2px solid $gold;
       background: $overlayb;
       color: $white;
@@ -308,6 +308,13 @@
           background: $gold;
         }
 
+      }
+      .menu-item-container{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       .menu-item:last-child{display: none;}
       h2{
@@ -336,6 +343,11 @@
     min-height: calc(100vh - 60px);
   }
   .container-bar{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 30px;
@@ -386,7 +398,7 @@
     background-image: url('../img/hall-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 300%;
+    background-size: 370%;
   }
 }
 
@@ -423,7 +435,7 @@
       background-size: 220%;
     }
     .section-menu{
-      background-size: 250%;
+      background-size: 280%;
     }
 //SPA
     .section-full-page-spa{
@@ -431,7 +443,7 @@
     }
 //HOTEL
     .section-full-page-hotel{
-      background-size: 200%;
+      background-size: 250%;
     }
   }
 }
@@ -467,7 +479,7 @@
       background-size: 180%;
     }
     .section-menu{
-      background-size: 200%;
+      background-size: 250%;
     }
 //SPA
     .section-full-page-spa{
@@ -475,7 +487,7 @@
     }
 //HOTEL
     .section-full-page-hotel{
-      background-size: 150%;
+      background-size: 200%;
     }
   }
 }
@@ -519,7 +531,7 @@
       background-size: 140%;
     }
     .section-menu{
-      background-size: 150%;
+      background-size: 200%;
     }
 //SPA
     .section-full-page-spa{
@@ -530,7 +542,7 @@
     }
 //HOTEL
     .section-full-page-hotel{
-      background-size: 100%;
+      background-size: 150%;
     }
   }
 }
@@ -566,11 +578,15 @@
       background-size: 120%;
     }
     .section-menu{
-      background-size: 100%;
+      background-size: 150%;
     }
 //SPA
     .section-full-page-spa{
       background-size: 120%;
+    }
+//HOTEL
+    .section-full-page-hotel{
+      background-size: 100%;
     }
   }
 }
@@ -596,6 +612,10 @@
           background-size: 170%;
         }
       }
+    }
+//RESTAURANT
+    .section-menu{
+      background-size: 100%;
     }
 //SPA
     .section-full-page-spa{
