@@ -711,6 +711,15 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 370%; }
+  #main .container-hotel {
+    margin-top: 30px; }
+    #main .container-hotel .section-hotel-text {
+      margin: 30px 0; }
+      #main .container-hotel .section-hotel-text p {
+        margin-bottom: 15px; }
+    #main .container-hotel img {
+      width: 100%;
+      margin-bottom: 15px; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
