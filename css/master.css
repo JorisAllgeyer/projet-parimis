@@ -723,6 +723,73 @@ html {
   #main .container-recrut {
     margin-top: 30px;
     margin-bottom: 30px; }
+  #main .acces {
+    color: #02152E; }
+    #main .acces h2 {
+      text-transform: uppercase;
+      padding: 15px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold; }
+    #main .acces .serif-gold {
+      margin-bottom: 0;
+      padding-top: 10px; }
+  #main .metro-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: #02152E;
+    font-weight: bold;
+    text-align: center; }
+  #main .container-avis #tab-avis {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    text-transform: uppercase; }
+    #main .container-avis #tab-avis .nav-link {
+      background: #02152E;
+      font-weight: normal;
+      transition: .3s;
+      height: 60px;
+      line-height: 60px;
+      padding: 0; }
+    #main .container-avis #tab-avis .active {
+      background: #bc9e48;
+      color: #02152E; }
+  #main .container-avis #chambres-tab, #main .container-avis #rest-tab, #main .container-avis #spa-tab, #main .container-avis #all-tab {
+    border: none; }
+    #main .container-avis #chambres-tab:hover, #main .container-avis #rest-tab:hover, #main .container-avis #spa-tab:hover, #main .container-avis #all-tab:hover {
+      opacity: .95;
+      border: none; }
+  #main .container-avis #tab-avis-content {
+    background: #bc9e48;
+    padding: 10px;
+    margin-bottom: 50px; }
+    #main .container-avis #tab-avis-content .container-avis-box {
+      text-align: left;
+      padding: 10px 15px;
+      background: #FFFFFF;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #main .container-avis #tab-avis-content .container-avis-box p {
+        padding: 0; }
+      #main .container-avis #tab-avis-content .container-avis-box .name {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-bottom: 5px; }
+      #main .container-avis #tab-avis-content .container-avis-box .rate {
+        margin-bottom: 15px; }
+      #main .container-avis #tab-avis-content .container-avis-box .com {
+        margin-bottom: 10px;
+        font-style: italic; }
+      #main .container-avis #tab-avis-content .container-avis-box .date {
+        text-align: right;
+        font-size: 0.8em; }
 
 @media (min-width: 576px) {
   #main .section-left-home {

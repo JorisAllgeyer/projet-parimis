@@ -418,6 +418,94 @@
   .container-recrut{
     margin-top: 30px; margin-bottom: 30px;
   }
+  .acces{
+    color: $deepblue;
+
+    h2{
+      text-transform: uppercase;
+      padding: 15px 0px;
+      font-size: 3em;
+      letter-spacing: -0.08em;
+      font-weight: bold;
+    }
+    .serif-gold{
+      margin-bottom: 0;
+      padding-top: 10px;
+    }
+  }
+  .metro-circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    color: $white;
+    background: $deepblue;
+    font-weight: bold;
+    text-align: center;
+  }
+//  ------------------------------------------- AVIS
+  .container-avis{
+
+    #tab-avis{
+      color: $white;
+      font-size: 0.8em;
+      text-transform: uppercase;
+
+      .nav-link{
+        background: $deepblue;
+        font-weight: normal;
+        transition: .3s;
+        height: 60px;
+        line-height: 60px;
+        padding: 0;
+      }
+      .active{
+        background: $gold;
+        color: $deepblue;
+      }
+    }
+    #chambres-tab, #rest-tab, #spa-tab, #all-tab{
+      border: none;
+
+      &:hover{
+        opacity: .95;
+        border: none;
+      }
+    }
+
+    #tab-avis-content{
+      background: $gold;
+      padding: 10px;
+      margin-bottom: 50px;
+
+      .container-avis-box{
+        text-align: left;
+        padding: 10px 15px;
+        background: $white;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        @include box-shadow($shadow);
+
+        p{padding: 0;}
+        .name{
+          font-size: 1.2em;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+        .rate{margin-bottom: 15px;}
+        .com{
+          margin-bottom: 10px;
+          font-style: italic;
+        }
+        .date{
+          text-align: right;
+          font-size: 0.8em;
+        }
+      }
+
+    }
+  }
 }
 
 // MOBILE LANDSCAPE
