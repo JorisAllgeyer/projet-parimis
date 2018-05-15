@@ -681,9 +681,9 @@ html {
     min-height: calc(100vh - 60px); }
     #main .container-bar .title h2 {
       color: #FFFFFF; }
-  #main .info-bar {
+  #main .info-bar, #main .info-recrut {
     text-align: center; }
-    #main .info-bar .bloc-link {
+    #main .info-bar .bloc-link, #main .info-recrut .bloc-link {
       margin-top: 0;
       margin-bottom: 20px; }
   #main .section-full-page-spa {
@@ -720,6 +720,9 @@ html {
     #main .container-hotel img {
       width: 100%;
       margin-bottom: 15px; }
+  #main .container-recrut {
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
 @media (min-width: 576px) {
   #main .section-left-home {

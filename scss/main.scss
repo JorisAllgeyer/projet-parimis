@@ -358,7 +358,7 @@
       h2{color: $white;}
     }
   }
-  .info-bar{
+  .info-bar, .info-recrut{
     text-align: center;
 
     .bloc-link{
@@ -414,6 +414,9 @@
       width: 100%;
       margin-bottom: 15px;
     }
+  }
+  .container-recrut{
+    margin-top: 30px; margin-bottom: 30px;
   }
 }
 
