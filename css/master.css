@@ -560,7 +560,7 @@ html {
           width: 100%; }
         #main .section-right-home .section-right-item:last-child:hover .overlay {
           background: rgba(255, 255, 255, 0.2); }
-  #main #arrow-next, #main #arrow-next-mobile {
+  #main #arrow-next, #main #arrow-next-mobile, #main .scroll {
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
