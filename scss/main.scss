@@ -520,7 +520,7 @@
         background: $deepblue;
         color: $white;
         font-size: 1.4em;
-        padding: 5px;;
+        padding: 3px 0px;
       }
     }
     #container-dispo, #container-options{
@@ -533,7 +533,7 @@
       }
     }
 
-    #name-input, #subject-input, #textarea-avis, #rate-input, #first-name-input, #civi-input, #country-input, #company-input, #mail-input, #cv-input, #lm-input, #arrival-input, #departure-input, #room-input, #visitor-input, #children-input{
+    #name-input, #subject-input, #textarea-avis, #rate-input, #first-name-input, #civi-input, #country-input, #company-input, #mail-input, #cv-input, #lm-input, #arrival-input, #departure-input, #room-input, #visitor-input, #children-input, #number-input, #street-input, #town-input, #cp-input, #tel-input{
       border: 2px solid $gold;
       background: $white;
       color: $deepblue;
@@ -550,15 +550,6 @@
         box-shadow: none !important;
       }
     }
-    .container-options{
-
-      .custom-control-label{
-
-        &:checked{
-          background-image: $gold;
-        }
-      }
-    }
 
     #submit-button-form{
       color: $white;
@@ -573,6 +564,33 @@
     .infos-form{
       text-align: left;
     }
+  }
+// ------------------------------------------- PANIER
+
+  .container-table{
+    width: 100%;
+    overflow-x: auto;
+
+    .table{
+
+      thead th{
+        background: $deepblue;
+        font-weight: normal;
+        color: $white;
+        border-bottom: none;
+        border-right: 1px solid;
+      }
+      tr th{font-weight: normal;}
+
+      .trash{
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .checkout{
+    margin-bottom: 30px;
   }
 }
 

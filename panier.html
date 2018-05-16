@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Contact - Hôtel Parimis ***** | Paris Champs-Elysées</title>
+      <title>Panier - Hôtel Parimis ***** | Paris Champs-Elysées</title>
 
   <meta name="description" content="Parimis, Hôtel 5 étoiles au coeur des Champs-Elysées.">
 	<meta name="keywords" content="Hôtel, Parimis, Paris, Champs-Elysées, 5 étoiles, Luxe">
@@ -219,68 +219,67 @@
   <main id="main" class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 offset-lg-1 title container-form">
-          <h2 class="slide-top">Une question, Une remarque ?</h2>
-          <p class="serif-gold slide-left">Laissez-nous un message nous vous repondrons dans les plus brefs délais.</p>
-          <form>
-            <fieldset>
-              <div class="row">
-                <div class="form-group col-sm-2">
-                  <label for="subject-input">Civilité*</label>
-                  <select class="form-control rounded-0" id="civi-input" required>
-                    <option>Mr</option>
-                    <option>Mme</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-4">
-                  <label for="name-input">Prenom*</label>
-                  <input type="text" class="form-control rounded-0" id="first-name-input" required>
-                </div>
-                <div class="form-group col-sm-3">
-                  <label for="name-input">Nom*</label>
-                  <input type="text" class="form-control rounded-0" id="name-input" required>
-                </div>
-                <div class="form-group col-sm-3">
-                  <label for="country-input">Pays*</label>
-                  <input type="text" class="form-control rounded-0" id="country-input" required>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <label for="company-input">Entreprise</label>
-                  <input type="text" class="form-control rounded-0" id="company-input">
-                </div>
-                <div class="form-group col-sm-6">
-                  <label for="mail-input">Mail*</label>
-                  <input type="mail" class="form-control rounded-0" id="mail-input" required>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <label for="subject-input">Sujet*</label>
-                  <select class="form-control rounded-0" id="subject-input" required>
-                    <option>Les Chambres</option>
-                    <option>Les Restaurant</option>
-                    <option>Le Spa</option>
-                    <option>Evenements</option>
-                    <option>Autres</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="textarea-avis">Message*</label>
-                <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
-              </div>
-              <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
-              <div class="required-field">
-                <p>*Champs Obligatoires</p>
-              </div>
-            </fieldset>
-          </form>
+        <div class="col-sm-12 title container-form">
+          <h2 class="slide-top">Mon Panier</h2>
+          <p class="serif-gold slide-left">Il y a actuellement 3 article(s) dans votre panier</p>
         </div>
       </div><!--/row-->
+
+      <div class="row container-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Réservations</th>
+              <th scope="col">Arrivée</th>
+              <th scope="col">Nuit(s)</th>
+              <th scope="col">Chambre</th>
+              <th scope="col">Options</th>
+              <th scope="col">Retirer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>21-05-2018</td>
+              <td>2</td>
+              <td>Classique</td>
+              <td>Pas d'option</td>
+              <td class="trash"><i class="fas fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>16-06-2018</td>
+              <td>1</td>
+              <td>Deluxe</td>
+              <td>Spa illimité</td>
+              <td class="trash"><i class="fas fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>26-06-2018</td>
+              <td>4</td>
+              <td>Confort</td>
+              <td>Pas d'option</td>
+              <td class="trash"><i class="fas fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">TOTAL</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>__,€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!--/container-table-->
+
+      <div class="container title checkout">
+        <div class="bloc-link">
+          <a href="reservation.html">Passer à la caisse</a>
+        </div>
+      </div>
+
     </div>
   </main>
 

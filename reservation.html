@@ -277,17 +277,35 @@
             <fieldset id="container-options">
               <legend>Vos Options</legend>
               <div class="row">
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="demi-pension" value="option1">
+                  <label class="form-check-label" for="demi-pension">
+                    Demi-pension
+                  </label>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+              </div>
+              <div class="row">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="pension-complete" value="option2">
+                  <label class="form-check-label" for="pension-complete">
+                    Pension Complète
+                  </label>
                 </div>
-                <div class="custom-control custom-checkbox col-sm-12">
-                  <input type="checkbox" class="custom-control-input rounded-0" id="option-spa">
-                  <label class="custom-control-label" for="option-spa">Accès Illimité au Spa</label>
+              </div>
+              <div class="row">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="demi-pension" value="option1" checked>
+                  <label class="form-check-label" for="demi-pension">
+                    Pas d'option de repas
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="acces-spa">
+                  <label class="form-check-label" for="acces-spa">
+                    Accès illimité au Spa
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -315,45 +333,42 @@
                   <input type="text" class="form-control rounded-0" id="country-input" required>
                 </div>
               </div>
+
               <div class="row">
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-1">
+                  <label for="number-input">N°</label>
+                  <input type="text" class="form-control rounded-0" id="number-input">
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="street-input">Rue*</label>
+                  <input type="text" class="form-control rounded-0" id="street-input" required>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="town-input">Ville*</label>
+                  <input type="text" class="form-control rounded-0" id="town-input" required>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="cp-input">Code Postal*</label>
+                  <input type="mail" class="form-control rounded-0" id="cp-input" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-sm-4">
                   <label for="company-input">Entreprise</label>
                   <input type="text" class="form-control rounded-0" id="company-input">
                 </div>
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-4">
                   <label for="mail-input">Mail*</label>
                   <input type="mail" class="form-control rounded-0" id="mail-input" required>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="tel-input">Téléphone*</label>
+                  <input type="mail" class="form-control rounded-0" id="tel-input" required>
                 </div>
               </div>
             </fieldset>
             <fieldset>
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <label for="subject-input">Secteur*</label>
-                  <select class="form-control rounded-0" id="subject-input" required>
-                    <option>Récepetion</option>
-                    <option>Restauration & bar</option>
-                    <option>Spa</option>
-                    <option>Gestion</option>
-                    <option>Ménage</option>
-                    <option>Autres</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <label for="cv-input">CV*</label>
-                  <input type="file" class="form-control rounded-0" id="cv-input" required>
-                </div>
-                <div class="form-group col-sm-6">
-                  <label for="lm-input">Lettre de Motivation*</label>
-                  <input type="file" class="form-control rounded-0" id="lm-input" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="textarea-avis">Message*</label>
-                <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
-              </div>
               <div class="form-group">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -365,7 +380,7 @@
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
+              <button type="submit" class="btn rounded-0" id="submit-button-form">Aller à l'étape suivante</button>
               <div class="infos-form">
                 <p>*Champs Obligatoires</p>
               </div>
@@ -436,14 +451,14 @@
     </footer>
   </div><!-- /FOOTER -->
 
-  <div class="break">
+  <!-- <div class="break">
     <span class="b0">Mobile</span>
     <span class="b1">Mobile Paysage</span>
     <span class="b2">Tablet</span>
     <span class="b3">Laptop</span>
     <span class="b4">Large</span>
     <span class="b5">X-Large</span>
-  </div>
+  </div> -->
 
 <!-- JQUERY -->
   <script src="jquery/external/jquery/jquery.js"></script>
