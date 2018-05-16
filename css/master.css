@@ -875,28 +875,35 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  #main .container-sitemap {
+  #main .container-sitemap, #main .container-cgv, #main .container-ml {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    #main .container-sitemap h3 {
+    #main .container-sitemap h3, #main .container-cgv h3, #main .container-ml h3 {
       font-size: 1.4em;
       text-transform: uppercase;
       margin-bottom: 8px;
       transition: .3s; }
-    #main .container-sitemap li, #main .container-sitemap h3 {
+    #main .container-sitemap li a, #main .container-sitemap h3 a, #main .container-cgv li a, #main .container-cgv h3 a, #main .container-ml li a, #main .container-ml h3 a {
       transition: .3s; }
-      #main .container-sitemap li:hover, #main .container-sitemap h3:hover {
+      #main .container-sitemap li a:hover, #main .container-sitemap h3 a:hover, #main .container-cgv li a:hover, #main .container-cgv h3 a:hover, #main .container-ml li a:hover, #main .container-ml h3 a:hover {
         letter-spacing: 0.05em;
         color: #bc9e48; }
-    #main .container-sitemap .separator100g {
+    #main .container-sitemap p, #main .container-cgv p, #main .container-ml p {
+      padding: 0;
+      margin-bottom: 15px; }
+    #main .container-sitemap .separator100g, #main .container-cgv .separator100g, #main .container-ml .separator100g {
       display: inline-block;
       margin: 20px 0; }
-    #main .container-sitemap .box-sitemap {
+    #main .container-sitemap .box-sitemap, #main .container-sitemap .box-cgv, #main .container-cgv .box-sitemap, #main .container-cgv .box-cgv, #main .container-ml .box-sitemap, #main .container-ml .box-cgv {
       padding: 5px; }
-    #main .container-sitemap .bloc-link {
+    #main .container-sitemap .box-cgv, #main .container-sitemap .box-ml, #main .container-cgv .box-cgv, #main .container-cgv .box-ml, #main .container-ml .box-cgv, #main .container-ml .box-ml {
+      text-align: left; }
+      #main .container-sitemap .box-cgv a, #main .container-sitemap .box-ml a, #main .container-cgv .box-cgv a, #main .container-cgv .box-ml a, #main .container-ml .box-cgv a, #main .container-ml .box-ml a {
+        border-bottom: 1px solid; }
+    #main .container-sitemap .bloc-link, #main .container-cgv .bloc-link, #main .container-ml .bloc-link {
       margin-bottom: 30px; }
 
 @media (min-width: 576px) {
