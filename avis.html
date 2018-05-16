@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Qui sommes-nous ? Hôtel Parimis ***** | Paris Champs-Elysées</title>
+      <title>Avis - Hôtel Parimis ***** | Paris Champs-Elysées</title>
 
   <meta name="description" content="Parimis, Hôtel 5 étoiles au coeur des Champs-Elysées.">
 	<meta name="keywords" content="Hôtel, Parimis, Paris, Champs-Elysées, 5 étoiles, Luxe">
@@ -73,32 +73,32 @@
             <form class="booking-form" action="reservation.html" method="post"><!-- FORMULAIRE RESERVATION -->
               <div class="booking-form-item">
                 <label for="arrival">Arrivée</label>
-                <input type="text" name="" value="" id="arrival">
+                <input type="text" id="arrival">
               </div>
               <div class="booking-form-item">
                 <label for="departure">Départ</label>
-                <input type="text" name="" value="" id="departure">
+                <input type="text" id="departure">
               </div>
               <div class="booking-form-item">
                 <label for="room">Chambre</label>
-                <select class="" name="" id="room">
-                  <option value="">Classique</option>
-                  <option value="">Confort</option>
-                  <option value="">Deluxe</option>
-                  <option value="">Suite</option>
+                <select id="room">
+                  <option>Classique</option>
+                  <option>Confort</option>
+                  <option>Deluxe</option>
+                  <option>Suite</option>
                 </select>
               </div>
               <div class="booking-form-item">
                 <label for="number">Visiteurs</label>
-                <select class="" name="" id="number">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5 et +</option>
+                <select id="number">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 et +</option>
                 </select>
               </div>
-              <input type="submit" name="" value="OK" id="submit-button">
+              <input type="submit" value="OK" id="submit-button">
             </form><!-- /FORMULAIRE RESERVATION -->
           </div>
         </div>
@@ -205,9 +205,9 @@
           <span id="text-search">Recherche</span>
           <div class="search-form-container">
             <form class="search-form" action="index.html" method="post">
-              <input type="text" name="" value="" id="search">
+              <input type="text" id="search">
               <label for="search"><i class="fas fa-search fa-2x"></i></label>
-              <input type="submit" name="" value="OK">
+              <input type="submit" value="OK">
             </form>
           </div>
         </div>
@@ -364,15 +364,39 @@
           </div>
         </div>
       </div><!--/row-->
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 title container-form">
           <h2>Laissez votre Avis</h2>
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Votre nom">
-            <textarea name="name" rows="8" cols="80"></textarea>
+          <form>
+            <div class="row">
+              <div class="form-group col-sm-6">
+                <label for="name-input">Nom*</label>
+                <input type="text" class="form-control rounded-0" id="name-input" required>
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="subject-input">Sujet*</label>
+                <select class="form-control rounded-0" id="subject-input" required>
+                  <option>Les Chambres</option>
+                  <option>Les Restaurant</option>
+                  <option>Le Spa</option>
+                  <option>Général</option>
+                  <option>Autres</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="textarea-avis">Message*</label>
+              <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
+            <div class="required-field">
+              <p>*Champs Obligatoires</p>
+            </div>
           </form>
         </div>
-      </div>
+      </div><!--/row-->
     </div>
   </main>
 
@@ -399,8 +423,8 @@
             <i class="far fa-envelope-open fa-2x"></i>
             <p>Newsletter</p>
             <form>
-               <input type="text" name="" value="" placeholder="Votre email">
-               <input type="submit" name="" value="OK">
+               <input type="text" placeholder="Votre email">
+               <input type="submit" value="OK">
             </form>
          </div>
       </div>

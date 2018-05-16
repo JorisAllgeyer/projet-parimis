@@ -444,7 +444,7 @@
     font-weight: bold;
     text-align: center;
   }
-//  ------------------------------------------- AVIS
+// ------------------------------------------- AVIS
   .container-avis{
 
     #tab-avis{
@@ -503,7 +503,55 @@
           font-size: 0.8em;
         }
       }
+    }
 
+  }
+// ------------------------------------------- FORMS
+  .container-form{
+    margin-bottom: 30px;
+    .row{margin: 0;}
+
+    fieldset{
+      background: whitesmoke;
+
+    }
+
+    .form-group{
+      label{
+        text-transform: uppercase;
+      }
+    }
+
+    #name-input, #subject-input, #textarea-avis, #firs-name-input, #civi-input{
+      border: 2px solid $gold;
+      background: $white;
+      color: $deepblue;
+
+      option{
+        color: $deepblue;
+      }
+
+      &:hover{
+        @include box-shadow($shadow);
+      }
+      &:focus{
+        outline: 0 none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    #submit-button-form{
+      color: $white;
+      background: $deepblue;
+      transition: .3s;
+
+      &:hover{
+        background: $gold;
+        @include box-shadow($shadow);
+      }
+    }
+    .required-field{
+      text-align: left;
     }
   }
 }

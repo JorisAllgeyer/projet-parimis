@@ -790,6 +790,38 @@ html {
       #main .container-avis #tab-avis-content .container-avis-box .date {
         text-align: right;
         font-size: 0.8em; }
+  #main .container-form {
+    margin-bottom: 30px; }
+    #main .container-form .row {
+      margin: 0; }
+    #main .container-form fieldset {
+      background: whitesmoke; }
+    #main .container-form .form-group label {
+      text-transform: uppercase; }
+    #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #firs-name-input, #main .container-form #civi-input {
+      border: 2px solid #bc9e48;
+      background: #FFFFFF;
+      color: #02152E; }
+      #main .container-form #name-input option, #main .container-form #subject-input option, #main .container-form #textarea-avis option, #main .container-form #firs-name-input option, #main .container-form #civi-input option {
+        color: #02152E; }
+      #main .container-form #name-input:hover, #main .container-form #subject-input:hover, #main .container-form #textarea-avis:hover, #main .container-form #firs-name-input:hover, #main .container-form #civi-input:hover {
+        -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+      #main .container-form #name-input:focus, #main .container-form #subject-input:focus, #main .container-form #textarea-avis:focus, #main .container-form #firs-name-input:focus, #main .container-form #civi-input:focus {
+        outline: 0 none !important;
+        box-shadow: none !important; }
+    #main .container-form #submit-button-form {
+      color: #FFFFFF;
+      background: #02152E;
+      transition: .3s; }
+      #main .container-form #submit-button-form:hover {
+        background: #bc9e48;
+        -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
+    #main .container-form .required-field {
+      text-align: left; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
