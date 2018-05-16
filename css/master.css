@@ -667,14 +667,14 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 60px); }
+    min-height: calc(100vh - 60px);
+    margin-bottom: 30px; }
   #main .container-bar {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 30px;
     margin-bottom: 30px;
     padding: 30px;
     background: #02152E;
@@ -795,20 +795,21 @@ html {
     #main .container-form .row {
       margin: 0; }
     #main .container-form fieldset {
+      padding-top: 20px;
       background: whitesmoke; }
     #main .container-form .form-group label {
       text-transform: uppercase; }
-    #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #firs-name-input, #main .container-form #civi-input {
+    #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #first-name-input, #main .container-form #civi-input, #main .container-form #country-input, #main .container-form #company-input, #main .container-form #mail-input, #main .container-form #cv-input, #main .container-form #lm-input {
       border: 2px solid #bc9e48;
       background: #FFFFFF;
       color: #02152E; }
-      #main .container-form #name-input option, #main .container-form #subject-input option, #main .container-form #textarea-avis option, #main .container-form #firs-name-input option, #main .container-form #civi-input option {
+      #main .container-form #name-input option, #main .container-form #subject-input option, #main .container-form #textarea-avis option, #main .container-form #first-name-input option, #main .container-form #civi-input option, #main .container-form #country-input option, #main .container-form #company-input option, #main .container-form #mail-input option, #main .container-form #cv-input option, #main .container-form #lm-input option {
         color: #02152E; }
-      #main .container-form #name-input:hover, #main .container-form #subject-input:hover, #main .container-form #textarea-avis:hover, #main .container-form #firs-name-input:hover, #main .container-form #civi-input:hover {
+      #main .container-form #name-input:hover, #main .container-form #subject-input:hover, #main .container-form #textarea-avis:hover, #main .container-form #first-name-input:hover, #main .container-form #civi-input:hover, #main .container-form #country-input:hover, #main .container-form #company-input:hover, #main .container-form #mail-input:hover, #main .container-form #cv-input:hover, #main .container-form #lm-input:hover {
         -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
-      #main .container-form #name-input:focus, #main .container-form #subject-input:focus, #main .container-form #textarea-avis:focus, #main .container-form #firs-name-input:focus, #main .container-form #civi-input:focus {
+      #main .container-form #name-input:focus, #main .container-form #subject-input:focus, #main .container-form #textarea-avis:focus, #main .container-form #first-name-input:focus, #main .container-form #civi-input:focus, #main .container-form #country-input:focus, #main .container-form #company-input:focus, #main .container-form #mail-input:focus, #main .container-form #cv-input:focus, #main .container-form #lm-input:focus {
         outline: 0 none !important;
         box-shadow: none !important; }
     #main .container-form #submit-button-form {
