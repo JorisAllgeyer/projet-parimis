@@ -9,6 +9,10 @@
     position: relative;
     bottom: 60px;
   }
+  #down-mobile{
+    position: absolute;
+    bottom: 60px;
+  }
 
 // ------------------------------------------- GENERAL
   .title{
@@ -184,13 +188,15 @@
     }
   }
 
-  .scroll{
+  #arrow-next, #arrow-next-mobile{
     position: absolute;
     bottom: 5px;
     left: calc(50% - 15px);
     color: $gold;
     z-index: 5;
   }
+  #arrow-next-mobile{display: block;}
+  #arrow-next{display: none;}
 
 // ------------------------------------------- HOTEL
 
@@ -606,7 +612,7 @@
   .checkout{
     margin-bottom: 30px;
   }
-
+// ------------------------------------------- CAISSE
   .container-caisse{
     min-height: calc(100vh - 60px);
     display: -webkit-flex;
@@ -614,6 +620,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+// ------------------------------------------- SITEMAP
+  .container-sitemap{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+      font-size: 1.4em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      transition: .3s;
+    }
+    li, h3{
+      transition: .3s;
+      &:hover{
+        letter-spacing: 0.05em;
+        color: $gold;
+      }
+    }
+    .separator100g{
+      display: inline-block;
+      margin: 20px 0;
+    }
+    .box-sitemap{
+      padding: 5px;
+    }
+
+    .bloc-link{
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -666,6 +705,9 @@
 // TABLET IPAD
 @media (min-width: 768px){
   #main{
+    #arrow-next-mobile{display: none;}
+    #arrow-next{display: block;}
+
     .section-left-home{
       background-size: 380%;
       &:hover{
