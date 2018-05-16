@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $('#arrival, #departure').datepicker();
+  $('#arrival, #departure, #arrival-input, #departure-input').datepicker();
 });

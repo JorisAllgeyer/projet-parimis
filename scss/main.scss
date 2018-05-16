@@ -5,7 +5,7 @@
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px;
 
-  #down, #classique, #confort, #deluxe, #suite, #restaurant, #bar, #detente, #découvrete, #relaxant, #plaisir, #evasion{
+  #down, #classique, #confort, #deluxe, #suite, #restaurant, #bar, #detente, #découvrete, #relaxant, #plaisir, #evasion, #qui-sommes-nous, #histoire, #acces, #recrutement{
     position: relative;
     bottom: 60px;
   }
@@ -514,6 +514,17 @@
     fieldset{
       padding-top: 20px;
       background: whitesmoke;
+
+      legend{
+        text-transform: uppercase;
+        background: $deepblue;
+        color: $white;
+        font-size: 1.4em;
+        padding: 5px;;
+      }
+    }
+    #container-dispo, #container-options{
+      margin-bottom: 20px;
     }
 
     .form-group{
@@ -522,7 +533,7 @@
       }
     }
 
-    #name-input, #subject-input, #textarea-avis, #first-name-input, #civi-input, #country-input, #company-input, #mail-input, #cv-input, #lm-input{
+    #name-input, #subject-input, #textarea-avis, #rate-input, #first-name-input, #civi-input, #country-input, #company-input, #mail-input, #cv-input, #lm-input, #arrival-input, #departure-input, #room-input, #visitor-input, #children-input{
       border: 2px solid $gold;
       background: $white;
       color: $deepblue;
@@ -539,6 +550,15 @@
         box-shadow: none !important;
       }
     }
+    .container-options{
+
+      .custom-control-label{
+
+        &:checked{
+          background-image: $gold;
+        }
+      }
+    }
 
     #submit-button-form{
       color: $white;
@@ -550,7 +570,7 @@
         @include box-shadow($shadow);
       }
     }
-    .required-field{
+    .infos-form{
       text-align: left;
     }
   }

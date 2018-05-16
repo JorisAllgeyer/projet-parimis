@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Recrutement - Hôtel Parimis ***** | Paris Champs-Elysées</title>
+      <title>Réservation - Hôtel Parimis ***** | Paris Champs-Elysées</title>
 
   <meta name="description" content="Parimis, Hôtel 5 étoiles au coeur des Champs-Elysées.">
 	<meta name="keywords" content="Hôtel, Parimis, Paris, Champs-Elysées, 5 étoiles, Luxe">
@@ -217,13 +217,83 @@
 
 <!-- HOTEL -->
   <main id="main" class="container-fluid">
-    <div class="container container-avis">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-10 offset-lg-1 title container-form">
-          <h2 class="slide-top">Vous voulez rejoindre la Famille Parimis ?</h2>
-          <p class="serif-gold slide-left">L'hôtel est régulièrement à la recherche de personnel, remplissez le formulaire ci-dessous et nous reviendrons vers vous dans les plus brefs délais</p>
+        <div class="col-sm-12 title container-form">
+          <h2 class="slide-top">Reservez à l'Hôtel Parimis</h2>
+          <p class="serif-gold slide-left">Vous désirez séjourner à l'Hôtel Parimis ? Remplissez le formulaire ci dessous. Sinon appelez la reception de l'Hôtel au (+33)1 00 00 00 00.</p>
           <form>
+
+<!-- DISPO  -->
+            <fieldset id="container-dispo">
+              <legend>Vos Disponibilités</legend>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="arrival-input">Date d'arrivée*</label>
+                  <input type="text" class="form-control rounded-0" id="arrival-input" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="departure-input">Date de départ*</label>
+                  <input type="text" class="form-control rounded-0" id="departure-input" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="room-input">Chambre</label>
+                  <select class="form-control rounded-0" id="room-input" required>
+                    <option>Classique</option>
+                    <option>Confort</option>
+                    <option>Deluxe</option>
+                    <option>Suite Parisienne</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="visitor-input">Nombre d'adultes*</label>
+                  <select class="form-control rounded-0" id="visitor-input" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <small id="passwordHelpInline" class="text-muted">Au delà de 5 personnes veuillez nous contacter</small>
+                </div>
+                <div class="form-group col-sm-3">
+                  <label for="children-input">Nombre d'enfants*</label>
+                  <select class="form-control rounded-0" id="children-input" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 et + (Nous contacter)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="infos-form">
+                <p>Les arrivées se font l'après-midi partir de 15h et les départs le matin avant 11h30. Pour toutes questions n'hésitez pas à nous contacter.</p>
+              </div>
+            </fieldset>
+<!-- OPTIONS -->
+            <fieldset id="container-options">
+              <legend>Vos Options</legend>
+              <div class="row">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+                </div>
+                <div class="custom-control custom-checkbox col-sm-12">
+                  <input type="checkbox" class="custom-control-input rounded-0" id="option-spa">
+                  <label class="custom-control-label" for="option-spa">Accès Illimité au Spa</label>
+                </div>
+              </div>
+            </fieldset>
+<!-- COORDONNEES -->
             <fieldset>
+              <legend>Vos Coordonnées</legend>
               <div class="row">
                 <div class="form-group col-sm-2">
                   <label for="civi-input">Civilité*</label>
@@ -284,8 +354,19 @@
                 <label for="textarea-avis">Message*</label>
                 <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
               </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    J'accepte les Conditions Générales de Ventes
+                  </label>
+                  <div class="invalid-feedback">
+                    Vous devez accepeter les Conditions Générales de Ventes.
+                  </div>
+                </div>
+              </div>
               <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
-              <div class="required-field">
+              <div class="infos-form">
                 <p>*Champs Obligatoires</p>
               </div>
             </fieldset>

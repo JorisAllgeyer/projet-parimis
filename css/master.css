@@ -404,7 +404,7 @@ html {
 #main {
   font-family: 'Geometria-Light', sans-serif;
   margin-top: 60px; }
-  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar, #main #detente, #main #d├®couvrete, #main #relaxant, #main #plaisir, #main #evasion {
+  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar, #main #detente, #main #d├®couvrete, #main #relaxant, #main #plaisir, #main #evasion, #main #qui-sommes-nous, #main #histoire, #main #acces, #main #recrutement {
     position: relative;
     bottom: 60px; }
   #main .title {
@@ -797,21 +797,31 @@ html {
     #main .container-form fieldset {
       padding-top: 20px;
       background: whitesmoke; }
+      #main .container-form fieldset legend {
+        text-transform: uppercase;
+        background: #02152E;
+        color: #FFFFFF;
+        font-size: 1.4em;
+        padding: 5px; }
+    #main .container-form #container-dispo, #main .container-form #container-options {
+      margin-bottom: 20px; }
     #main .container-form .form-group label {
       text-transform: uppercase; }
-    #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #first-name-input, #main .container-form #civi-input, #main .container-form #country-input, #main .container-form #company-input, #main .container-form #mail-input, #main .container-form #cv-input, #main .container-form #lm-input {
+    #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #rate-input, #main .container-form #first-name-input, #main .container-form #civi-input, #main .container-form #country-input, #main .container-form #company-input, #main .container-form #mail-input, #main .container-form #cv-input, #main .container-form #lm-input, #main .container-form #arrival-input, #main .container-form #departure-input, #main .container-form #room-input, #main .container-form #visitor-input, #main .container-form #children-input {
       border: 2px solid #bc9e48;
       background: #FFFFFF;
       color: #02152E; }
-      #main .container-form #name-input option, #main .container-form #subject-input option, #main .container-form #textarea-avis option, #main .container-form #first-name-input option, #main .container-form #civi-input option, #main .container-form #country-input option, #main .container-form #company-input option, #main .container-form #mail-input option, #main .container-form #cv-input option, #main .container-form #lm-input option {
+      #main .container-form #name-input option, #main .container-form #subject-input option, #main .container-form #textarea-avis option, #main .container-form #rate-input option, #main .container-form #first-name-input option, #main .container-form #civi-input option, #main .container-form #country-input option, #main .container-form #company-input option, #main .container-form #mail-input option, #main .container-form #cv-input option, #main .container-form #lm-input option, #main .container-form #arrival-input option, #main .container-form #departure-input option, #main .container-form #room-input option, #main .container-form #visitor-input option, #main .container-form #children-input option {
         color: #02152E; }
-      #main .container-form #name-input:hover, #main .container-form #subject-input:hover, #main .container-form #textarea-avis:hover, #main .container-form #first-name-input:hover, #main .container-form #civi-input:hover, #main .container-form #country-input:hover, #main .container-form #company-input:hover, #main .container-form #mail-input:hover, #main .container-form #cv-input:hover, #main .container-form #lm-input:hover {
+      #main .container-form #name-input:hover, #main .container-form #subject-input:hover, #main .container-form #textarea-avis:hover, #main .container-form #rate-input:hover, #main .container-form #first-name-input:hover, #main .container-form #civi-input:hover, #main .container-form #country-input:hover, #main .container-form #company-input:hover, #main .container-form #mail-input:hover, #main .container-form #cv-input:hover, #main .container-form #lm-input:hover, #main .container-form #arrival-input:hover, #main .container-form #departure-input:hover, #main .container-form #room-input:hover, #main .container-form #visitor-input:hover, #main .container-form #children-input:hover {
         -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
-      #main .container-form #name-input:focus, #main .container-form #subject-input:focus, #main .container-form #textarea-avis:focus, #main .container-form #first-name-input:focus, #main .container-form #civi-input:focus, #main .container-form #country-input:focus, #main .container-form #company-input:focus, #main .container-form #mail-input:focus, #main .container-form #cv-input:focus, #main .container-form #lm-input:focus {
+      #main .container-form #name-input:focus, #main .container-form #subject-input:focus, #main .container-form #textarea-avis:focus, #main .container-form #rate-input:focus, #main .container-form #first-name-input:focus, #main .container-form #civi-input:focus, #main .container-form #country-input:focus, #main .container-form #company-input:focus, #main .container-form #mail-input:focus, #main .container-form #cv-input:focus, #main .container-form #lm-input:focus, #main .container-form #arrival-input:focus, #main .container-form #departure-input:focus, #main .container-form #room-input:focus, #main .container-form #visitor-input:focus, #main .container-form #children-input:focus {
         outline: 0 none !important;
         box-shadow: none !important; }
+    #main .container-form .container-options .custom-control-label:checked {
+      background-image: #bc9e48; }
     #main .container-form #submit-button-form {
       color: #FFFFFF;
       background: #02152E;
@@ -821,7 +831,7 @@ html {
         -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
-    #main .container-form .required-field {
+    #main .container-form .infos-form {
       text-align: left; }
 
 @media (min-width: 576px) {

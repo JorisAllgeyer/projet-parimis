@@ -114,13 +114,13 @@
             <a href="hotel.html">L'Hôtel</a>
             <ul class="sub-nav" style="display: none;">
               <li class="sub-nav-item">
-                <a href="hotel.html#qui-somes-nous">Qui sommes-nous</a>
+                <a href="hotel.html#qui-sommes-nous">Qui sommes-nous</a>
               </li>
               <li class="sub-nav-item">
                 <a href="hotel.html#histoire">Histoire</a>
               </li>
               <li class="sub-nav-item">
-                <a href="hotel.html#nous-trouver">Nous Trouver</a>
+                <a href="hotel.html#acces">Accès</a>
               </li>
               <li class="sub-nav-item">
                 <a href="hotel.html#recrutement">Nous Rejoindre</a>
@@ -220,8 +220,8 @@
     <div class="container container-avis">
       <div class="row">
         <div class="col-12 title">
-          <h2>Livre d'or du Parimis</h2>
-          <p class="serif-gold">Nous portons une affection pariculière à la satisfaction de nos clients. Voici notre livre d'or...</p>
+          <h2 class="slide-top">Livre d'or du Parimis</h2>
+          <p class="serif-gold slide-left">Nous portons une affection pariculière à la satisfaction de nos clients. Voici notre livre d'or...</p>
           <ul class="nav nav-tabs nav-fill" id="tab-avis" role="tablist">
             <li class="nav-item">
               <a class="nav-link active rounded-0" id="chambres-tab" data-toggle="tab" href="#chambres" role="tab" aria-controls="chambres" aria-selected="true">Chambres</a>
@@ -370,30 +370,44 @@
         <div class="col-md-8 offset-md-2 title container-form">
           <h2>Laissez votre Avis</h2>
           <form>
-            <div class="row">
-              <div class="form-group col-sm-6">
-                <label for="name-input">Nom*</label>
-                <input type="text" class="form-control rounded-0" id="name-input" required>
+            <fieldset>
+              <div class="row">
+                <div class="form-group col-sm-5">
+                  <label for="name-input">Nom*</label>
+                  <input type="text" class="form-control rounded-0" id="name-input" required>
+                </div>
+                <div class="form-group col-sm-5">
+                  <label for="subject-input">Sujet*</label>
+                  <select class="form-control rounded-0" id="subject-input" required>
+                    <option>Les Chambres</option>
+                    <option>Les Restaurant</option>
+                    <option>Le Spa</option>
+                    <option>Général</option>
+                    <option>Autres</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-2">
+                  <label for="rate-input">Note*</label>
+                  <select class="form-control rounded-0" id="rate-input" required>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group col-sm-6">
-                <label for="subject-input">Sujet*</label>
-                <select class="form-control rounded-0" id="subject-input" required>
-                  <option>Les Chambres</option>
-                  <option>Les Restaurant</option>
-                  <option>Le Spa</option>
-                  <option>Général</option>
-                  <option>Autres</option>
-                </select>
+            </fieldset>
+            <fieldset>
+              <div class="form-group">
+                <label for="textarea-avis">Message*</label>
+                <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="textarea-avis">Message*</label>
-              <textarea class="form-control rounded-0" id="textarea-avis" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
-            <div class="required-field">
-              <p>*Champs Obligatoires</p>
-            </div>
+              <button type="submit" class="btn rounded-0" id="submit-button-form">Envoyer</button>
+              <div class="required-field">
+                <p>*Champs Obligatoires</p>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div><!--/row-->
