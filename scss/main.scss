@@ -562,7 +562,21 @@
       }
     }
     .infos-form{
+      font-size: 0.7em;
+      color: $grey;
       text-align: left;
+    }
+    #next-button{
+      margin-top: 10px;
+      color: $white;
+      background: $deepblue;
+      padding: 10px;
+      transition: .3s;
+
+      &:hover{
+        background: $gold;
+        @include box-shadow($shadow);
+      }
     }
   }
 // ------------------------------------------- PANIER
@@ -592,7 +606,17 @@
   .checkout{
     margin-bottom: 30px;
   }
+
+  .container-caisse{
+    min-height: calc(100vh - 60px);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
+
 
 // MOBILE LANDSCAPE
 @media (min-width: 576px){

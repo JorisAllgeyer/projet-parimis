@@ -23,7 +23,7 @@
 	<meta name="DC.Distribution" content="global">
 	<meta name="DC.Geography" content="Paris">
 
-	<meta property="og:title" content="Hôtel Parimis ***** | Paris Champs-Elysées">
+	<meta property="og:title" content="Réservation - Hôtel Parimis ***** | Paris Champs-Elysées">
 	<meta property="og:type" content="Website">
 	<meta property="og:url" content="https://www.parimis.netlify.com">
 	<meta property="og:image" content="img/logo.png">
@@ -70,7 +70,7 @@
           <span id="booking-text">Réservation rapide</span>
           <span id="booking-icon"><i class="far fa-calendar-alt fa-2x"></i></span>
           <div class="booking-form-container">
-            <form class="booking-form" action="reservation.html" method="post"><!-- FORMULAIRE RESERVATION -->
+            <form class="booking-form" action="panier.html" method="post"><!-- FORMULAIRE RESERVATION -->
               <div class="booking-form-item">
                 <label for="arrival">Arrivée</label>
                 <input type="text" id="arrival">
@@ -222,7 +222,7 @@
         <div class="col-sm-12 title container-form">
           <h2 class="slide-top">Reservez à l'Hôtel Parimis</h2>
           <p class="serif-gold slide-left">Vous désirez séjourner à l'Hôtel Parimis ? Remplissez le formulaire ci dessous. Sinon appelez la reception de l'Hôtel au (+33)1 00 00 00 00.</p>
-          <form>
+          <form action="panier.html" method="post">
 
 <!-- DISPO  -->
             <fieldset id="container-dispo">
@@ -265,7 +265,7 @@
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 et + (Nous contacter)</option>
+                    <option>5</option>
                   </select>
                 </div>
               </div>
@@ -343,11 +343,11 @@
                   <label for="street-input">Rue*</label>
                   <input type="text" class="form-control rounded-0" id="street-input" required>
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-5">
                   <label for="town-input">Ville*</label>
                   <input type="text" class="form-control rounded-0" id="town-input" required>
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-3">
                   <label for="cp-input">Code Postal*</label>
                   <input type="mail" class="form-control rounded-0" id="cp-input" required>
                 </div>
@@ -364,7 +364,7 @@
                 </div>
                 <div class="form-group col-sm-4">
                   <label for="tel-input">Téléphone*</label>
-                  <input type="mail" class="form-control rounded-0" id="tel-input" required>
+                  <input type="mail" class="form-control rounded-0" id="tel-input"  placeholder="+33" required>
                 </div>
               </div>
             </fieldset>
@@ -380,7 +380,10 @@
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn rounded-0" id="submit-button-form">Aller à l'étape suivante</button>
+              <div class="row d-flex justify-content-center">
+                <a href="panier.html" id="next-button">Aller à l'étape suivante</a>
+
+              </div>
               <div class="infos-form">
                 <p>*Champs Obligatoires</p>
               </div>

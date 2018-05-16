@@ -830,7 +830,20 @@ html {
         -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
         box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
     #main .container-form .infos-form {
+      font-size: 0.7em;
+      color: #6c757d;
       text-align: left; }
+    #main .container-form #next-button {
+      margin-top: 10px;
+      color: #FFFFFF;
+      background: #02152E;
+      padding: 10px;
+      transition: .3s; }
+      #main .container-form #next-button:hover {
+        background: #bc9e48;
+        -webkit-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 8px 20px -8px rgba(0, 0, 0, 0.6); }
   #main .container-table {
     width: 100%;
     overflow-x: auto; }
@@ -846,6 +859,13 @@ html {
       cursor: pointer; }
   #main .checkout {
     margin-bottom: 30px; }
+  #main .container-caisse {
+    min-height: calc(100vh - 60px);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
