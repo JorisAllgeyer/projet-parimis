@@ -416,6 +416,7 @@
         margin-bottom: 15px;
       }
     }
+
     img{
       width: 100%;
       margin-bottom: 15px;
@@ -621,7 +622,7 @@
     flex-direction: column;
     justify-content: center;
   }
-// ------------------------------------------- SITEMAP CGV
+// ------------------------------------------- SITEMAP CGV ML
   .container-sitemap, .container-cgv, .container-ml{
     display: -webkit-flex;
     display: -ms-flex;
@@ -665,6 +666,25 @@
 
     .bloc-link{
       margin-bottom: 30px;
+    }
+  }
+
+// ------------------------------------------- PRESSE
+
+  .container-presse{
+
+    .box-article{
+      background: $gold;
+      padding: 10px;
+
+      h3{
+        font-size: 1.4em;
+        text-transform: uppercase;
+      }
+      img{
+        width: 100%;
+      }
+      a{}
     }
   }
 }

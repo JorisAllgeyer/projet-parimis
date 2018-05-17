@@ -905,6 +905,14 @@ html {
         border-bottom: 1px solid; }
     #main .container-sitemap .bloc-link, #main .container-cgv .bloc-link, #main .container-ml .bloc-link {
       margin-bottom: 30px; }
+  #main .container-presse .box-article {
+    background: #bc9e48;
+    padding: 10px; }
+    #main .container-presse .box-article h3 {
+      font-size: 1.4em;
+      text-transform: uppercase; }
+    #main .container-presse .box-article img {
+      width: 100%; }
 
 @media (min-width: 576px) {
   #main .section-left-home {
