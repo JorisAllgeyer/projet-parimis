@@ -48,7 +48,7 @@ $bold: 'Geometria-Bold';
 
 
 // MIXINS
-$shadow: 0px 8px 20px -8px rgba(0,0,0,.6);
+$shadow: 0px 10px 20px -8px rgba(0,0,0,.6);
 @mixin box-shadow($value){
   -webkit-box-shadow: $value;
       -moz-box-shadow: $value;
