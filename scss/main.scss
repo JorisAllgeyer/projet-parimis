@@ -772,6 +772,32 @@
       }
     }
   }
+// ------------------------------------------- EVENEMENTS
+  .container-events{
+    .box-video{
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .container-video{
+      position: relative;
+	    padding-bottom: 56.25%; /* pour  16:9 */
+	    padding-top: 25px;
+	    height: 0;
+
+      iframe{
+        position: absolute;
+      	top: 0;
+      	left: 0;
+      	width: 100%;
+      	height: 100%;
+      }
+    }
+    .separator100g{
+      margin: 10px auto;
+      width: 200px;
+    }
+  }
 }
 
 
