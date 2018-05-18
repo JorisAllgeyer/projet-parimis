@@ -569,7 +569,7 @@
       }
     }
     .infos-form{
-      font-size: 0.7em;
+      font-size: 0.8em;
       color: $grey;
       text-align: left;
     }
@@ -876,6 +876,11 @@
         background-size:320%;
       }
     }
+    #down, #classique, #confort, #deluxe, #suite, #restaurant, #bar, #detente, #découvrete, #relaxant, #plaisir, #evasion, #qui-sommes-nous, #histoire, #acces, #recrutement{
+      position: relative;
+      bottom: 70px;
+    }
+
     .section-right-home{
       .section-right-item:first-child{
         background-size: 200%;
