@@ -379,7 +379,8 @@ html {
     display: none; } }
 @media (min-width: 1200px) {
   #header nav .logo {
-    padding-left: 30px; }
+    padding-left: 15px;
+    padding-right: 15px; }
   #header .lang {
     width: 50px; }
 
@@ -390,7 +391,8 @@ html {
     display: none; } }
 @media (min-width: 1500px) {
   #header nav .logo {
-    padding-left: 50px; }
+    padding-left: 25px;
+    padding-right: 25px; }
 
   .b5 {
     display: block; }
