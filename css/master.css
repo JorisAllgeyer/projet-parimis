@@ -620,12 +620,6 @@ html {
     background-size: 280%;
     background-position: center;
     background-repeat: no-repeat; }
-  #main .section-menu {
-    min-height: calc(100vh - 60px);
-    background-image: url("../img/restaurant-5.jpg");
-    background-position: center;
-    background-size: 380%;
-    background-repeat: no-repeat; }
   #main #rest .menu-container {
     display: -webkit-flex;
     display: -ms-flex;
@@ -633,11 +627,12 @@ html {
     flex-direction: column;
     justify-content: center;
     margin: 30px 15px;
-    border: 2px solid #bc9e48;
-    background: rgba(2, 21, 46, 0.9);
     color: #FFFFFF;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6); }
     #main #rest .menu-container header {
       display: -webkit-flex;
       display: -ms-flex;
@@ -645,7 +640,11 @@ html {
       #main #rest .menu-container header #menu-midi-title, #main #rest .menu-container header #menu-soir-title {
         width: 50%;
         height: 60px;
-        cursor: pointer; }
+        cursor: pointer;
+        background: #02152E;
+        transition: .3s; }
+        #main #rest .menu-container header #menu-midi-title:hover, #main #rest .menu-container header #menu-soir-title:hover {
+          opacity: 0.95; }
       #main #rest .menu-container header p {
         line-height: 60px;
         display: block;
@@ -656,20 +655,24 @@ html {
       display: -ms-flex;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      background: #02152E; }
     #main #rest .menu-container .menu-item:last-child {
       display: none; }
     #main #rest .menu-container h2 {
       font-size: 2em;
-      padding: 15px 0; }
+      margin: 15px 0; }
     #main #rest .menu-container h3 {
       font-size: 1.2em;
-      padding: 10px 0; }
+      margin-top: 20px; }
     #main #rest .menu-container li {
       font-size: 0.8em; }
     #main #rest .menu-container .prices {
       font-size: 0.6em;
-      padding: 10px; }
+      margin: 15px 0; }
+    #main #rest .menu-container .separator100g {
+      display: inline-block;
+      margin: 10px 0; }
   #main .container-degustation {
     display: -webkit-flex;
     display: -ms-flex;
@@ -721,19 +724,31 @@ html {
     background-repeat: no-repeat;
     background-size: 370%; }
   #main .container-hotel {
-    margin-top: 30px; }
-    #main .container-hotel .section-hotel-text {
-      margin: 30px 0; }
-      #main .container-hotel .section-hotel-text p {
-        margin-bottom: 15px; }
-    #main .container-hotel img {
-      width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  #main .section-hotel-text {
+    margin: 30px 0; }
+    #main .section-hotel-text p {
       margin-bottom: 15px; }
+  #main .container-histoire {
+    min-height: calc(100vh - 60px);
+    background: #02152E;
+    color: #FFFFFF; }
+    #main .container-histoire .title h2 {
+      color: #FFFFFF; }
+  #main #carousel-2 {
+    margin-bottom: 30px; }
   #main .container-recrut {
     margin-top: 30px;
     margin-bottom: 30px; }
+  #main .container-hotel-map {
+    min-height: calc(100vh - 60px);
+    padding: 20px; }
+    #main .container-hotel-map #container-map {
+      height: 50vh; }
   #main .acces {
-    color: #02152E; }
+    color: #02152E;
+    margin-bottom: 30px; }
     #main .acces h2 {
       text-transform: uppercase;
       padding: 15px 0px;
@@ -814,6 +829,12 @@ html {
         padding: 3px 0px; }
     #main .container-form #container-dispo, #main .container-form #container-options {
       margin-bottom: 20px; }
+      #main .container-form #container-dispo h3, #main .container-form #container-options h3 {
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 10px; }
+      #main .container-form #container-dispo .no-option, #main .container-form #container-options .no-option {
+        margin-top: 10px; }
     #main .container-form .form-group label {
       text-transform: uppercase; }
     #main .container-form #name-input, #main .container-form #subject-input, #main .container-form #textarea-avis, #main .container-form #rate-input, #main .container-form #first-name-input, #main .container-form #civi-input, #main .container-form #country-input, #main .container-form #company-input, #main .container-form #mail-input, #main .container-form #cv-input, #main .container-form #lm-input, #main .container-form #arrival-input, #main .container-form #departure-input, #main .container-form #room-input, #main .container-form #visitor-input, #main .container-form #children-input, #main .container-form #number-input, #main .container-form #street-input, #main .container-form #town-input, #main .container-form #cp-input, #main .container-form #tel-input {
@@ -866,8 +887,6 @@ html {
       font-weight: normal; }
     #main .container-table .table .trash {
       cursor: pointer; }
-  #main .checkout {
-    margin-bottom: 30px; }
   #main .container-caisse {
     min-height: calc(100vh - 60px);
     display: -webkit-flex;
@@ -942,8 +961,7 @@ html {
     #main .container-actualites #tab-actualites a {
       border-bottom: none; }
   #main .container-actualites #tab-actualites-content {
-    padding: 10px;
-    margin-bottom: 50px; }
+    padding: 10px; }
     #main .container-actualites #tab-actualites-content .container-actualites-box {
       text-align: left;
       padding: 10px 15px;
@@ -999,6 +1017,30 @@ html {
   #main .container-events .separator100g {
     margin: 10px auto;
     width: 200px; }
+  #main .footer-nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #02152E;
+    text-transform: uppercase; }
+    #main .footer-nav .bloc-nav-link {
+      border: 1px solid #02152E;
+      padding: 0px 12px;
+      height: 40px;
+      margin: 20px 10px;
+      transition: .3s; }
+      #main .footer-nav .bloc-nav-link a {
+        display: block;
+        width: 100%;
+        line-height: 38px; }
+      #main .footer-nav .bloc-nav-link:hover {
+        background: #02152E;
+        color: #FFFFFF;
+        -webkit-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6); }
 
 @media (min-width: 576px) {
   #main .section-left-home {
@@ -1017,8 +1059,6 @@ html {
     background-size: 270%; }
   #main .section-full-page-restaurant {
     background-size: 220%; }
-  #main .section-menu {
-    background-size: 280%; }
   #main .section-full-page-spa {
     background-size: 250%; }
   #main .section-full-page-hotel {
@@ -1044,44 +1084,42 @@ html {
     background-size: 200%; }
   #main .section-full-page-restaurant {
     background-size: 180%; }
-  #main .section-menu {
-    background-size: 250%; }
   #main .section-full-page-spa {
     background-size: 200%; }
   #main .section-full-page-hotel {
     background-size: 200%; } }
 @media (min-width: 992px) {
-  #main .section-left-home {
-    background-size: 300%; }
-    #main .section-left-home:hover {
-      background-size: 320%; }
-  #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar, #main #detente, #main #d├®couvrete, #main #relaxant, #main #plaisir, #main #evasion, #main #qui-sommes-nous, #main #histoire, #main #acces, #main #recrutement {
-    position: relative;
-    bottom: 70px; }
-  #main .section-right-home .section-right-item:first-child {
-    background-size: 200%; }
-    #main .section-right-home .section-right-item:first-child:hover {
-      background-size: 220%; }
-  #main .section-right-home .section-right-item:last-child {
-    background-size: 150%; }
-    #main .section-right-home .section-right-item:last-child:hover {
-      background-size: 170%; }
-  #main .section-right-home .section-full-page {
-    min-height: calc(100vh - 70px;); }
-  #main .container-room:nth-child(even) .info-room {
-    order: 2; }
-  #main .section-full-page-room {
-    background-size: 150%; }
-  #main .section-full-page-restaurant {
-    background-size: 140%; }
-  #main .section-menu {
-    background-size: 200%; }
-  #main .section-full-page-spa {
-    background-size: 150%; }
-  #main .container-spa:nth-child(even) .info-spa {
-    order: 2; }
-  #main .section-full-page-hotel {
-    background-size: 150%; } }
+  #main {
+    margin-top: 70px; }
+    #main .section-left-home {
+      background-size: 300%; }
+      #main .section-left-home:hover {
+        background-size: 320%; }
+    #main #down, #main #classique, #main #confort, #main #deluxe, #main #suite, #main #restaurant, #main #bar, #main #detente, #main #d├®couvrete, #main #relaxant, #main #plaisir, #main #evasion, #main #qui-sommes-nous, #main #histoire, #main #acces, #main #recrutement {
+      position: relative;
+      bottom: 70px; }
+    #main .section-right-home .section-right-item:first-child {
+      background-size: 200%; }
+      #main .section-right-home .section-right-item:first-child:hover {
+        background-size: 220%; }
+    #main .section-right-home .section-right-item:last-child {
+      background-size: 150%; }
+      #main .section-right-home .section-right-item:last-child:hover {
+        background-size: 170%; }
+    #main .section-right-home .section-full-page {
+      min-height: calc(100vh - 70px;); }
+    #main .container-room:nth-child(even) .info-room {
+      order: 2; }
+    #main .section-full-page-room {
+      background-size: 150%; }
+    #main .section-full-page-restaurant {
+      background-size: 140%; }
+    #main .section-full-page-spa {
+      background-size: 150%; }
+    #main .container-spa:nth-child(even) .info-spa {
+      order: 2; }
+    #main .section-full-page-hotel {
+      background-size: 150%; } }
 @media (min-width: 1200px) {
   #main .section-left-home {
     background-size: 240%; }
@@ -1099,8 +1137,6 @@ html {
     background-size: 100%; }
   #main .section-full-page-restaurant {
     background-size: 120%; }
-  #main .section-menu {
-    background-size: 150%; }
   #main .section-full-page-spa {
     background-size: 120%; }
   #main .section-full-page-hotel {
@@ -1118,8 +1154,6 @@ html {
     background-size: 150%; }
     #main .section-right-home .section-right-item:last-child:hover {
       background-size: 170%; }
-  #main .section-menu {
-    background-size: 100%; }
   #main .section-full-page-spa {
     background-size: 100%; } }
 #footer {

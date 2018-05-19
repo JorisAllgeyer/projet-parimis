@@ -278,35 +278,83 @@
             <fieldset id="container-options">
               <legend>Vos Options</legend>
               <div class="row">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="demi-pension" value="option1">
-                  <label class="form-check-label" for="demi-pension">
-                    Demi-pension
-                  </label>
+                <div class="col-md-6">
+                  <h3>Restaurant</h3>
+    <!-- OPTION 1 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="menu-midi" value="option1">
+                      <label class="form-check-label" for="menu-midi">
+                        Menu du midi au restaurant Parimis
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 2 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="menu-soir" value="option2">
+                      <label class="form-check-label" for="menu-soir">
+                        Menu du soir au restaurant Parimis
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 3 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="menu-midi-soir" value="option2">
+                      <label class="form-check-label" for="menu-midi-soir">
+                        Menu du midi et soir au restaurant Parimis
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 4 -->
+                  <div class="row no-option">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="no-option" value="option1" checked>
+                      <label class="form-check-label" for="no-option">
+                        Pas d'option restaurant
+                      </label>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="pension-complete" value="option2">
-                  <label class="form-check-label" for="pension-complete">
-                    Pension Complète
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="demi-pension" value="option1" checked>
-                  <label class="form-check-label" for="demi-pension">
-                    Pas d'option de repas
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="acces-spa">
-                  <label class="form-check-label" for="acces-spa">
-                    Accès illimité au Spa
-                  </label>
+                <div class="col-md-6">
+                  <h3>Spa</h3>
+    <!-- OPTION 5 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios-2" id="acces-spa-1">
+                      <label class="form-check-label" for="acces-spa-1">
+                        Forfait Découverte (2 soins au choix)
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 6 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios-2" id="acces-spa-2">
+                      <label class="form-check-label" for="acces-spa-2">
+                        Forfait Passion (3 soins + accès piscine illimté)
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 7 -->
+                  <div class="row">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios-2" id="acces-spa-3">
+                      <label class="form-check-label" for="acces-spa-3">
+                        Accès illimité au Spa et Soins
+                      </label>
+                    </div>
+                  </div>
+    <!-- OPTION 8 -->
+                  <div class="row no-option">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios-2" id="acces-spa-4" checked>
+                      <label class="form-check-label" for="acces-spa-4">
+                        Pas d'option Spa
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>

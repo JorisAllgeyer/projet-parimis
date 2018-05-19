@@ -275,13 +275,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .section-menu{
-    min-height: calc(100vh - 60px);
-    background-image: url('../img/restaurant-5.jpg');
-    background-position: center;
-    background-size: 380%;
-    background-repeat: no-repeat;
-  }
+
   #rest{
 
     .menu-container{
@@ -291,11 +285,10 @@
       flex-direction: column;
       justify-content: center;
       margin: 30px 15px;
-      border: 2px solid $gold;
-      background: $overlayb;
       color: $white;
       text-transform: uppercase;
       text-align: center;
+      @include box-shadow($shadow);
 
       header{
         display: -webkit-flex;
@@ -306,6 +299,12 @@
           width: 50%;
           height: 60px;
           cursor: pointer;
+          background: $deepblue;
+          transition: .3s;
+
+          &:hover{
+            opacity: 0.95;
+          }
         }
         p{
           line-height: 60px;
@@ -321,22 +320,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background: $deepblue;
       }
       .menu-item:last-child{display: none;}
       h2{
         font-size: 2em;
-        padding: 15px 0;
+        margin: 15px 0;
       }
       h3{
         font-size: 1.2em;
-        padding: 10px 0;
+        margin-top: 20px;
       }
       li{
         font-size: 0.8em;
       }
       .prices{
         font-size: 0.6em;
-        padding: 10px;
+        margin: 15px 0;
+      }
+      .separator100g{
+        display: inline-block;
+        margin: 10px 0;
       }
     }
   }
@@ -408,26 +412,36 @@
   }
   .container-hotel{
     margin-top: 30px;
-
-    .section-hotel-text{
-      margin: 30px 0;
-
-      p{
-        margin-bottom: 15px;
-      }
-    }
-
-    img{
-      width: 100%;
-      margin-bottom: 15px;
-    }
+    margin-bottom: 30px;
   }
+  .section-hotel-text{
+    margin: 30px 0;
+    p{margin-bottom: 15px;}
+  }
+  .container-histoire{
+    min-height: calc(100vh - 60px);
+    background: $deepblue;
+    color: $white;
+
+    .title h2{color: $white;}
+  }
+
+  #carousel-2{margin-bottom: 30px;}
   .container-recrut{
     margin-top: 30px; margin-bottom: 30px;
   }
+
+  .container-hotel-map{
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+
+    #container-map{
+      height: 50vh;
+    }
+  }
   .acces{
     color: $deepblue;
-
+    margin-bottom: 30px;
     h2{
       text-transform: uppercase;
       padding: 15px 0px;
@@ -532,6 +546,15 @@
     }
     #container-dispo, #container-options{
       margin-bottom: 20px;
+
+      h3{
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .no-option{
+        margin-top: 10px;
+      }
     }
 
     .form-group{
@@ -610,9 +633,6 @@
     }
   }
 
-  .checkout{
-    margin-bottom: 30px;
-  }
 // ------------------------------------------- CAISSE
   .container-caisse{
     min-height: calc(100vh - 60px);
@@ -726,7 +746,6 @@
 
     #tab-actualites-content{
       padding: 10px;
-      margin-bottom: 50px;
 
       .container-actualites-box{
         text-align: left;
@@ -798,6 +817,36 @@
       width: 200px;
     }
   }
+// FOOTER NAV
+  .footer-nav{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $deepblue;
+    text-transform: uppercase;
+
+    .bloc-nav-link{
+      border: 1px solid $deepblue;
+      padding: 0px 12px;
+      height: 40px;
+      margin: 20px 10px;
+      transition: .3s;
+
+      a{
+        display: block;
+        width: 100%;
+        line-height: 38px;
+      }
+
+      &:hover{
+        background: $deepblue;
+        color: $white;
+        @include box-shadow($shadow);
+      }
+    }
+  }
 }
 
 
@@ -832,9 +881,6 @@
 //RESTAURANT
     .section-full-page-restaurant{
       background-size: 220%;
-    }
-    .section-menu{
-      background-size: 280%;
     }
 //SPA
     .section-full-page-spa{
@@ -880,9 +926,6 @@
     .section-full-page-restaurant{
       background-size: 180%;
     }
-    .section-menu{
-      background-size: 250%;
-    }
 //SPA
     .section-full-page-spa{
       background-size: 200%;
@@ -896,6 +939,8 @@
 // LAPTOP
 @media (min-width: 992px){
   #main{
+    margin-top: 70px;
+
     .section-left-home{
       background-size: 300%;
       &:hover{
@@ -936,9 +981,6 @@
 //RESTAURANT
     .section-full-page-restaurant{
       background-size: 140%;
-    }
-    .section-menu{
-      background-size: 200%;
     }
 //SPA
     .section-full-page-spa{
@@ -984,9 +1026,6 @@
     .section-full-page-restaurant{
       background-size: 120%;
     }
-    .section-menu{
-      background-size: 150%;
-    }
 //SPA
     .section-full-page-spa{
       background-size: 120%;
@@ -1019,10 +1058,6 @@
           background-size: 170%;
         }
       }
-    }
-//RESTAURANT
-    .section-menu{
-      background-size: 100%;
     }
 //SPA
     .section-full-page-spa{
