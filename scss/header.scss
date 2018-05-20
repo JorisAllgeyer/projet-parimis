@@ -153,15 +153,9 @@
   position: fixed;
   bottom: 0;
 }
-.b1,.b2,.b3,.b4,.b5{display: none;}
 
 // MOBILE LANDSCAPE
-@media (min-width: 576px){
-
-  // ----------------------------------
-  .b1{display: block;}
-  .b0,.b2,.b3,.b4,.b5{display: none;}
-}
+// @media (min-width: 576px){}
 
 // TABLET IPAD
 @media (min-width: 768px){
@@ -315,9 +309,6 @@
       }
     }
   }
-// ----------------------------------
-.b2{display: block;}
-.b0,.b1,.b3,.b4,.b5{display: none;}
 }
 
 // LAPTOP
@@ -426,9 +417,6 @@
       }
     }
   }
-// ----------------------------------
-  .b3{display: block;}
-  .b0,.b1,.b2,.b4,.b5{display: none;}
 }
 
 // LARGE SCREEN
@@ -445,9 +433,6 @@
       width: 50px;
     }
   }
-// ----------------------------------
-  .b4{display: block;}
-  .b0,.b1,.b2,.b3,.b5{display: none;}
 }
 
 // X- LARGE SCREEN
@@ -460,7 +445,4 @@
       }
     }
   }
-// ----------------------------------
-  .b5{display: block;}
-  .b0,.b1,.b2,.b3,.b4{display: none;}
 }

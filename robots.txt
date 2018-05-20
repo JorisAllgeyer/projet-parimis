@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parimis.netlify.com/sitemap.xml
