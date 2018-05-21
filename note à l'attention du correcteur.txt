@@ -1,17 +1,24 @@
-GOOGLE MAPS :
-J'ai choisi d'utiliser l'API google maps afin de pouvoir customiser la map selon la charte graphique que j'ai établi. 
+Veuillez trouver ci-dessous quelques informations et explications quant aux choix que j'ai fais pour le projet PARIMIS.
 
-BOOTSTRAP :
-J'ai choisi d'utiliser boostrap pour faciliter la mise en forme du contenu, ainsi que pour obtenir un rendu responsive cohérent. 
+*BOOTSTRAP :
+J'ai choisi d'utiliser Bootstrap pour faciliter la mise en forme du contenu, ainsi que pour obtenir un rendu responsive cohérent. 
 
 Le header lui, a été consruit SANS l'aide de boostrap, les animations (hover et click) sont pour la plupart programmés en JavaScript ou JQuery. 
 
-CSS :
+*UX :
+J'ai prêté une attention particulière à l'expérience utilisateur avec une navigation fluide et facile. Je me suis éfforcé d'offrir à l'internaute plusieurs liens internes qui font office de "raccourcis" et permettent de découvrir l'hôtel de manière logique sans passer par le menu, avec comme point de chute la page de réservation. 
+
+*CSS :
 J'ai choisi d'utiliser le préprocesseur SASS pour construire mes feuilles de styles plus éfficacement et rapidement. 
 Je gère indépendemment les styles des sections header, footer, et main. Ces trois fichiers scss sont appelés dans un dernier fichier master.scss qui contient le reset inital, les variables, les mixins, les imports des fonts et des 3 feuilles de styles. La compilation sass éfface tous les commentaires, néanmoins les fichiers source sont proprement commentés et indentés.
 
-REFERENCEMENT :
+*HEBERGEMENT :
+J'ai choisi tout au long de l'exercice d'héberger mon site avec Netlify, solution d'hébergement gratuite qui propose un déploiement automatique synchronisé avec GitHub. Cela m'a permis de pouvoir controler facilement et rapidement mon site sur différents supports. GitHub permet également plus de sécurité quant au mises à jour de mes versions. Néanmoins cette solution à des faiblesses comme la lenteur de l'affichage, de plus Netlify n'accepte que des sites statiques c'est pourquoi les formulaires renvoient vers des pages "not found"... J'ai néamoins considéré que pour l'exercice, Netlify suffisait amplement.
+
+*GOOGLE MAPS :
+J'ai choisi d'utiliser l'API google maps afin de pouvoir customiser la map selon la charte graphique que j'ai établi. 
+
+*REFERENCEMENT :
 J'ai porté une attention particulière au référencement grâce notamment à : la répétition des mots clefs, balises strong et em, balises meta et open graph, multipilcation des liens internes, sitemap, robots.txt...
 
-HEBERGEMENT :
-J'ai choisi tout au long de l'exercice d'héberger mon site avec Netlify, solution d'hébergement gratuite qui propose un déploiement automatique synchronisé avec GitHub. Cela m'a permis de pouvoir controler facilement et rapidement mon site sur différents supports. GitHub permet également plus de sécurité quant au mises à jour de mes versions. Néanmoins cette solution à des faiblesses comme la lenteur de l'affichage, de plus Netlify n'accepte que des sites statiques c'est pourquoi les formulaires renvoient vers des pages "not found"... 
+Bonne navigation.
