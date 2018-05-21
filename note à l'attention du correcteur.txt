@@ -1,0 +1,17 @@
+GOOGLE MAPS :
+J'ai choisi d'utiliser l'API google maps afin de pouvoir customiser la map selon la charte graphique que j'ai établi. 
+
+BOOTSTRAP :
+J'ai choisi d'utiliser boostrap pour faciliter la mise en forme du contenu, ainsi que pour obtenir un rendu responsive cohérent. 
+
+Le header lui, a été consruit SANS l'aide de boostrap, les animations (hover et click) sont pour la plupart programmés en JavaScript ou JQuery. 
+
+CSS :
+J'ai choisi d'utiliser le préprocesseur SASS pour construire mes feuilles de styles plus éfficacement et rapidement. 
+Je gère indépendemment les styles des sections header, footer, et main. Ces trois fichiers scss sont appelés dans un dernier fichier master.scss qui contient le reset inital, les variables, les mixins, les imports des fonts et des 3 feuilles de styles. La compilation sass éfface tous les commentaires, néanmoins les fichiers source sont proprement commentés et indentés.
+
+REFERENCEMENT :
+J'ai porté une attention particulière au référencement grâce notamment à : la répétition des mots clefs, balises strong et em, balises meta et open graph, multipilcation des liens internes, sitemap, robots.txt...
+
+HEBERGEMENT :
+J'ai choisi tout au long de l'exercice d'héberger mon site avec Netlify, solution d'hébergement gratuite qui propose un déploiement automatique synchronisé avec GitHub. Cela m'a permis de pouvoir controler facilement et rapidement mon site sur différents supports. GitHub permet également plus de sécurité quant au mises à jour de mes versions. Néanmoins cette solution à des faiblesses comme la lenteur de l'affichage, de plus Netlify n'accepte que des sites statiques c'est pourquoi les formulaires renvoient vers des pages "not found"... 
