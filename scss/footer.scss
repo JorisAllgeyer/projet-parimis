@@ -50,7 +50,7 @@
   }
   .section{
     font-size: 0.8em;
-    padding: 30px 10px;
+    padding: 20px 10px;
     line-height: 20px;
   }
   .section-left{text-align: left;}
@@ -61,8 +61,15 @@
   .section-right{text-align: center;}
 
   .logo{
-    padding: 0;
+    padding-bottom: 10px;
+    text-align: center;
     img{width: 60px;}
+  }
+  .desc{
+    text-align: center;
+    iframe{
+      margin-top: 5px;
+    }
   }
   .infos{
     text-transform: none;
@@ -83,6 +90,12 @@
     }
     .section-center, .section-right{
       text-align: left;
+    }
+    .desc{
+      text-align: left;
+      iframe{
+        margin-top: 5px;
+      }
     }
   }
 }

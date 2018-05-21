@@ -1180,7 +1180,7 @@ html {
       background: #02152E; }
   #footer .section {
     font-size: 0.8em;
-    padding: 30px 10px;
+    padding: 20px 10px;
     line-height: 20px; }
   #footer .section-left {
     text-align: left; }
@@ -1190,9 +1190,14 @@ html {
   #footer .section-right {
     text-align: center; }
   #footer .logo {
-    padding: 0; }
+    padding-bottom: 10px;
+    text-align: center; }
     #footer .logo img {
       width: 60px; }
+  #footer .desc {
+    text-align: center; }
+    #footer .desc iframe {
+      margin-top: 5px; }
   #footer .infos {
     text-transform: none;
     font-size: 0.7em;
@@ -1204,7 +1209,11 @@ html {
   #footer .social .container-icon {
     height: 170px; }
   #footer .section-center, #footer .section-right {
-    text-align: left; } }
+    text-align: left; }
+  #footer .desc {
+    text-align: left; }
+    #footer .desc iframe {
+      margin-top: 5px; } }
 noscript {
   position: fixed;
   top: 0;
