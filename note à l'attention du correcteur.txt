@@ -1,3 +1,7 @@
+*PROJET PARIMIS*
+Url : https://parimis.netlify.com
+GitHub : https://github.com/JorisAllgeyer/projet-parimis
+
 Veuillez trouver ci-dessous quelques informations et explications quant aux choix que j'ai fais pour le projet PARIMIS.
 
 *BOOTSTRAP :
